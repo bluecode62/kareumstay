@@ -1,16 +1,12 @@
 import "./App.css";
 import styled from "styled-components";
-import { createGlobalStyle } from "styled-components";
 
-import Gnb from "./components/Gnb";
-import Footer from "./components/Footer";
+import GlobalStyle from "./styles/GlobalStyle";
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    font-family: "Noto Sans KR", sans-serif;
-  }
-`;
+import Gnb from "./components/layout/Gnb";
+import Footer from "./components/layout/Footer";
+import ReservationBar from "./components/reservation/ReservationBar";
+
 const Layout = styled.div`
   min-height: 100vh;
   display: flex;
@@ -23,7 +19,7 @@ function App() {
       <GlobalStyle />
       <Layout>
         <Gnb />
-        <div>주요 내용들</div>
+        <ReservationBar />
         <Footer />
       </Layout>
     </div>
