@@ -4,13 +4,25 @@
 }
 
 a {
-  list-style: none;
+  text-decoration: none;
   color: black;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 .App {
   text-align: center;
+}
+.wrap {
   width: 1070px;
   margin: 0 auto;
 }
-
