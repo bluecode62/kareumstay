@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export const Card = styled.div`
-`
+export const Card = styled.div``;
 export const ImageWrapper = styled.div`
   position: relative;
   width: 300px;
@@ -15,15 +14,15 @@ export const ImageWrapper = styled.div`
 
   img {
     width: 100%;
-    height:100%;
+    height: 100%;
     oject-fit: cover;
     display: block;
   }
 `;
 
 export const PickOverlay = styled.div`
-  width: 100%;  
-position: absolute;
+  width: 100%;
+  position: absolute;
   bottom: 0;
   left: 0;
   padding: 12px;
@@ -55,7 +54,7 @@ export const CardInfo = styled.div`
     color: black;
   }
   p {
-    color: #3D3D3D;
+    color: #3d3d3d;
     font-size: 14px;
     font-weight: 500;
   }

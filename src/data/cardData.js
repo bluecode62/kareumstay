@@ -94,3 +94,4 @@ export const cafeData = [
     description: "밥 그릇 뚝딱, 매콤달콤 우럭 장식",
   },
 ];
+

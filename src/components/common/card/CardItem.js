@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Card,
-  ImageWrapper,
-  PickOverlay,
-  CardInfo,
-} from "./card.styles";
+import { Card, ImageWrapper, PickOverlay, CardInfo } from "./card.styles";
 
 export default function CardItem({
   variant = "default",
@@ -33,8 +28,8 @@ export default function CardItem({
         <ImageWrapper variant="pick">
           <img src={cardImage} alt="PICK 카드" />
           <PickOverlay>
-              <p>{pickTitle}</p>
-              <p>{pickTxt}</p>
+            <p>{pickTitle}</p>
+            <p>{pickTxt}</p>
           </PickOverlay>
         </ImageWrapper>
       )}

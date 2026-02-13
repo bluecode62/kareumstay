@@ -9,6 +9,9 @@ import ReservationBar from "./components/reservation/ReservationBar";
 import CardList from "./components/common/card/CardList";
 import { cafeData, oneDayData, pickData, travelData } from "./data/cardData";
 
+import VillageSlider from "./components/slider/villageSlider";
+import { villageData } from "./data/villageData";
+
 const Layout = styled.div`
   min-height: 100vh;
   display: flex;
@@ -38,11 +41,9 @@ function App() {
         <Divider />
 
         <CardList title="카름스테이 PICK" variant="pick" data={pickData} />
-        <CardList
-          title="카페&레스토랑"
-          variant="defalt"
-          data={cafeData}
-        />
+        <CardList title="카페&레스토랑" variant="defalt" data={cafeData} />
+
+        <VillageSlider title="제주에서 만나는 13개의 마을 이야기" data={villageData} />
         <Footer />
       </Layout>
     </div>
