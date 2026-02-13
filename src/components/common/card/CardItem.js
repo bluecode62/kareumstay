@@ -12,6 +12,7 @@ export default function CardItem({
   cardTitle,
   location,
   description,
+  pickTitle,
   pickTxt,
 }) {
   return (
@@ -32,9 +33,8 @@ export default function CardItem({
         <ImageWrapper variant="pick">
           <img src={cardImage} alt="PICK 카드" />
           <PickOverlay>
-            {pickTxt.split("/").map((line, idx) => (
-              <p key={idx}>{line}</p>
-            ))}
+              <p>{pickTitle}</p>
+              <p>{pickTxt}</p>
           </PickOverlay>
         </ImageWrapper>
       )}

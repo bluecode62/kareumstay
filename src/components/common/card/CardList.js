@@ -3,8 +3,8 @@ import styled from "styled-components";
 import CardItem from "./CardItem";
 
 const CardWrapper = styled.div`
-  width: 1000px;
-  height: 320px;
+  width: 1000px; 
+  height: ${({ variant }) => (variant === "pick" ? "400px" : "320px")};
   margin: 30px auto;
   padding: 20px;
   display: flex;
@@ -45,7 +45,7 @@ const NextBtn = styled.button`
 
 export default function CardList({ data, variant, title }) {
   return (
-    <CardWrapper>
+    <CardWrapper variant={variant}>
       {title && <h3>{title}</h3>}
       <ListWraper>
         {data.map((item, id) => (

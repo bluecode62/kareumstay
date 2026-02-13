@@ -7,12 +7,18 @@ import Gnb from "./components/layout/Gnb";
 import Footer from "./components/layout/Footer";
 import ReservationBar from "./components/reservation/ReservationBar";
 import CardList from "./components/common/card/CardList";
-import { oneDayData, travelData } from "./data/cardData";
+import { cafeData, oneDayData, pickData, travelData } from "./data/cardData";
 
 const Layout = styled.div`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+`;
+
+const Divider = styled.hr`
+  border: none;
+  border-bottom: 1px solid #3b3b3b;
+  margin: 30px;
 `;
 
 function App() {
@@ -23,7 +29,20 @@ function App() {
         <Gnb />
         <ReservationBar />
         <CardList title="이달의 추천 여행" variant="defalt" data={travelData} />
-        <CardList title="인기 원데이 클래스" variant="defalt" data={oneDayData} />
+        <CardList
+          title="인기 원데이 클래스"
+          variant="defalt"
+          data={oneDayData}
+        />
+
+        <Divider />
+
+        <CardList title="카름스테이 PICK" variant="pick" data={pickData} />
+        <CardList
+          title="카페&레스토랑"
+          variant="defalt"
+          data={cafeData}
+        />
         <Footer />
       </Layout>
     </div>
