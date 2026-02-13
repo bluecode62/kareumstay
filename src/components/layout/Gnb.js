@@ -14,12 +14,20 @@ const LogoBox = styled.div`
 const JejuLogo = styled.div`
   width: 200px;
   height: 30px;
+  cursor: pointer;
 `;
 const Menu = styled.ul`
   display: flex;
   gap: 50px;
   color: ${({ type }) => (type === "basic" ? "#3D3D3D" : "black")};
   font-weight: ${({ type }) => (type === "main" ? "bold" : "normal")};
+`;
+const MenuLi = styled.li`
+  cursor: pointer;
+  &:hover {
+    font-weight: bold;
+    color: #F05423;
+  }
 `;
 
 export default function gnb() {
@@ -32,14 +40,14 @@ export default function gnb() {
         />
       </JejuLogo>
       <Menu type="main">
-        <li>카름마을</li>
-        <li>카름여행</li>
+        <MenuLi>카름마을</MenuLi>
+        <MenuLi>카름여행</MenuLi>
       </Menu>
       <Menu type="basic">
-        <li>공지사항</li>
-        <li>관심목록</li>
-        <li>예약내역</li>
-        <li>로그인</li>
+        <MenuLi>공지사항</MenuLi>
+        <MenuLi>관심목록</MenuLi>
+        <MenuLi>예약내역</MenuLi>
+        <MenuLi>로그인</MenuLi>
       </Menu>
     </LogoBox>
   );

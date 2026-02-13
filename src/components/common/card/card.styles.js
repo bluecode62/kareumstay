@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-export const Card = styled.div``;
+export const Card = styled.div`
+  cursor: pointer;
+`;
 export const ImageWrapper = styled.div`
   position: relative;
   width: 300px;

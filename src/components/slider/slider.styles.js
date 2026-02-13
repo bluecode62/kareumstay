@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 
 export const SlideWrapper = styled.div`
   width: 100%;
-  margin-bottom: 60px;
+  margin: 60px 0;
   overflow: hidden;
 `;
 const slide = keyframes`

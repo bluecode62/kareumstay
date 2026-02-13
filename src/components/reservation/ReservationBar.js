@@ -4,7 +4,7 @@ import Button from "../common/Button";
 
 const Wrap = styled.div`
   width: 1000px;
-  margin: 30px auto;
+  margin: 100px auto;
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -19,12 +19,13 @@ const BarBox = styled.div`
   text-align: left;
   padding: 10px 20px;
   box-sizing: border-box;
+  cursor: pointer;
 `;
 const BarTitle = styled.div`
   font-size: 14px;
-  color: #3D3D3D;
+  color: #3d3d3d;
   margin-bottom: 2px;
-`
+`;
 
 export default function ReservationBar() {
   return (

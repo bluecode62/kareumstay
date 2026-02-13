@@ -14,6 +14,9 @@ import cafe01 from "../assets/images/cafe01.jpg";
 import cafe02 from "../assets/images/cafe02.jpg";
 import cafe03 from "../assets/images/cafe03.jpg";
 
+import big01 from "../assets/images/big01.jpg";
+import big02 from "../assets/images/big02.PNG";
+
 export const travelData = [
   {
     cardImage: choice01,
@@ -23,15 +26,15 @@ export const travelData = [
   },
   {
     cardImage: choice02,
-    cardTitle: "자전거 투어",
+    cardTitle: "숲속 힐링체험",
     location: "한남리",
-    description: "#자연투어#힐링#자전거#트래킹",
+    description: "#자연#힐링#숲속#자연힐링",
   },
   {
     cardImage: choice03,
-    cardTitle: "자전거 투어",
-    location: "한남리",
-    description: "#자연투어#힐링#자전거#트래킹",
+    cardTitle: "세화리 마을투어",
+    location: "세화리",
+    description: "#자연#힐링#바다#마을투어",
   },
 ];
 
@@ -95,3 +98,15 @@ export const cafeData = [
   },
 ];
 
+export const festivalData = [
+  {
+    image: big01,
+    title: "한림 공원 수선화 축제",
+    address: "제주특별자치도 서귀포시",
+  },
+  {
+    image: big02,
+    title: "서귀포 겨울바다펭귄 수영대회",
+    address: "서귀포시 색달동 중문색달해수욕장",
+  },
+]
