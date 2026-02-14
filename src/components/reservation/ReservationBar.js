@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import Button from "../common/Button";
 import { StyledInput } from "./StyledInput";
@@ -119,6 +120,8 @@ export default function ReservationBar() {
   const dropdownRef = useRef(null);
   const dateRef = useRef(null);
 
+  const navigate = useNavigate();
+
   const increase = () => {
     if (guests < 10) {
       setGuests(guests + 1);
@@ -129,6 +132,21 @@ export default function ReservationBar() {
     if (guests > 1) {
       setGuests(guests - 1);
     }
+  };
+
+  const handleSearch = () => {
+    if(!town || !startDate || !endDate) {
+      alert("마을,날짜,인원 수를 정해주세요.");
+      return;
+    }
+
+    navigate("/search", {
+      state: {
+        town,
+        dateRange,
+        guests,
+      },
+    });
   };
 
   useEffect(() => {
@@ -237,7 +255,7 @@ export default function ReservationBar() {
           </GuestButton>
         </GuestWrapper>
       </BarBox>
-      <Button>검색</Button>
+      <Button type="button" onClick={handleSearch}>검색</Button>
     </Wrap>
   );
 }
