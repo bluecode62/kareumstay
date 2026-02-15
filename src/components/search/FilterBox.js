@@ -7,6 +7,7 @@ const Wrapper = styled.div`
   border: 1px solid #ddd;
   border-radius: 10px;
   text-align: left;
+  flex-shrink: 0;
 `;
 
 const Title = styled.h2`

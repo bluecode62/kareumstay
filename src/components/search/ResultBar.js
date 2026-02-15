@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   width: 90%;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,7 +64,7 @@ export default function ResultBar() {
     <Wrapper>
       <Left>
         <TotalText>
-          총 <Count>12</Count>개의 숙소
+          총 <Count>6</Count>개의 숙소
         </TotalText>
       </Left>
 
