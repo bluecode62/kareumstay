@@ -1,8 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
-import Gnb from "../components/layout/Gnb";
-import Footer from "../components/layout/Footer";
 import ReservationBar from "../components/reservation/ReservationBar";
 import CardList from "../components/common/card/CardList";
 import {
@@ -17,12 +15,10 @@ import VillageSlider from "../components/slider/villageSlider";
 import { villageData } from "../data/villageData";
 import LargeCard from "../components/common/card/LargeCard";
 import TopButton from "../components/common/TopButton";
+import { Layout } from "../components/layout/Layout";
+import { useNavigate } from "react-router-dom";
 
-const Layout = styled.div`
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-`;
+
 const Divider = styled.hr`
   width: 1040px;
   border: none;
@@ -31,10 +27,35 @@ const Divider = styled.hr`
 `;
 
 export default function Home() {
+  const navigate = useNavigate();
+
+  const [town, setTown] = useState("");
+  const [dateRange, setDateRange] = useState([null, null]);
+  const [guests, setGuests] = useState(1);
+
+  const handleSearch = () => {
+    const [startDate, endDate] = dateRange;
+
+    if(!town || !startDate || !endDate || !guests) {
+      alert("마을, 날짜, 인원 수를 정해주세요.");
+      return; 
+    }
+
+    navigate("/search", {
+      state: {town, dateRange, guests}
+    });
+  };
   return (
     <Layout>
-      <Gnb />
-      <ReservationBar />
+      <ReservationBar 
+        town={town}
+        setTown={setTown}
+        dateRange={dateRange}
+        setDateRange={setDateRange}
+        guests={guests}
+        setGuests={setGuests}
+        onSearch={handleSearch}
+      />
       <CardList title="이달의 추천 여행" variant="defalt" data={travelData} />
       <CardList title="인기 원데이 클래스" variant="defalt" data={oneDayData} />
 
@@ -52,7 +73,6 @@ export default function Home() {
 
       <TopButton />
 
-      <Footer />
     </Layout>
   );
 }
