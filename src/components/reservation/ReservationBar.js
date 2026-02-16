@@ -106,6 +106,7 @@ const towns = [
   "하효마을",
   "신창리",
   "저지리",
+  "무릉2리",
 ];
 
 export default function ReservationBar({
