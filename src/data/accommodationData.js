@@ -41,9 +41,9 @@ import gashi7 from "../assets/images/gashi07.jpg";
 
 import gyorae1 from "../assets/images/gyorae01.jpg";
 import gyorae2 from "../assets/images/gyorae02.jpg";
-import gyorae3 from "../assets/images/gyorae03.jpg";
-import gyorae4 from "../assets/images/gyorae04.jpg";
-import gyorae5 from "../assets/images/gyorae05.jpg";
+import gyorae3 from "../assets/images/gyorae03.png";
+import gyorae4 from "../assets/images/gyorae04.png";
+import gyorae5 from "../assets/images/gyorae05.png";
 import gyorae6 from "../assets/images/gyorae06.jpg";
 import gyorae7 from "../assets/images/gyorae07.jpg";
 
@@ -79,14 +79,14 @@ import sinheung6 from "../assets/images/sinheung06.jpg";
 import sinheung7 from "../assets/images/sinheung07.jpg";
 import sinheung8 from "../assets/images/sinheung08.jpg";
 
-import uigwi1 from "../assets/images/uigwim01.jpg";
-import uigwi2 from "../assets/images/uigwim02.jpg";
-import uigwi3 from "../assets/images/uigwim03.jpg";
-import uigwi4 from "../assets/images/uigwim04.jpg";
-import uigwi5 from "../assets/images/uigwim05.jpg";
-import uigwi6 from "../assets/images/uigwim06.jpg";
-import uigwi7 from "../assets/images/uigwim07.jpg";
-import uigwi8 from "../assets/images/uigwim08.jpg";
+import uigwi1 from "../assets/images/uigwi01.jpg";
+import uigwi2 from "../assets/images/uigwi02.jpg";
+import uigwi3 from "../assets/images/uigwi03.jpg";
+import uigwi4 from "../assets/images/uigwi04.jpg";
+import uigwi5 from "../assets/images/uigwi05.jpg";
+import uigwi6 from "../assets/images/uigwi06.jpg";
+import uigwi7 from "../assets/images/uigwi07.jpg";
+import uigwi8 from "../assets/images/uigwi08.jpg";
 
 import hogeun1 from "../assets/images/hogeun01.jpg";
 import hogeun2 from "../assets/images/hogeun02.jpg";
@@ -556,7 +556,7 @@ export const accommodationData = [
     image: gyorae1,
   },
   {
-    id: 38,
+    id: 39,
     town: "교래리",
     name: "제주베스트힐 글램핑&펜션",
     type:  "펜션",
@@ -567,7 +567,7 @@ export const accommodationData = [
     image: gyorae2,
   },
   {
-    id: 39,
+    id: 40,
     town: "교래리",
     name: "포니제주",
     type:  "홈 · 빌라",
@@ -578,7 +578,7 @@ export const accommodationData = [
     image: gyorae3,
   },
   {
-    id: 40,
+    id: 41,
     town: "교래리",
     name: "제주 피카소펜션",
     type:  "펜션",
@@ -589,7 +589,7 @@ export const accommodationData = [
     image: gyorae4,
   },
   {
-    id: 41,
+    id: 42,
     town: "교래리",
     name: "여누스테이",
     type:  "모텔",
@@ -600,7 +600,7 @@ export const accommodationData = [
     image: gyorae5,
   },
   {
-    id: 42,
+    id: 43,
     town: "교래리",
     name: "에코랜드호텔",
     type:  "호텔",
@@ -611,7 +611,7 @@ export const accommodationData = [
     image: gyorae6,
   },
   {
-    id: 43,
+    id: 44,
     town: "교래리",
     name: "숲골독채팬션",
     type:  "펜션",
@@ -622,7 +622,7 @@ export const accommodationData = [
     image: gyorae7,
   },
   {
-    id: 44,
+    id: 45,
     town: "수산리",
     name: "애월황토독채휴스테이",
     type:  "캠핑",
@@ -633,7 +633,7 @@ export const accommodationData = [
     image: susan1,
   },
   {
-    id: 45,
+    id: 46,
     town: "수산리",
     name: "트립레시피",
     type:  "모텔",
@@ -644,7 +644,7 @@ export const accommodationData = [
     image: susan2,
   },
   {
-    id: 46,
+    id: 47,
     town: "수산리",
     name: "좋은씨앗제주펜션",
     type:  "펜션",
@@ -655,7 +655,7 @@ export const accommodationData = [
     image: susan3,
   },
   {
-    id: 47,
+    id: 48,
     town: "수산리",
     name: "유화 펜션",
     type:  "펜션",
@@ -666,7 +666,7 @@ export const accommodationData = [
     image: susan4,
   },
   {
-    id: 48,
+    id: 49,
     town: "수산리",
     name: "오크라 펜션",
     type:  "펜션",
@@ -677,7 +677,7 @@ export const accommodationData = [
     image: susan5,
   },
   {
-    id: 49,
+    id: 50,
     town: "수산리",
     name: "어느날의 기록",
     type:  "캠핑",
@@ -688,7 +688,7 @@ export const accommodationData = [
     image: susan6,
   },
   {
-    id: 50,
+    id: 51,
     town: "수산리",
     name: "애월더문",
     type:  "홈 · 빌라",
@@ -699,7 +699,7 @@ export const accommodationData = [
     image: susan7,
   },
   {
-    id: 51,
+    id: 52,
     town: "수산리",
     name: "수산에머물다",
     type:  "펜션",
@@ -710,7 +710,7 @@ export const accommodationData = [
     image: susan8,
   },
   {
-    id: 51,
+    id: 53,
     town: "수산리",
     name: "물메랑",
     type:  "펜션",
@@ -721,7 +721,7 @@ export const accommodationData = [
     image: susan9,
   },
   {
-    id: 52,
+    id: 54,
     town: "수산리",
     name: "무디타제주",
     type:  "게스트하우스 · 한옥 · 돌집",
@@ -732,7 +732,7 @@ export const accommodationData = [
     image: susan10,
   },
   {
-    id: 53,
+    id: 55,
     town: "수산리",
     name: "또오크라 펜션",
     type:  "펜션",
@@ -743,7 +743,7 @@ export const accommodationData = [
     image: susan11,
   },
   {
-    id: 54,
+    id: 56,
     town: "수산리",
     name: "더쉼펜션",
     type:  "펜션",
@@ -754,7 +754,7 @@ export const accommodationData = [
     image: susan12,
   },
   {
-    id: 55,
+    id: 57,
     town: "수산리",
     name: "누구하나",
     type:  "홈 · 빌라",
@@ -765,7 +765,7 @@ export const accommodationData = [
     image: susan13,
   },
   {
-    id: 56,
+    id: 58,
     town: "수산리",
     name: "고샅길",
     type:  "게스트하우스 · 한옥 · 돌집",
@@ -776,7 +776,7 @@ export const accommodationData = [
     image: susan14,
   },
   {
-    id: 57,
+    id: 59,
     town: "한남리",
     name: "제주소요",
     type:  "펜션",
@@ -787,7 +787,7 @@ export const accommodationData = [
     image: hannam1,
   },
   {
-    id: 58,
+    id: 60,
     town: "한남리",
     name: "스테이망고",
     type:  "펜션",
@@ -798,7 +798,7 @@ export const accommodationData = [
     image: hannam2,
   },
   {
-    id: 59,
+    id: 61,
     town: "한남리",
     name: "청재설헌",
     type:  "호텔 · 리조트",
@@ -809,7 +809,7 @@ export const accommodationData = [
     image: hannam3,
   },
   {
-    id: 59,
+    id: 62,
     town: "한남리",
     name: "과수원집 소원재",
     type:  "홈 · 빌라",
@@ -820,7 +820,7 @@ export const accommodationData = [
     image: hannam4,
   },
   {
-    id: 60,
+    id: 63,
     town: "한남리",
     name: "돌담한길펜션",
     type:  "펜션",
@@ -831,7 +831,7 @@ export const accommodationData = [
     image: hannam5,
   },
   {
-    id: 61,
+    id: 64,
     town: "한남리",
     name: "비레이지",
     type:  "펜션",
@@ -842,7 +842,7 @@ export const accommodationData = [
     image: hannam6,
   },
   {
-    id: 62,
+    id: 65,
     town: "한남리",
     name: "류은주택",
     type:  "홈 · 빌라",
@@ -853,7 +853,7 @@ export const accommodationData = [
     image: hannam7,
   },
   {
-    id: 63,
+    id: 66,
     town: "동백마을",
     name: "동백언우재",
     type:  "모텔",
@@ -864,18 +864,7 @@ export const accommodationData = [
     image: sinheung1,
   },
   {
-    id: 63,
-    town: "동백마을",
-    name: "동백언우재",
-    type:  "모텔",
-    intro: "제주의 진짜 마을을 만날 수 있는 곳",
-    price: 50000,
-    rating: 4.9,
-    reviewCount: 96,
-    image: sinheung1,
-  },
-  {
-    id: 64,
+    id: 68,
     town: "동백마을",
     name: "사계절펜션(더포시즌빌라)",
     type:  "펜션",
@@ -886,7 +875,7 @@ export const accommodationData = [
     image: sinheung2,
   },
   {
-    id: 65,
+    id: 69,
     town: "동백마을",
     name: "녹음실 제주",
     type:  "게스트하우스 · 한옥 · 돌집",
@@ -897,7 +886,7 @@ export const accommodationData = [
     image: sinheung3,
   },
   {
-    id: 66,
+    id: 70,
     town: "동백마을",
     name: "도토리 게스트하우스",
     type:  "게스트하우스 · 한옥 · 돌집",
@@ -908,7 +897,7 @@ export const accommodationData = [
     image: sinheung4,
   },
   {
-    id: 67,
+    id: 71,
     town: "동백마을",
     name: "제주하늘바람",
     type:  "홈 · 빌라",
@@ -919,7 +908,7 @@ export const accommodationData = [
     image: sinheung5,
   },
   {
-    id: 68,
+    id: 72,
     town: "동백마을",
     name: "정원집",
     type:  "홈 · 빌라",
@@ -930,7 +919,7 @@ export const accommodationData = [
     image: sinheung6,
   },
   {
-    id: 69,
+    id: 73,
     town: "동백마을",
     name: "루다스테이",
     type:  "펜션",
@@ -941,7 +930,7 @@ export const accommodationData = [
     image: sinheung7,
   },
   {
-    id: 70,
+    id: 74,
     town: "동백마을",
     name: "밤편지",
     type:  "게스트하우스 · 한옥 · 돌집",
@@ -952,7 +941,7 @@ export const accommodationData = [
     image: sinheung8,
   },
   {
-    id: 71,
+    id: 75,
     town: "의귀리",
     name: "귤림동화",
     type:  "호텔 · 리조트",
@@ -963,7 +952,7 @@ export const accommodationData = [
     image: uigwi1,
   },
   {
-    id: 72,
+    id: 76,
     town: "의귀리",
     name: "토리153",
     type:  "홈 · 빌라",
@@ -974,7 +963,7 @@ export const accommodationData = [
     image: uigwi2,
   },
   {
-    id: 73,
+    id: 77,
     town: "의귀리",
     name: "할망의뜰도채펜션",
     type:  "펜션",
@@ -985,7 +974,7 @@ export const accommodationData = [
     image: uigwi3,
   },
   {
-    id: 74,
+    id: 78,
     town: "의귀리",
     name: "티파니에서 아침을",
     type:  "펜션",
@@ -996,7 +985,7 @@ export const accommodationData = [
     image: uigwi4,
   },
   {
-    id: 75,
+    id: 79,
     town: "의귀리",
     name: "정원책방",
     type:  "게스트하우스 · 한옥 · 돌집",
@@ -1007,7 +996,7 @@ export const accommodationData = [
     image: uigwi5,
   },
   {
-    id: 76,
+    id: 80,
     town: "의귀리",
     name: "의귀소담",
     type:  "캠핑",
@@ -1018,7 +1007,7 @@ export const accommodationData = [
     image: uigwi6,
   },
   {
-    id: 77,
+    id: 81,
     town: "의귀리",
     name: "은빌레 펜션",
     type:  "펜션",
@@ -1029,7 +1018,7 @@ export const accommodationData = [
     image: uigwi7,
   },
   {
-    id: 78,
+    id: 82,
     town: "의귀리",
     name: "바띠에",
     type:  "홈 · 빌라",
@@ -1040,7 +1029,7 @@ export const accommodationData = [
     image: uigwi8,
   },
   {
-    id: 79,
+    id: 83,
     town: "호근마을",
     name: "호근정원",
     type:  "호텔 · 리조트",
@@ -1051,7 +1040,7 @@ export const accommodationData = [
     image: hogeun1,
   },
   {
-    id: 80,
+    id: 84,
     town: "호근마을",
     name: "제주나무의 꿈",
     type:  "펜션",
@@ -1062,7 +1051,7 @@ export const accommodationData = [
     image: hogeun2,
   },
   {
-    id: 81,
+    id: 85,
     town: "호근마을",
     name: "제주, 그리고",
     type:  "펜션",
@@ -1073,7 +1062,7 @@ export const accommodationData = [
     image: hogeun3,
   },
   {
-    id: 82,
+    id: 86,
     town: "호근마을",
     name: "귤나잇",
     type:  "게스트하우스 · 한옥 · 돌집",
@@ -1084,7 +1073,7 @@ export const accommodationData = [
     image: hogeun4,
   },
   {
-    id: 83,
+    id: 87,
     town: "호근마을",
     name: "귤림성",
     type:  "게스트하우스 · 한옥 · 돌집",
@@ -1095,7 +1084,7 @@ export const accommodationData = [
     image: hogeun5,
   },
   {
-    id: 84,
+    id: 88,
     town: "호근마을",
     name: "모루헌",
     type:  "게스트하우스 · 한옥 · 돌집",
@@ -1106,7 +1095,7 @@ export const accommodationData = [
     image: hogeun6,
   },
   {
-    id: 85,
+    id: 89,
     town: "신창리",
     name: "까망하우스",
     type:  "펜션",
@@ -1117,7 +1106,7 @@ export const accommodationData = [
     image: sinchang1,
   },
   {
-    id: 86,
+    id: 90,
     town: "신창리",
     name: "바사팬스파",
     type:  "펜션",
@@ -1128,7 +1117,7 @@ export const accommodationData = [
     image: sinchang2,
   },
   {
-    id: 87,
+    id: 91,
     town: "신창리",
     name: "배배게스트하우스",
     type:  "게스트하우스 · 한옥 · 돌집",
@@ -1139,7 +1128,7 @@ export const accommodationData = [
     image: sinchang3,
   },
   {
-    id: 88,
+    id: 92,
     town: "신창리",
     name: "별빛소랑",
     type:  "펜션",
@@ -1150,7 +1139,7 @@ export const accommodationData = [
     image: sinchang4,
   },
   {
-    id: 89,
+    id: 93,
     town: "신창리",
     name: "보롬제주",
     type:  "게스트하우스 · 한옥 · 돌집",
@@ -1161,7 +1150,7 @@ export const accommodationData = [
     image: sinchang5,
   },
   {
-    id: 90,
+    id: 94,
     town: "신창리",
     name: "삼삼구옥",
     type:  "게스트하우스 · 한옥 · 돌집",
@@ -1172,7 +1161,7 @@ export const accommodationData = [
     image: sinchang6,
   },
   {
-    id: 91,
+    id: 95,
     town: "신창리",
     name: "신창여관",
     type:  "게스트하우스 · 한옥 · 돌집",
@@ -1183,7 +1172,7 @@ export const accommodationData = [
     image: sinchang7,
   },
   {
-    id: 92,
+    id: 96,
     town: "신창리",
     name: "신창윤업사bikely",
     type:  "호텔 · 리조트",
@@ -1194,7 +1183,7 @@ export const accommodationData = [
     image: sinchang8,
   },
   {
-    id: 93,
+    id: 97,
     town: "신창리",
     name: "오운스테이",
     type:  "게스트하우스 · 한옥 · 돌집",
@@ -1205,7 +1194,7 @@ export const accommodationData = [
     image: sinchang9,
   },
   {
-    id: 94,
+    id: 98,
     town: "신창리",
     name: "제주가족펜션 꿀하우스",
     type:  "펜션",
@@ -1216,7 +1205,7 @@ export const accommodationData = [
     image: sinchang10,
   },
   {
-    id: 95,
+    id: 99,
     town: "신창리",
     name: "파람스테이",
     type:  "펜션",
@@ -1227,7 +1216,7 @@ export const accommodationData = [
     image: sinchang11,
   },
   {
-    id: 96,
+    id: 100,
     town: "신창리",
     name: "풍차와 노을",
     type:  "펜션",
@@ -1238,7 +1227,7 @@ export const accommodationData = [
     image: sinchang12,
   },
   {
-    id: 97,
+    id: 101,
     town: "신창리",
     name: "괜찮아 쉐어하우스",
     type:  "게스트하우스 · 한옥 · 돌집",
@@ -1249,7 +1238,7 @@ export const accommodationData = [
     image: sinchang13,
   },
   {
-    id: 98,
+    id: 102,
     town: "저지리",
     name: "미센터 덤부리스테이",
     type:  "게스트하우스 · 한옥 · 돌집",
@@ -1260,7 +1249,7 @@ export const accommodationData = [
     image: jeoji1,
   },
   {
-    id: 99,
+    id: 103,
     town: "저지리",
     name: "명원팜민박",
     type:  "펜션",
@@ -1271,18 +1260,18 @@ export const accommodationData = [
     image: jeoji2,
   },
   {
-    id: 100,
+    id: 104,
     town: "저지리",
     name: "무위의 공간",
     type:  "홈 · 빌라",
-    intro: "인위적이지 않은 고즈넉함과 여유로움을ㄹ 느끼는 공간",
+    intro: "인위적이지 않은 고즈넉함과 여유로움을 느끼는 공간",
     price: 230000,
     rating: 4.8,
     reviewCount: 42,
     image: jeoji3,
   },
   {
-    id: 101,
+    id: 105,
     town: "저지리",
     name: "제주 이층집",
     type:  "펜션",
@@ -1293,7 +1282,7 @@ export const accommodationData = [
     image: jeoji4,
   },
   {
-    id: 102,
+    id: 106,
     town: "저지리",
     name: "저지맨션",
     type:  "펜션",
@@ -1304,7 +1293,7 @@ export const accommodationData = [
     image: jeoji5,
   },
   {
-    id: 103,
+    id: 107,
     town: "저지리",
     name: "저지돌담민박",
     type:  "게스트하우스 · 한옥 · 돌집",
@@ -1315,7 +1304,7 @@ export const accommodationData = [
     image: jeoji6,
   },
   {
-    id: 104,
+    id: 108,
     town: "저지리",
     name: "제주외갓집",
     type:  "게스트하우스 · 한옥 · 돌집",
@@ -1326,7 +1315,7 @@ export const accommodationData = [
     image: jeoji7,
   },
   {
-    id: 105,
+    id: 109,
     town: "저지리",
     name: "텔레스코프",
     type:  "펜션",
@@ -1337,7 +1326,7 @@ export const accommodationData = [
     image: jeoji8,
   },
   {
-    id: 106,
+    id: 110,
     town: "저지리",
     name: "이끌림",
     type:  "게스트하우스 · 한옥 · 돌집",
@@ -1348,18 +1337,18 @@ export const accommodationData = [
     image: jeoji9,
   },
   {
-    id: 107,
+    id: 112,
     town: "저지리",
     name: "각이진별",
     type:  "호텔 · 리조트",
-    intro: "곶자왈 인근 중산간 마을에 위치한 화덕피자카페 겸 깔끔 아늑한 2층 숙소",
+    intro: "곶자왈 인근 중산간 마을에 위치한 화덕피자카페 겸 아늑한 2층 숙소",
     price: 160000,
     rating: 4.9,
     reviewCount: 110,
     image: jeoji10,
   },
   {
-    id: 108,
+    id: 113,
     town: "저지리",
     name: "어울스테이(euolstay)",
     type:  "펜션",
@@ -1370,7 +1359,7 @@ export const accommodationData = [
     image: jeoji11,
   },
   {
-    id: 109,
+    id: 114,
     town: "저지리",
     name: "클랭블루수동",
     type:  "게스트하우스 · 한옥 · 돌집",
@@ -1381,7 +1370,7 @@ export const accommodationData = [
     image: jeoji12,
   },
   {
-    id: 110,
+    id: 115,
     town: "저지리",
     name: "우주오리",
     type:  "홈 · 빌라",
@@ -1392,7 +1381,7 @@ export const accommodationData = [
     image: jeoji13,
   },
   {
-    id: 111,
+    id: 116,
     town: "저지리",
     name: "그날저지",
     type:  "펜션",
@@ -1403,7 +1392,7 @@ export const accommodationData = [
     image: jeoji14,
   },
   {
-    id: 112,
+    id: 117,
     town: "저지리",
     name: "화우재",
     type:  "펜션",
@@ -1414,7 +1403,7 @@ export const accommodationData = [
     image: jeoji15,
   },
   {
-    id: 112,
+    id: 118,
     town: "저지리",
     name: "그리하오",
     type:  "펜션",
@@ -1425,7 +1414,7 @@ export const accommodationData = [
     image: jeoji16,
   },
   {
-    id: 113,
+    id: 119,
     town: "무릉2리",
     name: "델루나",
     type:  "호텔 · 리조트",
@@ -1436,18 +1425,18 @@ export const accommodationData = [
     image: mureung1,
   },
   {
-    id: 114,
+    id: 120,
     town: "무릉2리",
     name: "무릉도원펜션",
     type:  "펜션",
-    intro: "석양이 아름다운 무릉리와 돌고래를 볼 수 있는 신도리가 어우러진 자연 친화 숙소",
+    intro: "아름다운 석양, 무릉리와 돌고래를 볼 수 있는 자연 친화 숙소",
     price: 90000,
     rating: 4.7,
     reviewCount: 36,
     image: mureung2,
   },
   {
-    id: 115,
+    id: 121,
     town: "무릉2리",
     name: "소스스테이",
     type:  "게스트하우스 · 한옥 · 돌집",
@@ -1458,7 +1447,7 @@ export const accommodationData = [
     image: mureung3,
   },
   {
-    id: 116,
+    id: 122,
     town: "무릉2리",
     name: "스테이 가량",
     type:  "홈 · 빌라",
@@ -1469,7 +1458,7 @@ export const accommodationData = [
     image: mureung4,
   },
   {
-    id: 117,
+    id: 123,
     town: "무릉2리",
     name: "제이앤클로이",
     type:  "호텔 · 리조트",
@@ -1480,7 +1469,7 @@ export const accommodationData = [
     image: mureung5,
   },
   {
-    id: 118,
+    id: 124,
     town: "무릉2리",
     name: "제주무릉도원집",
     type:  "펜션",
@@ -1491,7 +1480,7 @@ export const accommodationData = [
     image: mureung6,
   },
   {
-    id: 119,
+    id: 125,
     town: "무릉2리",
     name: "제주에머물다",
     type:  "홈 · 빌라",
@@ -1502,7 +1491,7 @@ export const accommodationData = [
     image: mureung7,
   },
   {
-    id: 120,
+    id: 126,
     town: "무릉2리",
     name: "하귤스테이",
     type:  "게스트하우스 · 한옥 · 돌집",
@@ -1513,11 +1502,11 @@ export const accommodationData = [
     image: mureung8,
   },
   {
-    id: 121,
+    id: 127,
     town: "무릉2리",
     name: "홍시네",
     type:  "캠핑",
-    intro: "돌고래 뛰는 푸른 바다와 밤엔 보랏빛 노을, 야자수 정원*돌담 바베큐를 즐기는 공간",
+    intro: "푸른 바다, 보랏빛 노을, 야자수 정원*돌담 바베큐를 즐기는 공간",
     price: 185000,
     rating: 4.7,
     reviewCount: 52,

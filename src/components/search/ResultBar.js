@@ -59,12 +59,12 @@ const SortList = styled.ul`
   }
 `;
 
-export default function ResultBar() {
+export default function ResultBar({count}) {
   return (
     <Wrapper>
       <Left>
         <TotalText>
-          총 <Count>6</Count>개의 숙소
+          총 <Count>{count}</Count>개의 숙소
         </TotalText>
       </Left>
 

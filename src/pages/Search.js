@@ -5,15 +5,22 @@ import ReservationBar from "../components/reservation/ReservationBar";
 import AccommodationList from "../components/search/AccommodationList";
 import FilterBox from "../components/search/FilterBox";
 import ResultBar from "../components/search/ResultBar";
+import { accommodationData } from "../data/accommodationData";
 
 export default function Search() {
   const location = useLocation();
 
-  const [town, setTown] = useState(location.state?.town || "");
+  const initialTown = location.state?.town || "";
+
+  const [town, setTown] = useState(initialTown);
   const [dateRange, setDateRange] = useState(
     location.state?.dateRange || [null, null]
   );
   const [guests, setGuests] = useState(location.state?.guests || 1);
+
+  const filteredList = town
+  ? accommodationData.filter((item) => item.town === town)
+  : accommodationData;
 
   return (
     <Layout>
@@ -27,7 +34,7 @@ export default function Search() {
       />
 
       <Inner>
-        <ResultBar />
+        <ResultBar count={filteredList.length} />
 
         <ContentWrapper>
           <FilterBox />

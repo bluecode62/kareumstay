@@ -51,9 +51,11 @@ const Name = styled.h3`
 const Intro = styled.p`
   margin: 5px 0;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
+  word-break: break-word;
+  overflow-wrap: break-word;
   color: #999;
-`
+`;
 
 const Wrapping = styled.div`
   display: flex;
@@ -74,7 +76,7 @@ const RatingBox = styled.span`
 `;
 
 const Price = styled.div`
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
 
   span {
@@ -116,7 +118,7 @@ export default function AccommodationCard({ data }) {
         <RightBox>
           <HeartIcon />
           <Price>
-            {data.price.toLocaleString()}원<span> / 1박</span>
+            {data.price.toLocaleString()}원<span> 1박</span>
           </Price>
         </RightBox>
       </Info>

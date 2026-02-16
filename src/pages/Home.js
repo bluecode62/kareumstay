@@ -42,7 +42,7 @@ export default function Home() {
     }
 
     navigate("/search", {
-      state: {town, dateRange, guests}
+      state: {town, dateRange, guests,}
     });
   };
   return (
