@@ -19,10 +19,33 @@ export default function Search() {
   const [guests, setGuests] = useState(location.state?.guests || 1);
 
   const [sortType, setSortType] = useState("recommend");
-  
-  const filteredList = town
-    ? accommodationData.filter((item) => item.town === town)
-    : accommodationData;
+  const [selectedTypes, setSelectedTypes] = useState([]);
+  const [selectedFacilities, setSelectedFacilities] = useState([]);
+
+  const toggleType = (type) => {
+    setSelectedTypes((prev) =>
+      prev.includes(type) ? prev.filter((t) => t !== type) : [...prev, type]
+    );
+  };
+
+  const toggleFacility = (facility) => {
+    setSelectedFacilities((prev) =>
+      prev.includes(facility)
+        ? prev.filter((f) => f !== facility)
+        : [...prev, facility]
+    );
+  };
+
+  const filteredList = accommodationData
+    .filter((item) => (town ? item.town === town : true))
+    .filter((item) =>
+      selectedFacilities.length > 0
+        ? selectedFacilities.every((f) => item.facilities.includes(f))
+        : true
+    )
+    .filter((item) =>
+      selectedTypes.length > 0 ? selectedTypes.includes(item.type) : true
+    );
 
   const sortedList = [...filteredList].sort((a, b) => {
     switch (sortType) {
@@ -58,7 +81,12 @@ export default function Search() {
         />
 
         <ContentWrapper>
-          <FilterBox />
+          <FilterBox
+            selectedFacilities={selectedFacilities}
+            toggleFacility={toggleFacility}
+            selectedTypes={selectedTypes}
+            toggleType={toggleType}
+          />
           <AccommodationList list={sortedList} />
         </ContentWrapper>
       </Inner>

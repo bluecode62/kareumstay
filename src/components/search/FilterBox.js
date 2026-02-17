@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -53,17 +53,40 @@ const TagGroup = styled.div`
 
 const Tag = styled.div`
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid ${({ $active }) => ($active ? "#f0523" : "#ddd")};
   border-radius: 20px;
   font-size: 12px;
   cursor: pointer;
+  background-color: ${({ $active }) => ($active ? "#f05423" : "#fff")};
+  color: ${({ $active }) => ($active ? "#fff" : "#333")};
+  transition: all 0.2s ease;
 
   &:hover {
     border-color: #333;
   }
 `;
 
-export default function FilterBox() {
+export default function FilterBox({
+  selectedTypes,
+  toggleType,
+  selectedFacilities,
+  toggleFacility,
+}) {
+  const facilities = [
+    "조식포함",
+    "무료주차",
+    "바베큐",
+    "바다뷰",
+    "수영장",
+    "목욕시설",
+    "카페",
+    "반려동물 동반",
+    "유아용품",
+    "가족룸",
+    "주방시설",
+    "세탁시설",
+    "전기차 충전",
+  ];
   return (
     <Wrapper>
       <Title>필터</Title>
@@ -72,27 +95,51 @@ export default function FilterBox() {
         <SectionTitle>숙소 유형</SectionTitle>
         <CheckboxGroup>
           <CheckboxItem>
-            <input type="checkbox" />
-            호텔 · 리조트 
+            <input
+              type="checkbox"
+              checked={selectedTypes.includes("호텔 · 리조트")}
+              onChange={() => toggleType("호텔 · 리조트")}
+            />
+            호텔 · 리조트
           </CheckboxItem>
           <CheckboxItem>
-            <input type="checkbox" />
-            모텔 
+            <input
+              type="checkbox"
+              checked={selectedTypes.includes("모텔")}
+              onChange={() => toggleType("모텔")}
+            />
+            모텔
           </CheckboxItem>
           <CheckboxItem>
-            <input type="checkbox" />
-            펜션 
+            <input
+              type="checkbox"
+              checked={selectedTypes.includes("펜션")}
+              onChange={() => toggleType("펜션")}
+            />
+            펜션
           </CheckboxItem>
           <CheckboxItem>
-            <input type="checkbox" />
+            <input
+              type="checkbox"
+              checked={selectedTypes.includes("홈 · 빌라")}
+              onChange={() => toggleType("홈 · 빌라")}
+            />
             홈 · 빌라
           </CheckboxItem>
           <CheckboxItem>
-            <input type="checkbox" />
+            <input
+              type="checkbox"
+              checked={selectedTypes.includes("캠핑")}
+              onChange={() => toggleType("캠핑")}
+            />
             캠핑
           </CheckboxItem>
           <CheckboxItem>
-            <input type="checkbox" />
+            <input
+              type="checkbox"
+              checked={selectedTypes.includes("게스트하우스 · 한옥 · 돌집")}
+              onChange={() => toggleType("게스트하우스 · 한옥 · 돌집")}
+            />
             게스트하우스 · 한옥 · 돌집
           </CheckboxItem>
         </CheckboxGroup>
@@ -101,22 +148,17 @@ export default function FilterBox() {
       <Section>
         <SectionTitle>서비스 유형</SectionTitle>
         <TagGroup>
-          <Tag>조식포함</Tag>
-          <Tag>무료주차</Tag>
-          <Tag>바베큐</Tag>
-          <Tag>바다뷰</Tag>
-          <Tag>수영장</Tag>
-          <Tag>목욕시설</Tag>
-          <Tag>카페</Tag>
-          <Tag>반려동물 동반</Tag>
-          <Tag>유아용품</Tag>
-          <Tag>가족룸</Tag>
-          <Tag>주방시설</Tag>
-          <Tag>세탁시설</Tag>
-          <Tag>전기차 충전</Tag>
+          {facilities.map((facility) => (
+            <Tag
+              key={facility}
+              $active={selectedFacilities.includes(facility)}
+              onClick={() => toggleFacility(facility)}
+            >
+              {facility}
+            </Tag>
+          ))}
         </TagGroup>
       </Section>
-
     </Wrapper>
   );
 }

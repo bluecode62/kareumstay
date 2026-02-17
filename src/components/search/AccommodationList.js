@@ -7,8 +7,32 @@ const Wrapper = styled.div`
   flex: 1;
   padding-left: 40px;
 `;
+const EmptyWrapper = styled.div`
+  padding: 80px 0;
+  text-align: left;
+  color: #666;
+`;
+const EmptyTitle = styled.h3`
+  font-size: 18px;
+  margin-bottom: 10px;
+`;
+const EmptyText = styled.p`
+  font-size: 14px;
+  color: #999;
+`;
 
 export default function AccommodationList({ list }) {
+  if(list.length === 0){
+    return(
+      <EmptyWrapper>
+        <EmptyTitle>조건에 맞는 숙소가 없어요.😢</EmptyTitle>
+        <EmptyText>
+        선택한 필터를 다시 확인해보세요.
+        </EmptyText>
+      </EmptyWrapper>
+    )
+  }
+
   return (
     <Wrapper>
       {list.map((item) => (
