@@ -18,9 +18,26 @@ export default function Search() {
   );
   const [guests, setGuests] = useState(location.state?.guests || 1);
 
+  const [sortType, setSortType] = useState("recommend");
+  
   const filteredList = town
-  ? accommodationData.filter((item) => item.town === town)
-  : accommodationData;
+    ? accommodationData.filter((item) => item.town === town)
+    : accommodationData;
+
+  const sortedList = [...filteredList].sort((a, b) => {
+    switch (sortType) {
+      case "lowPrice":
+        return a.price - b.price;
+      case "highPrice":
+        return b.price - a.price;
+      case "rating":
+        return b.rating - a.rating;
+      case "review":
+        return b.reviewCount - a.reviewCount;
+      default:
+        return 0;
+    }
+  });
 
   return (
     <Layout>
@@ -34,11 +51,15 @@ export default function Search() {
       />
 
       <Inner>
-        <ResultBar count={filteredList.length} />
+        <ResultBar
+          count={filteredList.length}
+          sortType={sortType}
+          setSortType={setSortType}
+        />
 
         <ContentWrapper>
           <FilterBox />
-          <AccommodationList town={town} />
+          <AccommodationList list={sortedList} />
         </ContentWrapper>
       </Inner>
     </Layout>

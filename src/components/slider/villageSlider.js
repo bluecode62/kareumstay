@@ -16,12 +16,12 @@ export default function VillageSlider({ data, title }) {
       <SliderTrack>
         {data.map((item, i) => (
           <Slide key={i}>
-            <img src={item.image} alt="" />
+            <img src={item.image} alt="슬라이드 이미지" />
           </Slide>
         ))}
         {data.map((item, i) => (
           <Slide key={`copy-${i}`}>
-            <img src={item.image} alt="" />
+            <img src={item.image} alt="슬라이드 이미지" />
           </Slide>
         ))}
       </SliderTrack>

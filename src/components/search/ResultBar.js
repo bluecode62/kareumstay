@@ -59,7 +59,7 @@ const SortList = styled.ul`
   }
 `;
 
-export default function ResultBar({count}) {
+export default function ResultBar({count, setSortType}) {
   return (
     <Wrapper>
       <Left>
@@ -70,10 +70,11 @@ export default function ResultBar({count}) {
 
       <Right>
         <SortList>
-          <li>추천순</li>
-          <li>낮은 가격순</li>
-          <li>높은 가격순</li>
-          <li>리뷰순</li>
+          <li onClick={() => setSortType("recommend")}>추천순</li>
+          <li onClick={() => setSortType("lowPrice")}>낮은 가격순</li>
+          <li onClick={() => setSortType("highPrice")}>높은 가격순</li>
+          <li onClick={() => setSortType("rating")}>별점순</li>
+          <li onClick={() => setSortType("review")}>리뷰순</li>
         </SortList>
       </Right>
     </Wrapper>

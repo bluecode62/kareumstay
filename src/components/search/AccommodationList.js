@@ -8,14 +8,10 @@ const Wrapper = styled.div`
   padding-left: 40px;
 `;
 
-export default function AccommodationList({ town }) {
-  const filtered = town
-    ? accommodationData.filter((item) => item.town === town)
-    : accommodationData;
-
+export default function AccommodationList({ list }) {
   return (
     <Wrapper>
-      {filtered.map((item) => (
+      {list.map((item) => (
         <AccommodationCard key={item.id} data={item} />
       ))}
     </Wrapper>
