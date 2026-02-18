@@ -153,7 +153,7 @@ export const accommodationData = [
       "/images/stay01-03.jpg",
       "/images/stay01-04.jpg",
     ],
-    decription:`
+    description:`
     기분 좋은 민박은 친환경 나무 루버 인테리어로 되어 있어요. 이름처럼 쾌적하고 아늑하며 편하게 사용할 수 있도록 신경을 씁니다. 식재료만 가지고 오시면 뚝딱 요리해 드실 수 있습니다. 도로와 가까이에 위치해 있으면서도 주변이 조용합니다. 숙소에서 바다와 오름이 보여요. 옛 제주의 향토적 전원적 정취를 즐길 수 있답니다.
     `,
 
@@ -184,7 +184,7 @@ export const accommodationData = [
       lng: 126.6226
     },
 
-    ntices: [
+    notices: [
       "체크인 15:00 이후",
       "체크아웃 11:00 이전",
       "반려동물 동반 불가",
