@@ -146,8 +146,64 @@ export const accommodationData = [
     price: 94000,
     rating: 4.5,
     reviewCount: 35,
-    facilities: ["조식포함","바다뷰"],
-    image: hahyo1,
+    thumbnail: hahyo1,
+    images: [
+      "/images/stay01-01.jpg",
+      "/images/stay01-02.jpg",
+      "/images/stay01-03.jpg",
+      "/images/stay01-04.jpg",
+    ],
+    decription:`
+    기분 좋은 민박은 친환경 나무 루버 인테리어로 되어 있어요. 이름처럼 쾌적하고 아늑하며 편하게 사용할 수 있도록 신경을 씁니다. 식재료만 가지고 오시면 뚝딱 요리해 드실 수 있습니다. 도로와 가까이에 위치해 있으면서도 주변이 조용합니다. 숙소에서 바다와 오름이 보여요. 옛 제주의 향토적 전원적 정취를 즐길 수 있답니다.
+    `,
+
+    rooms: [
+      {
+        id: 1,
+        name: "침실 1",
+        price: 94000,
+        image: "/images/room01-01.jpg",
+        info: "더블 침대 · 화장실 · 에어컨"
+      }
+    ],
+
+    experiences: [
+      {
+        id: 1,
+        title: "자전거 탐방클래스",
+        price: 30000,
+        image: "/images/"
+      }
+    ],
+
+    facilities: ["조식포함","바다뷰","와이파이"],
+
+    location: {
+      address: "제주 서귀포시 하효동",
+      lat: 33.2615,
+      lng: 126.6226
+    },
+
+    ntices: [
+      "체크인 15:00 이후",
+      "체크아웃 11:00 이전",
+      "반려동물 동반 불가",
+    ],
+
+    reviews: [
+      {
+        id: 1,
+        user: "오렌지러버",
+        rating: 5,
+        content: "조용하고 정말 좋았어요"
+      },
+      {
+        id: 2,
+        user: "제주좋아",
+        rating: 4,
+        content: "분위기가 따뜻하고 편안했습니다."
+      }
+    ]
   },
   {
     id: 2,
@@ -159,7 +215,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 72,
     facilities: ["바다뷰", "카페"],
-    image: hahyo2,
+    thumbnail: hahyo2,
   },
   {
     id: 3,
@@ -171,7 +227,7 @@ export const accommodationData = [
     rating: 4.5,
     reviewCount: 80,
     facilities: ["바다뷰", "카페","목욕시설"],
-    image: hahyo3,
+    thumbnail: hahyo3,
   },
   {
     id: 4,
@@ -183,7 +239,7 @@ export const accommodationData = [
     rating: 4.5,
     reviewCount: 80,
     facilities: ["조식포함", "카페", "목욕시설"],
-    image: hahyo4,
+    thumbnail: hahyo4,
   },
   {
     id: 5,
@@ -195,7 +251,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 110,
     facilities: ["수영장", "바베큐", "세탁시설","유아용품"],
-    image: hahyo5,
+    thumbnail: hahyo5,
   },
   {
     id: 6,
@@ -207,7 +263,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 16,
     facilities: ["바베큐"],
-    image: hahyo6,
+    thumbnail: hahyo6,
   },
   {
     id: 7,
@@ -219,7 +275,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 22,
     facilities: ["무료주차","바다뷰"],
-    image: gimnyeong1,
+    thumbnail: gimnyeong1,
   },
   {
     id: 8,
@@ -231,7 +287,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 50,
     facilities: ["목욕시설","바다뷰"],
-    image: gimnyeong2,
+    thumbnail: gimnyeong2,
   },
   {
     id: 9,
@@ -243,7 +299,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 16,
     facilities: ["바다뷰"],
-    image: gimnyeong3,
+    thumbnail: gimnyeong3,
   },
   {
     id: 10,
@@ -255,7 +311,7 @@ export const accommodationData = [
     rating: 4.7,
     reviewCount: 45,
     facilities: ["목욕시설","바다뷰"],
-    image: gimnyeong4,
+    thumbnail: gimnyeong4,
   },
   {
     id: 11,
@@ -267,7 +323,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 77,
     facilities: ["반려동물 동반","바다뷰","무료주차"],
-    image: gimnyeong5,
+    thumbnail: gimnyeong5,
   },
   {
     id: 12,
@@ -279,7 +335,7 @@ export const accommodationData = [
     rating: 4.7,
     reviewCount: 10,
     facilities: ["바다뷰"],
-    image: gimnyeong6,
+    thumbnail: gimnyeong6,
   },
   {
     id: 13,
@@ -291,7 +347,7 @@ export const accommodationData = [
     rating: 4.5,
     reviewCount: 12,
     facilities: ["조식포함"],
-    image: gimnyeong7,
+    thumbnail: gimnyeong7,
   },
   {
     id: 14,
@@ -303,7 +359,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 38,
     facilities: ["목욕시설"],
-    image: gimnyeong8,
+    thumbnail: gimnyeong8,
   },
   {
     id: 15,
@@ -315,7 +371,7 @@ export const accommodationData = [
     rating: 4.7,
     reviewCount: 10,
     facilities: ["바다뷰"],
-    image: gimnyeong9,
+    thumbnail: gimnyeong9,
   },
   {
     id: 16,
@@ -327,7 +383,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 50,
     facilities: ["목욕시설","수영장"],
-    image: gimnyeong10,
+    thumbnail: gimnyeong10,
   },
   {
     id: 17,
@@ -339,7 +395,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 35,
     facilities: ["바베큐"],
-    image: sehwa1,
+    thumbnail: sehwa1,
   },
   {
     id: 18,
@@ -351,7 +407,7 @@ export const accommodationData = [
     rating: 4.7,
     reviewCount: 65,
     facilities: ["조식포함","가족룸"],
-    image: sehwa2,
+    thumbnail: sehwa2,
   },
   {
     id: 19,
@@ -363,7 +419,7 @@ export const accommodationData = [
     rating: 4.7,
     reviewCount: 26,
     facilities: ["조식포함","바베큐"],
-    image: sehwa3,
+    thumbnail: sehwa3,
   },
   {
     id: 20,
@@ -375,7 +431,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 61,
     facilities: ["바다뷰","카페","조식포함"],
-    image: sehwa4,
+    thumbnail: sehwa4,
   },
   {
     id: 21,
@@ -387,7 +443,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 72,
     facilities: ["바다뷰","카페","조식포함"],
-    image: sehwa5,
+    thumbnail: sehwa5,
   },
   {
     id: 22,
@@ -399,7 +455,7 @@ export const accommodationData = [
     rating: 4.5,
     reviewCount: 52,
     facilities: ["목욕시설","카페"],
-    image: sehwa6,
+    thumbnail: sehwa6,
   },
   {
     id: 23,
@@ -411,7 +467,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 38,
     facilities: ["목욕시설","카페","반려동물 동반"],
-    image: sehwa7,
+    thumbnail: sehwa7,
   },
   {
     id: 24,
@@ -423,7 +479,7 @@ export const accommodationData = [
     rating: 4.5,
     reviewCount: 85,
     facilities: ["조식포함","바베큐"],
-    image: sehwa8,
+    thumbnail: sehwa8,
   },
   {
     id: 25,
@@ -435,7 +491,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 78,
     facilities: ["목욕시설","카페","반려동물 동반"],
-    image: sehwa9,
+    thumbnail: sehwa9,
   },
   {
     id: 26,
@@ -447,7 +503,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 10,
     facilities: ["목욕시설","유아용품"],
-    image: sehwa10,
+    thumbnail: sehwa10,
   },
   {
     id: 27,
@@ -459,7 +515,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 43,
     facilities: ["바다뷰"],
-    image: sehwa11,
+    thumbnail: sehwa11,
   },
   {
     id: 28,
@@ -471,7 +527,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 82,
     facilities: ["카페"],
-    image: sehwa12,
+    thumbnail: sehwa12,
   },
   {
     id: 29,
@@ -483,7 +539,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 33,
     facilities: ["목욕시설","유아용품"],
-    image: sehwa13,
+    thumbnail: sehwa13,
   },
   {
     id: 30,
@@ -495,7 +551,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 62,
     facilities: ["바다뷰"],
-    image: sehwa14,
+    thumbnail: sehwa14,
   },
   {
     id: 31,
@@ -507,7 +563,7 @@ export const accommodationData = [
     rating: 4.5,
     reviewCount: 42,
     facilities: ["바다뷰"],
-    image: gashi1,
+    thumbnail: gashi1,
   },
   {
     id: 32,
@@ -519,7 +575,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 36,
     facilities: ["카페"],
-    image: gashi2,
+    thumbnail: gashi2,
   },
   {
     id: 33,
@@ -531,7 +587,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 21,
     facilities: ["유아용품","목욕시설"],
-    image: gashi3,
+    thumbnail: gashi3,
   },
   {
     id: 34,
@@ -543,7 +599,7 @@ export const accommodationData = [
     rating: 4.5,
     reviewCount: 18,
     facilities: ["주방시설"],
-    image: gashi4,
+    thumbnail: gashi4,
   },
   {
     id: 35,
@@ -555,7 +611,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 48,
     facilities: ["세탁시설"],
-    image: gashi5,
+    thumbnail: gashi5,
   },
   {
     id: 36,
@@ -567,7 +623,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 88,
     facilities: ["주방시설","반려동물 동반"],
-    image: gashi6,
+    thumbnail: gashi6,
   },
   {
     id: 37,
@@ -579,7 +635,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 92,
     facilities: ["바베큐"],
-    image: gashi7,
+    thumbnail: gashi7,
   },
   {
     id: 38,
@@ -591,7 +647,7 @@ export const accommodationData = [
     rating: 4.6,
     reviewCount: 40,
     facilities: ["카페","가족룸"],
-    image: gyorae1,
+    thumbnail: gyorae1,
   },
   {
     id: 39,
@@ -603,7 +659,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 78,
     facilities: ["반려동물 동반","바베큐"],
-    image: gyorae2,
+    thumbnail: gyorae2,
   },
   {
     id: 40,
@@ -615,7 +671,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 58,
     facilities: ["수영장","목욕시설","바베큐"],
-    image: gyorae3,
+    thumbnail: gyorae3,
   },
   {
     id: 41,
@@ -627,7 +683,7 @@ export const accommodationData = [
     rating: 4.5,
     reviewCount: 10,
     facilities: ["반려동물 동반"],
-    image: gyorae4,
+    thumbnail: gyorae4,
   },
   {
     id: 42,
@@ -639,7 +695,7 @@ export const accommodationData = [
     rating: 4.5,
     reviewCount: 10,
     facilities: ["유아용품"],
-    image: gyorae5,
+    thumbnail: gyorae5,
   },
   {
     id: 43,
@@ -651,7 +707,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 120,
     facilities: ["가족룸","수영장","유아용품"],
-    image: gyorae6,
+    thumbnail: gyorae6,
   },
   {
     id: 44,
@@ -663,7 +719,7 @@ export const accommodationData = [
     rating: 4.7,
     reviewCount: 30,
     facilities: ["주방시설","바베큐","유아용품","전기차 충전"],
-    image: gyorae7,
+    thumbnail: gyorae7,
   },
   {
     id: 45,
@@ -675,7 +731,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 64,
     facilities: ["반려동물 동반","바베큐"],
-    image: susan1,
+    thumbnail: susan1,
   },
   {
     id: 46,
@@ -687,7 +743,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 47,
     facilities: ["조식포함","카페"],
-    image: susan2,
+    thumbnail: susan2,
   },
   {
     id: 47,
@@ -699,7 +755,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 47,
     facilities: ["무료주차"],
-    image: susan3,
+    thumbnail: susan3,
   },
   {
     id: 48,
@@ -711,7 +767,7 @@ export const accommodationData = [
     rating: 4.7,
     reviewCount: 17,
     facilities: ["유아용품","수영장","바베큐"],
-    image: susan4,
+    thumbnail: susan4,
   },
   {
     id: 49,
@@ -723,7 +779,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 87,
     facilities: ["바베큐"],
-    image: susan5,
+    thumbnail: susan5,
   },
   {
     id: 50,
@@ -735,7 +791,7 @@ export const accommodationData = [
     rating: 4.7,
     reviewCount: 51,
     facilities: ["가족룸","조식포함"],
-    image: susan6,
+    thumbnail: susan6,
   },
   {
     id: 51,
@@ -747,7 +803,7 @@ export const accommodationData = [
     rating: 4.6,
     reviewCount: 11,
     facilities: ["수영장","바베큐"],
-    image: susan7,
+    thumbnail: susan7,
   },
   {
     id: 52,
@@ -759,7 +815,7 @@ export const accommodationData = [
     rating: 4.5,
     reviewCount: 17,
     facilities: ["주방시설","전기차 충전"],
-    image: susan8,
+    thumbnail: susan8,
   },
   {
     id: 53,
@@ -771,7 +827,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 37,
     facilities: ["주방시설","가족룸"],
-    image: susan9,
+    thumbnail: susan9,
   },
   {
     id: 54,
@@ -783,7 +839,7 @@ export const accommodationData = [
     rating: 4.5,
     reviewCount: 17,
     facilities: ["조식포함","가족룸"],
-    image: susan10,
+    thumbnail: susan10,
   },
   {
     id: 55,
@@ -795,7 +851,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 41,
     facilities: ["바베큐","가족룸"],
-    image: susan11,
+    thumbnail: susan11,
   },
   {
     id: 56,
@@ -807,7 +863,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 64,
     facilities: ["목욕시설","가족룸","주방시설","카페"],
-    image: susan12,
+    thumbnail: susan12,
   },
   {
     id: 57,
@@ -819,7 +875,7 @@ export const accommodationData = [
     rating: 4.7,
     reviewCount: 31,
     facilities: ["조식포함","바베큐"],
-    image: susan13,
+    thumbnail: susan13,
   },
   {
     id: 58,
@@ -831,7 +887,7 @@ export const accommodationData = [
     rating: 4.5,
     reviewCount: 14,
     facilities: ["가족룸","수영장"],
-    image: susan14,
+    thumbnail: susan14,
   },
   {
     id: 59,
@@ -843,7 +899,7 @@ export const accommodationData = [
     rating: 4.6,
     reviewCount: 54,
     facilities: ["조식포함"],
-    image: hannam1,
+    thumbnail: hannam1,
   },
   {
     id: 60,
@@ -855,7 +911,7 @@ export const accommodationData = [
     rating: 4.7,
     reviewCount: 44,
     facilities: ["유아용품","주방시설"],
-    image: hannam2,
+    thumbnail: hannam2,
   },
   {
     id: 61,
@@ -867,7 +923,7 @@ export const accommodationData = [
     rating: 4.5,
     reviewCount: 60,
     facilities: ["조식포함"],
-    image: hannam3,
+    thumbnail: hannam3,
   },
   {
     id: 62,
@@ -879,7 +935,7 @@ export const accommodationData = [
     rating: 4.6,
     reviewCount: 17,
     facilities: ["조식포함"],
-    image: hannam4,
+    thumbnail: hannam4,
   },
   {
     id: 63,
@@ -891,7 +947,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 47,
     facilities: ["바베큐"],
-    image: hannam5,
+    thumbnail: hannam5,
   },
   {
     id: 64,
@@ -903,7 +959,7 @@ export const accommodationData = [
     rating: 4.6,
     reviewCount: 36,
     facilities: ["바다뷰"],
-    image: hannam6,
+    thumbnail: hannam6,
   },
   {
     id: 65,
@@ -915,7 +971,7 @@ export const accommodationData = [
     rating: 4.6,
     reviewCount: 36,
     facilities: ["주방시설"],
-    image: hannam7,
+    thumbnail: hannam7,
   },
   {
     id: 66,
@@ -927,7 +983,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 96,
     facilities: ["세탁시설"],
-    image: sinheung1,
+    thumbnail: sinheung1,
   },
   {
     id: 67,
@@ -939,7 +995,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 10,
     facilities: ["바베큐","카페"],
-    image: sinheung2,
+    thumbnail: sinheung2,
   },
   {
     id: 68,
@@ -951,7 +1007,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 37,
     facilities: ["카페"],
-    image: sinheung3,
+    thumbnail: sinheung3,
   },
   {
     id: 69,
@@ -963,7 +1019,7 @@ export const accommodationData = [
     rating: 4.6,
     reviewCount: 47,
     facilities: ["바다뷰"],
-    image: sinheung4,
+    thumbnail: sinheung4,
   },
   {
     id: 70,
@@ -975,7 +1031,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 87,
     facilities: ["주방시설","세탁시설"],
-    image: sinheung5,
+    thumbnail: sinheung5,
   },
   {
     id: 71,
@@ -987,7 +1043,7 @@ export const accommodationData = [
     rating: 4.5,
     reviewCount: 12,
     facilities: ["바베큐","가족룸"],
-    image: sinheung6,
+    thumbnail: sinheung6,
   },
   {
     id: 72,
@@ -999,7 +1055,7 @@ export const accommodationData = [
     rating: 4.7,
     reviewCount: 42,
     facilities: ["주방시설","가족룸","목욕시설"],
-    image: sinheung7,
+    thumbnail: sinheung7,
   },
   {
     id: 73,
@@ -1011,7 +1067,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 22,
     facilities: ["유아용품","전기차 충전"],
-    image: sinheung8,
+    thumbnail: sinheung8,
   },
   {
     id: 74,
@@ -1023,7 +1079,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 52,
     facilities: ["목욕시설"],
-    image: uigwi1,
+    thumbnail: uigwi1,
   },
   {
     id: 75,
@@ -1035,7 +1091,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 27,
     facilities: ["주방시설"],
-    image: uigwi2,
+    thumbnail: uigwi2,
   },
   {
     id: 76,
@@ -1047,7 +1103,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 47,
     facilities: ["반려동물 동반","바베큐"],
-    image: uigwi3,
+    thumbnail: uigwi3,
   },
   {
     id: 77,
@@ -1059,7 +1115,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 97,
     facilities: ["세탁시설"],
-    image: uigwi4,
+    thumbnail: uigwi4,
   },
   {
     id: 78,
@@ -1071,7 +1127,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 82,
     facilities: ["카페"],
-    image: uigwi5,
+    thumbnail: uigwi5,
   },
   {
     id: 79,
@@ -1083,7 +1139,7 @@ export const accommodationData = [
     rating: 4.5,
     reviewCount: 25,
     facilities: ["유아용품","목욕시설","바베큐"],
-    image: uigwi6,
+    thumbnail: uigwi6,
   },
   {
     id: 80,
@@ -1095,7 +1151,7 @@ export const accommodationData = [
     rating: 4.7,
     reviewCount: 45,
     facilities: ["주방시설","유아용품"],
-    image: uigwi7,
+    thumbnail: uigwi7,
   },
   {
     id: 81,
@@ -1107,7 +1163,7 @@ export const accommodationData = [
     rating: 4.6,
     reviewCount: 31,
     facilities: ["목욕시설","유아용품"],
-    image: uigwi8,
+    thumbnail: uigwi8,
   },
   {
     id: 82,
@@ -1119,7 +1175,7 @@ export const accommodationData = [
     rating: 4.6,
     reviewCount: 31,
     facilities: ["바다뷰"],
-    image: hogeun1,
+    thumbnail: hogeun1,
   },
   {
     id: 83,
@@ -1131,7 +1187,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 51,
     facilities: ["주방시설"],
-    image: hogeun2,
+    thumbnail: hogeun2,
   },
   {
     id: 84,
@@ -1143,7 +1199,7 @@ export const accommodationData = [
     rating: 4.7,
     reviewCount: 38,
     facilities: ["바베큐","주방시설"],
-    image: hogeun3,
+    thumbnail: hogeun3,
   },
   {
     id: 85,
@@ -1155,7 +1211,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 76,
     facilities: ["유아용품"],
-    image: hogeun4,
+    thumbnail: hogeun4,
   },
   {
     id: 86,
@@ -1167,7 +1223,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 106,
     facilities: ["유아용품"],
-    image: hogeun5,
+    thumbnail: hogeun5,
   },
   {
     id: 87,
@@ -1179,7 +1235,7 @@ export const accommodationData = [
     rating: 4.7,
     reviewCount: 63,
     facilities: ["가족룸","목욕시설","주방시설"],
-    image: hogeun6,
+    thumbnail: hogeun6,
   },
   {
     id: 88,
@@ -1191,7 +1247,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 68,
     facilities: ["조식포함"],
-    image: sinchang1,
+    thumbnail: sinchang1,
   },
   {
     id: 89,
@@ -1203,7 +1259,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 128,
     facilities: ["바다뷰","바베큐","목욕시설"],
-    image: sinchang2,
+    thumbnail: sinchang2,
   },
   {
     id: 90,
@@ -1215,7 +1271,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 88,
     facilities: ["주방시설","바다뷰"],
-    image: sinchang3,
+    thumbnail: sinchang3,
   },
   {
     id: 91,
@@ -1227,7 +1283,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 54,
     facilities: ["주방시설","바베큐","유아용품"],
-    image: sinchang4,
+    thumbnail: sinchang4,
   },
   {
     id: 92,
@@ -1239,7 +1295,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 95,
     facilities: ["무료주차"],
-    image: sinchang5,
+    thumbnail: sinchang5,
   },
   {
     id: 93,
@@ -1251,7 +1307,7 @@ export const accommodationData = [
     rating: 4.7,
     reviewCount: 38,
     facilities: ["바베큐","주방시설"],
-    image: sinchang6,
+    thumbnail: sinchang6,
   },
   {
     id: 94,
@@ -1263,7 +1319,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 98,
     facilities: ["카페"],
-    image: sinchang7,
+    thumbnail: sinchang7,
   },
   {
     id: 95,
@@ -1275,7 +1331,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 48,
     facilities: ["목욕시설"],
-    image: sinchang8,
+    thumbnail: sinchang8,
   },
   {
     id: 96,
@@ -1287,7 +1343,7 @@ export const accommodationData = [
     rating: 4.7,
     reviewCount: 61,
     facilities: ["세탁시설"],
-    image: sinchang9,
+    thumbnail: sinchang9,
   },
   {
     id: 97,
@@ -1299,7 +1355,7 @@ export const accommodationData = [
     rating: 4.5,
     reviewCount: 40,
     facilities: ["주방시설","바다뷰","바베큐"],
-    image: sinchang10,
+    thumbnail: sinchang10,
   },
   {
     id: 98,
@@ -1311,7 +1367,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 66,
     facilities: ["바다뷰","카페"],
-    image: sinchang11,
+    thumbnail: sinchang11,
   },
   {
     id: 99,
@@ -1323,7 +1379,7 @@ export const accommodationData = [
     rating: 4.6,
     reviewCount: 48,
     facilities: ["가족룸","바베큐","수영장","주방시설"],
-    image: sinchang12,
+    thumbnail: sinchang12,
   },
   {
     id: 100,
@@ -1335,7 +1391,7 @@ export const accommodationData = [
     rating: 4.5,
     reviewCount: 26,
     facilities: ["주방시설","세탁시설"],
-    image: sinchang13,
+    thumbnail: sinchang13,
   },
   {
     id: 101,
@@ -1347,7 +1403,7 @@ export const accommodationData = [
     rating: 4.6,
     reviewCount: 16,
     facilities: ["주방시설","세탁시설"],
-    image: jeoji1,
+    thumbnail: jeoji1,
   },
   {
     id: 102,
@@ -1359,7 +1415,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 36,
     facilities: ["가족룸"],
-    image: jeoji2,
+    thumbnail: jeoji2,
   },
   {
     id: 103,
@@ -1371,7 +1427,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 42,
     facilities: ["조식포함","목욕시설"],
-    image: jeoji3,
+    thumbnail: jeoji3,
   },
   {
     id: 104,
@@ -1383,7 +1439,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 56,
     facilities: ["주방시설","세탁시설","바베큐"],
-    image: jeoji4,
+    thumbnail: jeoji4,
   },
   {
     id: 105,
@@ -1395,7 +1451,7 @@ export const accommodationData = [
     rating: 4.7,
     reviewCount: 75,
     facilities: ["주방시설","세탁시설"],
-    image: jeoji5,
+    thumbnail: jeoji5,
   },
   {
     id: 106,
@@ -1407,7 +1463,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 43,
     facilities: ["주방시설","세탁시설"],
-    image: jeoji6,
+    thumbnail: jeoji6,
   },
   {
     id: 107,
@@ -1419,7 +1475,7 @@ export const accommodationData = [
     rating: 4.7,
     reviewCount: 70,
     facilities: ["주방시설","조식포함"],
-    image: jeoji7,
+    thumbnail: jeoji7,
   },
   {
     id: 108,
@@ -1431,7 +1487,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 50,
     facilities: ["유아용품","반려동물 동반"],
-    image: jeoji8,
+    thumbnail: jeoji8,
   },
   {
     id: 109,
@@ -1443,7 +1499,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 90,
     facilities: ["유아용품","카페"],
-    image: jeoji9,
+    thumbnail: jeoji9,
   },
   {
     id: 110,
@@ -1455,7 +1511,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 110,
     facilities: ["카페"],
-    image: jeoji10,
+    thumbnail: jeoji10,
   },
   {
     id: 111,
@@ -1467,7 +1523,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 90,
     facilities: ["수영장","세탁시설"],
-    image: jeoji11,
+    thumbnail: jeoji11,
   },
   {
     id: 112,
@@ -1479,7 +1535,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 75,
     facilities: ["바베큐"],
-    image: jeoji12,
+    thumbnail: jeoji12,
   },
   {
     id: 113,
@@ -1491,7 +1547,7 @@ export const accommodationData = [
     rating: 4.5,
     reviewCount: 46,
     facilities: ["바베큐"],
-    image: jeoji13,
+    thumbnail: jeoji13,
   },
   {
     id: 114,
@@ -1503,7 +1559,7 @@ export const accommodationData = [
     rating: 4.5,
     reviewCount: 46,
     facilities: ["목욕시설"],
-    image: jeoji14,
+    thumbnail: jeoji14,
   },
   {
     id: 115,
@@ -1515,7 +1571,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 79,
     facilities: ["유아용품","가족룸","주방시설","세탁시설"],
-    image: jeoji15,
+    thumbnail: jeoji15,
   },
   {
     id: 116,
@@ -1527,7 +1583,7 @@ export const accommodationData = [
     rating: 4.7,
     reviewCount: 57,
     facilities: ["주방시설"],
-    image: jeoji16,
+    thumbnail: jeoji16,
   },
   {
     id: 117,
@@ -1539,7 +1595,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 86,
     facilities: ["수영장","바베큐","조식포함"],
-    image: mureung1,
+    thumbnail: mureung1,
   },
   {
     id: 118,
@@ -1551,7 +1607,7 @@ export const accommodationData = [
     rating: 4.7,
     reviewCount: 36,
     facilities: ["주방시설","유아용품"],
-    image: mureung2,
+    thumbnail: mureung2,
   },
   {
     id: 119,
@@ -1563,7 +1619,7 @@ export const accommodationData = [
     rating: 4.6,
     reviewCount: 16,
     facilities: ["반려동물 동반"],
-    image: mureung3,
+    thumbnail: mureung3,
   },
   {
     id: 120,
@@ -1575,7 +1631,7 @@ export const accommodationData = [
     rating: 4.8,
     reviewCount: 65,
     facilities: ["수영장","주방시설"],
-    image: mureung4,
+    thumbnail: mureung4,
   },
   {
     id: 121,
@@ -1587,7 +1643,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 125,
     facilities: ["목욕시설","바베큐","조식포함"],
-    image: mureung5,
+    thumbnail: mureung5,
   },
   {
     id: 122,
@@ -1599,7 +1655,7 @@ export const accommodationData = [
     rating: 4.7,
     reviewCount: 57,
     facilities: ["바다뷰","주방시설"],
-    image: mureung6,
+    thumbnail: mureung6,
   },
   {
     id: 123,
@@ -1611,7 +1667,7 @@ export const accommodationData = [
     rating: 4.6,
     reviewCount: 43,
     facilities: ["가족룸","유아용품","목욕시설"],
-    image: mureung7,
+    thumbnail: mureung7,
   },
   {
     id: 124,
@@ -1623,7 +1679,7 @@ export const accommodationData = [
     rating: 4.9,
     reviewCount: 83,
     facilities: ["유아용품","목욕시설"],
-    image: mureung8,
+    thumbnail: mureung8,
   },
   {
     id: 125,
@@ -1635,6 +1691,6 @@ export const accommodationData = [
     rating: 4.7,
     reviewCount: 52,
     facilities: ["반려동물 동반","바베큐","바다뷰"],
-    image: mureung9,
+    thumbnail: mureung9,
   },
 ]

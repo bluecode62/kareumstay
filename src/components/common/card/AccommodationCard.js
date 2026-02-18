@@ -102,7 +102,7 @@ const HeartIcon = styled(FiHeart)`
 export default function AccommodationCard({ data }) {
   return (
     <Card>
-      <Image src={data.image} alt={data.name} />
+      <Image src={data.thumbnail} alt={data.name} />
 
       <Info>
         <LeftBox>
