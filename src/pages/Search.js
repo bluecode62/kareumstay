@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { ContentWrapper, Inner, Layout } from "../components/layout/Layout";
 import ReservationBar from "../components/reservation/ReservationBar";
 import AccommodationList from "../components/search/AccommodationList";
@@ -9,6 +10,7 @@ import { accommodationData } from "../data/accommodationData";
 
 export default function Search() {
   const location = useLocation();
+  const navigate = useNavigate();
 
   const initialTown = location.state?.town || "";
 
@@ -87,7 +89,10 @@ export default function Search() {
             selectedTypes={selectedTypes}
             toggleType={toggleType}
           />
-          <AccommodationList list={sortedList} />
+          <AccommodationList
+            list={sortedList}
+            onCardClick={(id) => navigate(`/detail/${id}`)}
+          />
         </ContentWrapper>
       </Inner>
     </Layout>

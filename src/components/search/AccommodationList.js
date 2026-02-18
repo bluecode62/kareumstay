@@ -21,7 +21,7 @@ const EmptyText = styled.p`
   color: #999;
 `;
 
-export default function AccommodationList({ list }) {
+export default function AccommodationList({ list, onCardClick }) {
   if(list.length === 0){
     return(
       <EmptyWrapper>
@@ -36,7 +36,7 @@ export default function AccommodationList({ list }) {
   return (
     <Wrapper>
       {list.map((item) => (
-        <AccommodationCard key={item.id} data={item} />
+        <AccommodationCard key={item.id} data={item} onClick={()=> onCardClick(item.id)}/>
       ))}
     </Wrapper>
   );

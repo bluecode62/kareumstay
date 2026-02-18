@@ -99,9 +99,9 @@ const HeartIcon = styled(FiHeart)`
   }
 `;
 
-export default function AccommodationCard({ data }) {
+export default function AccommodationCard({ data, onClick }) {
   return (
-    <Card>
+    <Card onClick={onClick}>
       <Image src={data.thumbnail} alt={data.name} />
 
       <Info>

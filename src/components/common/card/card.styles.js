@@ -32,6 +32,7 @@ export const PickOverlay = styled.div`
   color: #fff;
   font-size: 14px;
   line-height: 1.4;
+  pointer-events: none;
 
   p {
     margin: 5px 0;

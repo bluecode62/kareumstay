@@ -172,7 +172,7 @@ export const accommodationData = [
         id: 1,
         title: "자전거 탐방클래스",
         price: 30000,
-        image: "/images/"
+        image: "/images/exp01.jpg",
       }
     ],
 
