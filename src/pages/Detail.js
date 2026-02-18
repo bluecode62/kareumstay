@@ -43,9 +43,14 @@ export default function Detail() {
 
       <BasicInfo
         name={accommodation.name}
+        type={accommodation.type}
+        summary={accommodation.summary}
         rating={accommodation.rating}
         reviewCount={accommodation.reviewCount}
         price={accommodation.price}
+        facilities={accommodation.facilities}
+        address={accommodation.address}
+        reviews={accommodation.reviews?.[0]?.content}
       />
 
       <Description text={accommodation.description} />

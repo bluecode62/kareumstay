@@ -146,6 +146,7 @@ export const accommodationData = [
     price: 94000,
     rating: 4.5,
     reviewCount: 35,
+    summary:"최대 인원 3명 · 침실 5개 · 침대 2개 · 욕실 1개",
     thumbnail: hahyo1,
     images: [
       "/images/stay01-01.jpg",
@@ -177,7 +178,7 @@ export const accommodationData = [
     ],
 
     facilities: ["조식포함","바다뷰","와이파이"],
-
+    address: "제주특별자치도 서귀포시 보목포로 177 제주특별자치도 서귀포시 하효동 1371-1",
     location: {
       address: "제주 서귀포시 하효동",
       lat: 33.2615,
