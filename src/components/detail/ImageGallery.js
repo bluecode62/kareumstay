@@ -6,7 +6,7 @@ const GalleryWrapper = styled.div`
   gap: 10px;
   width: 100%;
   height: 400px;
-  margin: 40px 0;
+  margin: 20px 0;
 `;
 
 const MainImage = styled.div`

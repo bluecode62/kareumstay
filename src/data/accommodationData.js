@@ -154,8 +154,12 @@ export const accommodationData = [
       "/images/stay01-03.jpg",
       "/images/stay01-04.jpg",
     ],
-    description:`
-    기분 좋은 민박은 친환경 나무 루버 인테리어로 되어 있어요. 이름처럼 쾌적하고 아늑하며 편하게 사용할 수 있도록 신경을 씁니다. 식재료만 가지고 오시면 뚝딱 요리해 드실 수 있습니다. 도로와 가까이에 위치해 있으면서도 주변이 조용합니다. 숙소에서 바다와 오름이 보여요. 옛 제주의 향토적 전원적 정취를 즐길 수 있답니다.
+    description: 
+    `
+    기분 좋은 민박은 친환경 나무 루버 인테리어로 되어 있어요. 
+    이름처럼 쾌적하고 아늑하며 편하게 사용할 수 있도록 신경을 씁니다. 
+    식재료만 가지고 오시면 뚝딱 요리해 드실 수 있습니다. 도로와 가까이에 위치해 있으면서도 주변이 조용합니다. 
+    숙소에서 바다와 오름이 보여요. 옛 제주의 향토적 전원적 정취를 즐길 수 있답니다.
     `,
 
     rooms: [
@@ -165,6 +169,13 @@ export const accommodationData = [
         price: 94000,
         image: "/images/room01-01.jpg",
         info: "더블 침대 · 화장실 · 에어컨"
+      },
+      {
+        id: 2,
+        name: "침실 2",
+        price: 98000,
+        image: "/images/room01-02.jpg",
+        info: "더블 침대 · 화장실 · 에어컨 · 건조기"
       }
     ],
 
@@ -174,10 +185,16 @@ export const accommodationData = [
         title: "자전거 탐방클래스",
         price: 30000,
         image: "/images/exp01.jpg",
+      },
+      {
+        id: 2,
+        title: "커피 로스팅 클래스",
+        price: 40000,
+        image: "/images/exp02.jpg",
       }
     ],
 
-    facilities: ["조식포함","바다뷰","와이파이"],
+    facilities: ["조식포함","바다뷰","와이파이","목욕시설","유아용품"],
     address: "제주특별자치도 서귀포시 보목포로 177 제주특별자치도 서귀포시 하효동 1371-1",
     location: {
       address: "제주 서귀포시 하효동",
@@ -196,7 +213,7 @@ export const accommodationData = [
         id: 1,
         user: "오렌지러버",
         rating: 5,
-        content: "조용하고 정말 좋았어요"
+        content: "조용하고 정말 좋았어요. 객실 깨끗하고, 서비스가 좋았습니다."
       },
       {
         id: 2,

@@ -6,7 +6,6 @@ import BasicInfo from "../components/detail/BasicInfo";
 import ExperienceList from "../components/detail/ExperienceList";
 import ImageGallery from "../components/detail/ImageGallery";
 import Description from "../components/detail/Description";
-import FacilityList from "../components/detail/FacilityList";
 import LocationSection from "../components/detail/LocationSection";
 import NoticeList from "../components/detail/NoticeList";
 import ReservationBox from "../components/detail/ReservationBox";
@@ -20,7 +19,7 @@ const DetailContainer = styled.div`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 10px;
 `;
 
 export default function Detail() {
@@ -58,8 +57,6 @@ export default function Detail() {
       <RoomList rooms={accommodation.rooms} />
 
       <ExperienceList experiences={accommodation.experiences} />
-
-      <FacilityList facilities={accommodation.facilities} />
 
       <LocationSection location={accommodation.location} />
 
