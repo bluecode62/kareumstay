@@ -48,36 +48,53 @@ const Avatar = styled.div`
   border-radius: 50%;
   background-color: #f1f1f1;
 `;
+const JoinPerid = styled.div``;
 
 const Right = styled.div`
   flex: 1;
   display: flex;
-  align-items: center;
   gap: 50px;
 `;
 
 const UserRow = styled.div`
   display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
-  min-width: 160px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  min-width: 150px;
 `;
 
 const UserName = styled.div`
   font-weight: 600;
 `;
-
+const JoinPeriod = styled.div`
+  font-size: 13px;
+  color: #999;
+`;
+const RateDate = styled.div`
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+`;
+const CreatedAt = styled.div``;
 const Stars = styled.div`
   display: flex;
+  margin-top: 2px;
   gap: 2px;
-  margin-bottom: 10px;
 `;
-
+const Room = styled.div`
+  text-align: left;
+`;
 const Content = styled.p`
+  display: flex;
+  flex-direction: column;
   font-size: 14px;
   color: #555;
   line-height: 1.6;
+`;
+
+const ReviewContent = styled.div`
+  margin-top: 20px
 `;
 
 export default function ReviewList({ reviews }) {
@@ -105,15 +122,20 @@ export default function ReviewList({ reviews }) {
             <Right>
               <UserRow>
                 <UserName>{review.user}</UserName>
+                <JoinPeriod>{review.joinPeriod}</JoinPeriod>
               </UserRow>
 
               <Content>
-                <Stars>
-                  {Array.from({ length: review.rating }).map((_, i) => (
-                    <FaStar key={i} color="#f4c430" size={14} />
-                  ))}
-                </Stars>
-                {review.content}
+                <RateDate>
+                  <Stars>
+                    {Array.from({ length: review.rating }).map((_, i) => (
+                      <FaStar key={i} color="#f4c430" size={14} />
+                    ))}
+                  </Stars>
+                  <CreatedAt>{review.createdAt}</CreatedAt>
+                </RateDate>
+                <Room>{review.room}</Room>
+                <ReviewContent>{review.content}</ReviewContent>
               </Content>
             </Right>
           </ReviewItem>
