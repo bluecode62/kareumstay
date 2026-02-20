@@ -137,7 +137,7 @@ const LocationRow = styled.div`
   color: #666;
   font-size: 14px;
   text-align: left;
-  word-break: keep-all;
+  white-space: pre-line;
   cursor: pointer;
 `;
 const Price = styled.div`
@@ -224,7 +224,7 @@ export default function BasicInfo({
           <InfoBox>
             <BoxTitle>위치정보</BoxTitle>
             <LocationRow>
-              <IoLocationOutline size={50} />
+              <IoLocationOutline size={40} />
               <span>{address}</span>
             </LocationRow>
           </InfoBox>
