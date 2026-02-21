@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 
@@ -24,6 +24,9 @@ const DetailContainer = styled.div`
 
 export default function Detail() {
   const { id } = useParams();
+
+  const [selectedRoom, setSelectedRoom] = useState(null);
+  const [selectedExperiences, setSelectedExperiences] = useState([]);
 
   const accommodation = accommodationData.find(
     (item) => item.id === Number(id)
@@ -54,17 +57,30 @@ export default function Detail() {
 
       <Description text={accommodation.description} />
 
-      <RoomList rooms={accommodation.rooms} />
+      <RoomList
+        rooms={accommodation.rooms}
+        selectedRoom={selectedRoom}
+        onSelectRoom={setSelectedRoom}
+      />
 
-      <ExperienceList experiences={accommodation.experiences} />
+      <ExperienceList
+        experiences={accommodation.experiences}
+        selectedExperiences={selectedExperiences}
+        setSelectedExperiences={setSelectedExperiences}
+      />
+
+      {selectedRoom && (
+        <ReservationBox
+          selectedRoom={selectedRoom}
+          selectedExperiences={selectedExperiences}
+        />
+      )}
 
       <LocationSection location={accommodation.location} />
 
       <NoticeList notices={accommodation.notices} />
 
       <ReviewList reviews={accommodation.reviews} />
-
-      <ReservationBox accommodation={accommodation} />
     </DetailContainer>
   );
 }

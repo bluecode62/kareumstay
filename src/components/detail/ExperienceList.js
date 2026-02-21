@@ -79,6 +79,19 @@ const SubText = styled.span`
 `;
 
 export default function ExperienceList({ experiences }) {
+
+  const toggleExperience = (exp) => {
+    const exists = selectedExperiences.find((e) => e.id === exp.id);
+
+    if(exists) {
+      setSelectedExperiences(
+        selectedExperiences.filter((e) => e.id !== exp.id)
+      );
+    } else {
+      setselectedExperiences([...selectedExperiences, exp]);
+    }
+  };
+
   if (!experiences || experiences.length === 0) return null;
 
   return (

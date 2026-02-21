@@ -65,7 +65,11 @@ export default function RoomList({ rooms }) {
       <Title>객실 선택</Title>
 
       {rooms.map((room) => (
-        <RoomCard key={room.id}>
+        <RoomCard
+          key={room.id}
+          onClick={() => onSelectRoom(room)}
+          active={selectedRoom?.id === room.id}
+        >
           <RoomImage>
             <img src={room.image} alt={room.name} />
           </RoomImage>
