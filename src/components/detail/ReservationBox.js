@@ -20,6 +20,9 @@ const Item = styled.div`
   margin-bottom: 20px;
 `;
 
+const Img = styled.div`
+`;
+
 const Thumbnail = styled.img`
   width: 200px;
   height: 150px;
@@ -80,7 +83,7 @@ const Pay = styled.button`
   cursor: pointer;
 `;
 
-function ReservationBox({ selectedRoom, selectedExperiences }) {
+function ReservationBox({ selectedRoom, selectedExperiences, setSelectedRoom, setSelectedExperiences }) {
   const totalPrice =
     selectedRoom.price +
     selectedExperiences.reduce((sum, exp) => sum + exp.price, 0);
@@ -99,9 +102,9 @@ function ReservationBox({ selectedRoom, selectedExperiences }) {
 
       {selectedExperiences.map((exp) => (
         <Item key={exp.id}>
-          <Img src={exp.image} alt="" />
+          <Thumbnail src={exp.image} alt={exp.title} />
           <Info>
-            <div>{exp.name}</div>
+            <div>{exp.title}</div>
             <div>{exp.price.toLocaleString()}원</div>
           </Info>
         </Item>

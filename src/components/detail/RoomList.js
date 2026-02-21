@@ -57,7 +57,7 @@ const Price = styled.div`
   font-weight: 600;
 `;
 
-export default function RoomList({ rooms }) {
+export default function RoomList({ rooms, selectedRoom, onSelectRoom }) {
   if (!rooms || rooms.length === 0) return null;
 
   return (

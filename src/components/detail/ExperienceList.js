@@ -78,19 +78,23 @@ const SubText = styled.span`
   color: #888;
 `;
 
-export default function ExperienceList({ experiences }) {
-
+export default function ExperienceList({
+  experiences,
+  selectedExperiences,
+  setSelectedExperiences,
+}) {
   const toggleExperience = (exp) => {
     const exists = selectedExperiences.find((e) => e.id === exp.id);
 
-    if(exists) {
+    if (exists) {
       setSelectedExperiences(
         selectedExperiences.filter((e) => e.id !== exp.id)
       );
     } else {
-      setselectedExperiences([...selectedExperiences, exp]);
+      setSelectedExperiences([...selectedExperiences, exp]);
     }
   };
+
 
   if (!experiences || experiences.length === 0) return null;
 
@@ -99,22 +103,36 @@ export default function ExperienceList({ experiences }) {
       <Title>예약가능 원데이클래스</Title>
 
       <ScrollRow>
-        {experiences.map((exp) => (
-          <Card key={exp.id}>
-            <ImageWrapper>
-              <img src={exp.image} alt={exp.title} />
-              <AddButton>+</AddButton>
-            </ImageWrapper>
+        {experiences.map((exp) => {
+          const isActive = selectedExperiences.some(
+            (e) => e.id === exp.id
+          );
 
-            <Content>
-              <h3>{exp.title}</h3>
-              <PriceRow>
-                <Price>{exp.price.toLocaleString()}원</Price>
-                <SubText>성인 1인 기준</SubText>
-              </PriceRow>
-            </Content>
-          </Card>
-        ))}
+          return (
+            <Card
+              key={exp.id}
+              onClick={() => toggleExperience(exp)}
+              active={isActive}
+            >
+              <ImageWrapper>
+                <img src={exp.image} alt={exp.title} />
+                <AddButton>
+                  {isActive ? "-" : "+"}
+                </AddButton>
+              </ImageWrapper>
+
+              <Content>
+                <h3>{exp.title}</h3>
+                <PriceRow>
+                  <Price>
+                    {exp.price.toLocaleString()}원
+                  </Price>
+                  <SubText>성인 1인 기준</SubText>
+                </PriceRow>
+              </Content>
+            </Card>
+          );
+        })}
       </ScrollRow>
     </Wrapper>
   );

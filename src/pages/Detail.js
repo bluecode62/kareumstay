@@ -73,6 +73,8 @@ export default function Detail() {
         <ReservationBox
           selectedRoom={selectedRoom}
           selectedExperiences={selectedExperiences}
+          setSelectedRoom={setSelectedRoom}
+          setSelectedExperiences={setSelectedExperiences}
         />
       )}
 
