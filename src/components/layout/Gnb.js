@@ -31,7 +31,7 @@ const MenuLi = styled.li`
   }
 `;
 
-export default function gnb() {
+export default function Gnb() {
   const navigate = useNavigate();
   return (
     <LogoBox>

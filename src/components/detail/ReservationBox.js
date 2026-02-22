@@ -89,6 +89,13 @@ const Cancel = styled.button`
   font-size: 20px;
   cursor: pointer;
 `;
+const SaveBtn = styled.button`
+  background: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+`;
 
 const Pay = styled.button`
   padding: 10px 40px;
@@ -107,7 +114,7 @@ const ModalOverlay = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,7 +131,7 @@ const ConfirmBtn = styled.button`
   background: #4caf50;
   color: #fff;
   padding: 10px 20px;
-  border:none;
+  border: none;
   border-radius: 10px;
 `;
 
@@ -132,7 +139,7 @@ const CancelBtn = styled.button`
   background: #ddd;
   padding: 10px 20px;
   color: #333;
-  border:none;
+  border: none;
   border-radius: 10px;
 `;
 
@@ -154,14 +161,11 @@ function ReservationBox({
       room: selectedRoom,
       experiences: selectedExperiences,
       total:
-        selectedRoom.price + 
+        selectedRoom.price +
         selectedExperiences.reduce((sum, exp) => sum + exp.price, 0),
     };
 
-    localStorage.setItem(
-      "reservation",
-      JSON.stringify(reservationData)
-    );
+    localStorage.setItem("reservation", JSON.stringify(reservationData));
 
     alert("예약조회에 저장되었습니다.");
   };
@@ -214,10 +218,12 @@ function ReservationBox({
             <Modal>
               <p>결제하시겠습니까?</p>
               <ButtonRow>
-                <ConfirmBtn onClick={() => {
-                  setShowConfirm(false);
-                  navigate("/payment-complete");
-                }}>
+                <ConfirmBtn
+                  onClick={() => {
+                    setShowConfirm(false);
+                    navigate("/payment-complete");
+                  }}
+                >
                   예
                 </ConfirmBtn>
                 <CancelBtn onClick={() => setShowConfirm(false)}>

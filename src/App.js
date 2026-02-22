@@ -8,7 +8,8 @@ import Search from "./pages/Search";
 import Detail from "./pages/Detail";
 import { useState } from "react";
 import PaymentComplete from "./components/detail/PaymentComplete";
-import ReservationPage from "./components/reservation/ReservationPage";
+import ReservationPage from "./pages/ReservationPage";
+
 
 function App() {
   const [isPaid, setIsPaid] = useState(false);
