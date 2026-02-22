@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import TopButton from "../components/common/TopButton";
 import { ContentWrapper, Inner, Layout } from "../components/layout/Layout";
 import ReservationBar from "../components/reservation/ReservationBar";
 import AccommodationList from "../components/search/AccommodationList";
@@ -95,6 +96,7 @@ export default function Search() {
           />
         </ContentWrapper>
       </Inner>
+      <TopButton />
     </Layout>
   );
 }

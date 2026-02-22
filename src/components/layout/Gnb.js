@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 const LogoBox = styled.div`
@@ -31,6 +32,7 @@ const MenuLi = styled.li`
 `;
 
 export default function gnb() {
+  const navigate = useNavigate();
   return (
     <LogoBox>
       <JejuLogo>
@@ -46,7 +48,9 @@ export default function gnb() {
       <Menu type="basic">
         <MenuLi>공지사항</MenuLi>
         <MenuLi>관심목록</MenuLi>
-        <MenuLi>예약내역</MenuLi>
+        <MenuLi onClick={() => {
+          navigate("/reservation")
+        }}>예약내역</MenuLi>
         <MenuLi>로그인</MenuLi>
       </Menu>
     </LogoBox>

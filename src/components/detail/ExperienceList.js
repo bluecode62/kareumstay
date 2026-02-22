@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -78,12 +78,34 @@ const SubText = styled.span`
   color: #888;
 `;
 
+const Warning = styled.div`
+  margin: 30px 0;
+  padding: 10px 20px;
+  background-color: #ffecec;
+  color: #ff4d4f;
+  border-radius: 10px;
+  font-size: 14px;
+`;
+
 export default function ExperienceList({
   experiences,
   selectedExperiences,
   setSelectedExperiences,
+  selectedRoom={selectedRoom}
 }) {
+  const [showWarning, setShowWarning] = useState(false);
+
   const toggleExperience = (exp) => {
+    if (!selectedRoom) {
+      setShowWarning(true);
+
+      setTimeout(() => {
+        setShowWarning(false);
+      }, 4000);
+
+      return;
+    }
+
     const exists = selectedExperiences.find((e) => e.id === exp.id);
 
     if (exists) {
@@ -95,18 +117,18 @@ export default function ExperienceList({
     }
   };
 
-
   if (!experiences || experiences.length === 0) return null;
 
   return (
     <Wrapper>
       <Title>예약가능 원데이클래스</Title>
 
+      {showWarning && (
+        <Warning>객실을 먼저 선택해주세요.</Warning>
+      )}
       <ScrollRow>
         {experiences.map((exp) => {
-          const isActive = selectedExperiences.some(
-            (e) => e.id === exp.id
-          );
+          const isActive = selectedExperiences.some((e) => e.id === exp.id);
 
           return (
             <Card
@@ -116,17 +138,13 @@ export default function ExperienceList({
             >
               <ImageWrapper>
                 <img src={exp.image} alt={exp.title} />
-                <AddButton>
-                  {isActive ? "-" : "+"}
-                </AddButton>
+                <AddButton>{isActive ? "-" : "+"}</AddButton>
               </ImageWrapper>
 
               <Content>
                 <h3>{exp.title}</h3>
                 <PriceRow>
-                  <Price>
-                    {exp.price.toLocaleString()}원
-                  </Price>
+                  <Price>{exp.price.toLocaleString()}원</Price>
                   <SubText>성인 1인 기준</SubText>
                 </PriceRow>
               </Content>

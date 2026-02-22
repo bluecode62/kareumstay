@@ -12,6 +12,7 @@ import ReservationBox from "../components/detail/ReservationBox";
 import ReviewList from "../components/detail/ReviewList";
 import RoomList from "../components/detail/RoomList";
 import { accommodationData } from "../data/accommodationData";
+import TopButton from "../components/common/TopButton";
 
 const DetailContainer = styled.div`
   width: 100%;
@@ -67,6 +68,7 @@ export default function Detail() {
         experiences={accommodation.experiences}
         selectedExperiences={selectedExperiences}
         setSelectedExperiences={setSelectedExperiences}
+        selectedRoom={selectedRoom}
       />
 
       {selectedRoom && (
@@ -83,6 +85,9 @@ export default function Detail() {
       <NoticeList notices={accommodation.notices} />
 
       <ReviewList reviews={accommodation.reviews} />
+
+      <TopButton />
+
     </DetailContainer>
   );
 }
