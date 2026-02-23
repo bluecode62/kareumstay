@@ -193,7 +193,14 @@ export const accommodationData = [
       },
     ],
 
-    facilities: ["조식포함", "바다뷰", "와이파이", "목욕시설", "유아용품"],
+    facilities: [
+      "조식포함",
+      "바다뷰",
+      "와이파이",
+      "목욕시설",
+      "유아용품",
+      "카페",
+    ],
     address: "제주 서귀포시 보목포로 179\n제주 서귀포시 하효동 1371",
     location: {
       address: "제주 서귀포시 보목포로 179",
@@ -215,18 +222,21 @@ export const accommodationData = [
       {
         id: 1,
         icon: "cancel",
-        content: "24시간 동안 무료 취소가 가능합니다.\n체크인 하루 전에는 부분 환불을 받을 수 있습니다.\n자세한 내용은 호스트의 환불 정채 전문을 참고하세요."
+        content:
+          "24시간 동안 무료 취소가 가능합니다.\n체크인 하루 전에 환불을 받을 수 있습니다.\n자세한 내용은 호스트의 환불 정채 전문을 참고하세요.",
       },
       {
         id: 2,
         icon: "time",
-        content: "체크인 가능 시간: 오후 4:00 이후\n체크아웃 시간: 오전 12:00 전까지\n게스트 정원 5명"
+        content:
+          "체크인 가능 시간: 오후 4:00 이후\n체크아웃 시간: 오전 12:00 전까지\n게스트 정원 5명",
       },
       {
         id: 3,
         icon: "safety",
-        content: "부지 내 실외 보안 카메라\n근처에 호수, 강, 바다 등이 있음\n난간이나 보호 장치가 없는 높은 곳"
-      }
+        content:
+          "부지 내 실외 보안 카메라\n근처에 호수, 강, 바다 등이 있음\n난간이나 보호 장치가 없는 높은 곳",
+      },
     ],
 
     reviews: [
@@ -286,8 +296,152 @@ export const accommodationData = [
     price: 230000,
     rating: 4.8,
     reviewCount: 72,
-    facilities: ["바다뷰", "카페"],
+    summary: "최대 인원 2명 · 침실 30개 · 침대 2개 · 욕실 1개",
     thumbnail: hahyo2,
+
+    images: [
+      "/images/stay02-01.jpg",
+      "/images/stay02-02.jpg",
+      "/images/stay02-03.jpg",
+      "/images/stay02-04.jpg",
+    ],
+    description: `
+    조용한 제주마을 하효에 위치한 하효일(下孝日)은 평범하지만 정겨운 우리네 일상을 담고 있습니다. 
+
+    귤농사로 유명한 지역에 위치한 만큼, 하효일 주변에는 귤낭(귤나무)들을 많이 볼 수 있어요. 
+    물론 하효일 마당에도 아기 귤낭들이 열매를 맺고 있어요.
+
+    시끌벅적한 일상에서 벗어나 나와 연인, 가족과의 소중한 시간에 집중할 수 있는 공간.
+    하효일에서 고즈넉한 마을풍경을 벗삼아 일상을 돌아보는 시간을 가져보세요.
+    `,
+
+    rooms: [
+      {
+        id: 1,
+        name: "침실 1",
+        price: 230000,
+        image: "/images/room02-01.jpg",
+        info: "퀸사이즈 침대 · 화장실 · 에어컨",
+      },
+    ],
+
+    experiences: [
+      {
+        id: 1,
+        title: "감귤농장 체험클래스",
+        price: 50000,
+        image: "/images/exp03.jpg",
+      },
+      {
+        id: 2,
+        title: "커피 로스팅 클래스",
+        price: 40000,
+        image: "/images/exp02.jpg",
+      },
+    ],
+
+    facilities: [
+      "조식포함",
+      "바다뷰",
+      "와이파이",
+      "바베큐",
+      "카페",
+      "무료주차",
+    ],
+    address:
+      "제주특별자치도 서귀포시 일주동로 8133 \n제주특별자치도 서귀포시 하효동 650",
+    location: {
+      address: "서귀포시, 제주도, 한국",
+      notice: `
+      쇠소깍(바다)에서 도보 15분 거리에 위치해있습니다.
+
+      교통편
+      1. 버스정류장
+      2m 거리에 버스 정류장(효돈하나로마트 정류장)이 위치해 있어, 대중교통을 이용하기 편리합니다.
+
+      2. 주변도로
+      숙소 앞쪽은 제주의 동쪽과 서쪽을 잇는 일주도로와 이어져 있어, 관광지로의 이동 및 숙소를 찾아오시기에 매우 용이합니다.
+
+      3. 주차시설
+      건물 앞쪽에 마련된 전용 주차장을 이용하시면 되세요.
+      (객실당 1대 주차가능, 2대 이상 주차시 사전에 연락부탁드립니다.)
+      `,
+      lat: 33.260656,
+      lng: 126.618542,
+    },
+
+    notices: [
+      {
+        id: 1,
+        icon: "cancel",
+        content:
+          "24시간 동안 무료 취소가 가능합니다.\n체크인 하루 전에 환불을 받을 수 있습니다.\n자세한 내용은 호스트의 환불 정채 전문을 참고하세요.",
+      },
+      {
+        id: 2,
+        icon: "time",
+        content:
+          "체크인 가능 시간: 오후 4:00 이후\n체크아웃 시간: 오전 12:00 전까지\n게스트 정원 5명",
+      },
+      {
+        id: 3,
+        icon: "safety",
+        content:
+          "부지 내 실외 보안 카메라\n근처에 호수, 강, 바다 등이 있음\n난간이나 보호 장치가 없는 높은 곳",
+      },
+    ],
+
+    reviews: [
+      {
+        id: 1,
+        user: "참새귤귤",
+        joinPeriod: "가입 3개월",
+        rating: 5,
+        createdAt: "일주일 전",
+        room: "침실1",
+        content:
+          "사진과 동일합니다 매우청결하며 동네도 조용해서 편하게 쉬다왔어요.",
+      },
+      {
+        id: 2,
+        user: "제주빵빵",
+        joinPeriod: "가입 1개월",
+        rating: 5,
+        createdAt: "한 달 전",
+        room: "침실1",
+        content:
+          "사진으로 보는 것 보다 훨씬 좋았습니다~ 안방 창에서 보이는 조용한 동네 전경이 너무 기억에 남아요. 화장실, 부엌, 안방 모든 공간이 깨끗했고 침구,수건도 뽀송뽀송 했습니다.",
+      },
+      {
+        id: 3,
+        user: "제주빵귤",
+        joinPeriod: "가입 2개월",
+        rating: 4,
+        createdAt: "5주 전",
+        room: "침실1",
+        content:
+          "내 집처럼 너무 편안했고 인테리어도 예쁘고 무엇보다 사장님이 친절하고 숙소에 신경을 많이 썼다는 느낌이 확 받았습니다!",
+      },
+      {
+        id: 4,
+        user: "감귤싹싹",
+        joinPeriod: "가입 6개월",
+        rating: 5,
+        createdAt: "6주 전",
+        room: "침실2",
+        content: "제주에서 지냈던 숙소 중 가장 좋았습니다!",
+      },
+      {
+        id: 5,
+        user: "빵위에귤",
+        joinPeriod: "가입 3개월",
+        rating: 3,
+        createdAt: "8주 전",
+        room: "침실1",
+        content:
+          "조용하고 깨끗하고 수건도 많아서 너무 좋았어요 다음 방문에도 갈 의향이 있습니다.",
+      },
+    ],
   },
   {
     id: 3,
@@ -298,8 +452,147 @@ export const accommodationData = [
     price: 77000,
     rating: 4.5,
     reviewCount: 80,
-    facilities: ["바다뷰", "카페", "목욕시설"],
+    summary: "최대 인원 4명 · 침실 20개 · 침대 2개 · 욕실 1개",
     thumbnail: hahyo3,
+
+    images: [
+      "/images/stay03-01.jpg",
+      "/images/stay03-02.jpg",
+      "/images/stay03-03.jpg",
+      "/images/stay03-04.jpg",
+    ],
+    description: `
+    제주올레 5코스 끝! 쇠소깍 6코스 시작!
+    과거의끝과 새로운시작이 공존하는 해와돌바라기 펜션에서 아름다운 추억을 만들어 보세요
+    `,
+
+    rooms: [
+      {
+        id: 1,
+        name: "원룸형",
+        price: 77000,
+        image: "/images/room03-01.jpg",
+        info: "더블침대 · 화장실 · 에어컨 · 주방시설",
+      },
+      {
+        id: 1,
+        name: "복층형",
+        price: 80000,
+        image: "/images/room03-02.jpg",
+        info: "더블침대 · 화장실 · 에어컨 · 주방시설",
+      },
+      {
+        id: 1,
+        name: "가족형A",
+        price: 110000,
+        image: "/images/room03-03.jpg",
+        info: "더블침대 2개 · 화장실 · 에어컨 · 주방시설 · 발코니",
+      },
+      {
+        id: 1,
+        name: "가족형B",
+        price: 110000,
+        image: "/images/room03-04.jpg",
+        info: "더블침대 2개 · 화장실 · 에어컨 · 주방시설 · 발코니",
+      },
+    ],
+
+    experiences: [
+      {
+        id: 1,
+        title: "감귤농장 체험클래스",
+        price: 50000,
+        image: "/images/exp03.jpg",
+      },
+      {
+        id: 2,
+        title: "커피 로스팅 클래스",
+        price: 40000,
+        image: "/images/exp02.jpg",
+      },
+    ],
+
+    facilities: ["바다뷰", "와이파이", "가족룸", "카페", "수영장", "주방시설"],
+    address:
+      "제주특별자치도 서귀포시 쇠소깍로 209 \n제주특별자치도 서귀포시 하효동 1068",
+    location: {
+      address: "제주특별자치도 서귀포시 하효동 1068",
+      notice: `
+      약 53km, 공항에서 1시간 20분정도 소요
+      고속화도로 및 국도가 포함되어 있어, 제주경관을 느끼면서 오실 수 있습니다.
+      `,
+      lat: 33.252608,
+      lng: 126.617196,
+    },
+
+    notices: [
+      {
+        id: 1,
+        icon: "cancel",
+        content:
+          "24시간 동안 무료 취소가 가능합니다.\n체크인 하루 전에 환불을 받을 수 있습니다.\n자세한 내용은 호스트의 환불 정채 전문을 참고하세요.",
+      },
+      {
+        id: 2,
+        icon: "time",
+        content:
+          "체크인 가능 시간: 오후 4:00 이후\n체크아웃 시간: 오전 12:00 전까지\n게스트 정원 5명",
+      },
+      {
+        id: 3,
+        icon: "safety",
+        content:
+          "부지 내 실외 보안 카메라\n근처에 호수, 강, 바다 등이 있음\n난간이나 보호 장치가 없는 높은 곳",
+      },
+    ],
+
+    reviews: [
+      {
+        id: 1,
+        user: "앙버터귤빵",
+        joinPeriod: "가입 3개월",
+        rating: 5,
+        createdAt: "일주일 전",
+        room: "원룸형",
+        content: "자연을 편하게 구경하면서 쉬었다 갑니다.",
+      },
+      {
+        id: 2,
+        user: "제주바다속",
+        joinPeriod: "가입 1개월",
+        rating: 3,
+        createdAt: "한 달 전",
+        room: "원룸형",
+        content: "밤 야경이 좋고, 여러모로 좋았습니다.",
+      },
+      {
+        id: 3,
+        user: "귤러버",
+        joinPeriod: "가입 2개월",
+        rating: 4,
+        createdAt: "5주 전",
+        room: "원룸형",
+        content: "살짝 낡은 느낌이 들긴 했지만 나름 깨끗했고 좋았습니다.",
+      },
+      {
+        id: 4,
+        user: "감귤싹싹",
+        joinPeriod: "가입 6개월",
+        rating: 5,
+        createdAt: "6주 전",
+        room: "복층형",
+        content: "친구들이랑 재밌게 놀고 여행숙소로 짱이에요!",
+      },
+      {
+        id: 5,
+        user: "빵위에귤",
+        joinPeriod: "가입 3개월",
+        rating: 3,
+        createdAt: "8주 전",
+        room: "가족형B",
+        content: "집처럼 편한 방구조라 가족이랑 즐겁게 여행 보냈습니다.",
+      },
+    ],
   },
   {
     id: 4,
@@ -310,8 +603,121 @@ export const accommodationData = [
     price: 120000,
     rating: 4.5,
     reviewCount: 80,
-    facilities: ["조식포함", "카페", "목욕시설"],
+    summary: "최대 인원 2명 · 침실 10개 · 침대 1개 · 욕실 1개",
     thumbnail: hahyo4,
+
+    images: [
+      "/images/stay04-01.jpg",
+      "/images/stay04-02.jpg",
+      "/images/stay04-03.jpg",
+      "/images/stay04-04.jpg",
+    ],
+    description: `
+    스너글은 제주에서 가장 따뜻한 하효동에 위치해 있습니다. 
+    귤이 맛있기로 유명한 동네인 만큼 잠잘곳 주변에서 귤나무를 볼 수 있으며 돌담, 수국, 동백으로 가득 차 있는 제주스러운 앞마당이 있습니다. 
+    조용한 마을에서 지친 일상을 치유받을 수 있을 거예요.
+    `,
+
+    rooms: [
+      {
+        id: 1,
+        name: "침실1",
+        price: 120000,
+        image: "/images/room04-01.jpg",
+        info: "더블침대 · 화장실 · 에어컨",
+      },
+    ],
+
+    experiences: [
+      {
+        id: 1,
+        title: "카약 체험클래스",
+        price: 80000,
+        image: "/images/exp04.jpg",
+      },
+    ],
+
+    facilities: ["조식포함", "카페", "목욕시설", "와이파이", "수영장"],
+    address:
+      "제주특별자치도 서귀포시 과원동로11번길 5 \n제주특별자치도 서귀포시 하효동 464",
+    location: {
+      address: "제주특별자치도 서귀포시 하효동 464",
+      notice: `
+      약 53km, 공항에서 1시간 20분정도 소요
+      고속화도로 및 국도가 포함되어 있어, 제주경관을 느끼면서 오실 수 있습니다.
+      `,
+      lat: 33.261077,
+      lng: 126.621212,
+    },
+
+    notices: [
+      {
+        id: 1,
+        icon: "cancel",
+        content:
+          "24시간 동안 무료 취소가 가능합니다.\n체크인 하루 전에 환불을 받을 수 있습니다.\n자세한 내용은 호스트의 환불 정채 전문을 참고하세요.",
+      },
+      {
+        id: 2,
+        icon: "time",
+        content:
+          "체크인 가능 시간: 오후 4:00 이후\n체크아웃 시간: 오전 12:00 전까지\n게스트 정원 5명",
+      },
+      {
+        id: 3,
+        icon: "safety",
+        content:
+          "부지 내 실외 보안 카메라\n근처에 호수, 강, 바다 등이 있음\n난간이나 보호 장치가 없는 높은 곳",
+      },
+    ],
+
+    reviews: [
+      {
+        id: 1,
+        user: "초록초롱",
+        joinPeriod: "가입 3개월",
+        rating: 5,
+        createdAt: "일주일 전",
+        room: "침실1",
+        content: "인테리어가 고급지고 온천물도 좋았습니다.",
+      },
+      {
+        id: 2,
+        user: "바다바다",
+        joinPeriod: "가입 1개월",
+        rating: 3,
+        createdAt: "한 달 전",
+        room: "원룸형",
+        content: "상당히 고급진 건물로 좋은 숙박을 보냈습니다.",
+      },
+      {
+        id: 3,
+        user: "해산문어",
+        joinPeriod: "가입 2개월",
+        rating: 4,
+        createdAt: "5주 전",
+        room: "침실1",
+        content: "비품도 어느 숙소에서 볼 법한 게 아닌 수제 느낌이라 좋았어요.",
+      },
+      {
+        id: 4,
+        user: "TourLove",
+        joinPeriod: "가입 6개월",
+        rating: 5,
+        createdAt: "6주 전",
+        room: "침실1",
+        content: "보기보다 넓고 쾌적해서 편히 잘 수 있었어요!",
+      },
+      {
+        id: 5,
+        user: "국수냠냠",
+        joinPeriod: "가입 3개월",
+        rating: 3,
+        createdAt: "8주 전",
+        room: "침실1",
+        content: "혼자 숙박하기 정말 좋았습니다.",
+      },
+    ],
   },
   {
     id: 5,
@@ -322,8 +728,150 @@ export const accommodationData = [
     price: 90000,
     rating: 4.9,
     reviewCount: 110,
-    facilities: ["수영장", "바베큐", "세탁시설", "유아용품"],
+    summary: "최대 인원 2명 · 침실 20개 · 침대 2개 · 욕실 1개",
     thumbnail: hahyo5,
+
+    images: [
+      "/images/stay05-01.jpg",
+      "/images/stay05-02.jpg",
+      "/images/stay05-03.jpg",
+      "/images/stay05-04.jpg",
+    ],
+    description: `
+    아름다운 쇠소깍 해변에서 파도 소리를 들으며 힐링할 수 있는 공간입니다. 
+    호텔식으로 관리하는 청결한 침구와 화장실이 두 개씩 있는 복층 구조의 숙소입니다. 
+    여름철에는 넓은 야외 수영장을 운영하고, 넉넉한 크기의 주차장을 보유하고 있습니다.
+    `,
+
+    rooms: [
+      {
+        id: 1,
+        name: "침실더블1",
+        price: 90000,
+        image: "/images/room05-01.jpg",
+        info: "더블침대 · 화장실 · 에어컨",
+      },
+      {
+        id: 1,
+        name: "침실더블2",
+        price: 100000,
+        image: "/images/room05-02.jpg",
+        info: "더블침대 · 화장실 · 에어컨 · 발코니",
+      },
+      {
+        id: 1,
+        name: "침실트윈1",
+        price: 130000,
+        image: "/images/room05-03.jpg",
+        info: "더블침대 · 화장실 · 에어컨 · 발코니",
+      },
+    ],
+
+    experiences: [
+      {
+        id: 1,
+        title: "제주 고기국수 쿠킹클래스",
+        price: 20000,
+        image: "/images/exp05.jpg",
+      },
+      {
+        id: 2,
+        title: "카약 체험클래스",
+        price: 80000,
+        image: "/images/exp04.jpg",
+      },
+    ],
+
+    facilities: [
+      "수영장",
+      "바베큐",
+      "세탁시설",
+      "무료주차",
+      "와이파이",
+      "주방시설",
+      "바다뷰",
+    ],
+    address:
+      "제주특별자치도 서귀포시 쇠소깍로 138\n제주특별자치도 서귀포시 하효동 996-1 ",
+    location: {
+      address: "제주특별자치도 서귀포시 쇠소깍로 138",
+      notice: `
+      서귀포 쇠소깍 해변 앞에 위치한 펜션입니다. 숙소에서 바다뷰를 즐기실 수 있으며, 수영장 (7,8월) 과 바베큐장이 있습니다.
+      도보5분거리에 테라로사, 게우지코지 등 유명한 카페들이 있습니다.
+      `,
+      lat: 33.252083,
+      lng: 126.622489,
+    },
+
+    notices: [
+      {
+        id: 1,
+        icon: "cancel",
+        content:
+          "24시간 동안 무료 취소가 가능합니다.\n체크인 하루 전에 환불을 받을 수 있습니다.\n자세한 내용은 호스트의 환불 정채 전문을 참고하세요.",
+      },
+      {
+        id: 2,
+        icon: "time",
+        content:
+          "체크인 가능 시간: 오후 4:00 이후\n체크아웃 시간: 오전 12:00 전까지\n게스트 정원 5명",
+      },
+      {
+        id: 3,
+        icon: "safety",
+        content:
+          "부지 내 실외 보안 카메라\n근처에 호수, 강, 바다 등이 있음\n난간이나 보호 장치가 없는 높은 곳",
+      },
+    ],
+
+    reviews: [
+      {
+        id: 1,
+        user: "후크선장76",
+        joinPeriod: "가입 3개월",
+        rating: 5,
+        createdAt: "일주일 전",
+        room: "침실더블1",
+        content:
+          "뷰 좋고, 지금껏 가본 펜션 중 청결 및 고객 편의를 위해 제공한 어메니티, 시설, 향기까지 최고입니다!",
+      },
+      {
+        id: 2,
+        user: "은정이777",
+        joinPeriod: "가입 1개월",
+        rating: 3,
+        createdAt: "한 달 전",
+        room: "침실더블1",
+        content: "친구들이랑 여행 왔는데 잘 놀다 가요.",
+      },
+      {
+        id: 3,
+        user: "kuku",
+        joinPeriod: "가입 2개월",
+        rating: 4,
+        createdAt: "5주 전",
+        room: "침실더블2",
+        content: "비품도 어느 숙소에서 볼 법한 게 아닌 수제 느낌이라 좋았어요.",
+      },
+      {
+        id: 4,
+        user: "TourLove",
+        joinPeriod: "가입 6개월",
+        rating: 5,
+        createdAt: "6주 전",
+        room: "침실더블2",
+        content: "보기보다 넓고 쾌적해서 편히 잘 수 있었어요!",
+      },
+      {
+        id: 5,
+        user: "Thegift",
+        joinPeriod: "가입 3개월",
+        rating: 3,
+        createdAt: "8주 전",
+        room: "침실트윈1",
+        content: "깨끗하고 직원들 친절하시고 좋았어요.",
+      },
+    ],
   },
   {
     id: 6,
@@ -334,8 +882,155 @@ export const accommodationData = [
     price: 80000,
     rating: 4.9,
     reviewCount: 16,
-    facilities: ["바베큐"],
+    summary: "최대 인원 5명 · 침실 5개 · 침대 2개 · 욕실 1.5개",
     thumbnail: hahyo6,
+
+    images: [
+      "/images/stay06-01.jpg",
+      "/images/stay06-02.jpg",
+      "/images/stay06-03.jpg",
+      "/images/stay06-04.jpg",
+    ],
+    description: `
+     <빈도롱이가>는 제주 전통돌집을 개조하여 만든 숙소이고, 가옥 구조를 그대로 활용하여 옛 멋은 살리되, 
+     각종 시설을 보완하여 불편한  요소는 최대한 줄였답니다. 
+     숙소는 거실과 2개의 방으로 되어 있으며 5명까지 넉넉하게 묵을 수 있어요. 
+     앞마당에서 불멍과 바베큐를 즐기고, 옥상 테라스에서는 마을 전경을 한눈에 볼 수 있는 것도 특징이랍니다.
+     제주의 여유를 진하게 누리고 싶으신 분들은 침대에 하염없이 누워도 보고 또롱이와 정신없이 놀아보세요. 
+     제주에서만큼은 바쁘지 않아도 괜찮답니다.
+    `,
+
+    rooms: [
+      {
+        id: 1,
+        name: "침실더블1",
+        price: 80000,
+        image: "/images/room06-01.jpeg",
+        info: "더블침대 · 이불난방 · 에어컨 · 침구",
+      },
+      {
+        id: 1,
+        name: "침실더블2",
+        price: 90000,
+        image: "/images/room06-02.jpeg",
+        info: "더블침대 · 이불난방 · 에어컨 · 침구 · 보관 공간",
+      },
+    ],
+
+    experiences: [
+      {
+        id: 1,
+        title: "감귤디저트 쿠킹클래스",
+        price: 40000,
+        image: "/images/exp06.jpg",
+      },
+      {
+        id: 2,
+        title: "다육이 심기 클래스",
+        price: 20000,
+        image: "/images/exp07.jpg",
+      },
+    ],
+
+    facilities: [
+      "바베큐",
+      "목욕시설",
+      "와이파이",
+      "주방시설",
+      "바다뷰",
+      "무료주차",
+    ],
+    address:
+      "제주특별자치도 서귀포시 효돈순환로180번길 26 \n제주특별자치도 서귀포시 하효동 257 ",
+    location: {
+      address: "Hahyo-dong, Seogwipo, 제주도, 한국",
+      notice: `
+      근접한 거리(도보 15분)에 쇠소깍이 있으며
+      서귀포 시내와도 가까워
+      시골과 도시의 매력을 동시에
+      느낄 수 있습니다!
+      집 주위에는 편의점과 하나로마트가 있어
+      간단한 먹거리 및 생필품 구매가 가능합니다.
+
+      교통편
+      대중교통 이용시 인접 버스정류장과 매우 가까워 매우 편리합니다~
+      제주도는 카카오맵과 연동하여 실시간 버스 정보를 맵 자체에서 실시간으로
+      검색 가능합니다.
+      렌트카 이용시에는 대문 앞 공간에 바로 주차 가능합니다.
+      `,
+      lat: 33.252083,
+      lng: 126.622489,
+    },
+
+    notices: [
+      {
+        id: 1,
+        icon: "cancel",
+        content:
+          "24시간 동안 무료 취소가 가능합니다.\n체크인 하루 전에 환불을 받을 수 있습니다.\n자세한 내용은 호스트의 환불 정채 전문을 참고하세요.",
+      },
+      {
+        id: 2,
+        icon: "time",
+        content:
+          "체크인 가능 시간: 오후 4:00 이후\n체크아웃 시간: 오전 12:00 전까지\n게스트 정원 5명",
+      },
+      {
+        id: 3,
+        icon: "safety",
+        content:
+          "부지 내 실외 보안 카메라\n근처에 호수, 강, 바다 등이 있음\n난간이나 보호 장치가 없는 높은 곳",
+      },
+    ],
+
+    reviews: [
+      {
+        id: 1,
+        user: "오렌지파이",
+        joinPeriod: "가입 3개월",
+        rating: 5,
+        createdAt: "일주일 전",
+        room: "침실1",
+        content:
+          "추운 겨울에도 즐거운 바베큐 파티 즐기고 갑니다~ 깨끗한 장비제공해주시고, 즐거운 시간을 보냈습니다.",
+      },
+      {
+        id: 2,
+        user: "제주제주",
+        joinPeriod: "가입 1개월",
+        rating: 3,
+        createdAt: "한 달 전",
+        room: "침실1",
+        content: "몸이 안 좋아서 쉬는 동안 또롱이가 와서 놀아준 즐거운 추억이었습니다.",
+      },
+      {
+        id: 3,
+        user: "초코오렌지빵",
+        joinPeriod: "가입 2개월",
+        rating: 4,
+        createdAt: "5주 전",
+        room: "침실2",
+        content: "늘 이용하는 곳이고 집처럼 아늑해요. 또롱이 늘 건강히 잘 지내서 다행이고, 항상 깨끗해서 좋아요~",
+      },
+      {
+        id: 4,
+        user: "돌하르방감귤빵",
+        joinPeriod: "가입 6개월",
+        rating: 5,
+        createdAt: "6주 전",
+        room: "침실더블2",
+        content: "야외에서 재밌게 바베큐 즐기고, 또롱이랑 즐겁게 놀아서 더 좋았습니다!",
+      },
+      {
+        id: 5,
+        user: "감귤생선",
+        joinPeriod: "가입 3개월",
+        rating: 3,
+        createdAt: "8주 전",
+        room: "침실트윈1",
+        content: "깨끗하고 조용하게 자기 좋았습니다. 또롱이도 귀여웠습니다.",
+      },
+    ],
   },
   {
     id: 7,

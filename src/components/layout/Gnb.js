@@ -78,7 +78,9 @@ export default function Gnb() {
 
   return (
     <LogoBox onMouseLeave={() => setActiveMenu(null)}>
-      <JejuLogo>
+      <JejuLogo  onClick={() => {
+            navigate("/");
+          }}>
         <img
           src={process.env.PUBLIC_URL + "../images/logo.png"}
           alt="로고 이미지"

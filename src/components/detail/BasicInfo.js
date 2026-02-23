@@ -5,9 +5,14 @@ import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineWifi, MdOutlineBathtub } from "react-icons/md";
 import { FaCar } from "react-icons/fa";
 import { GiBarbecue } from "react-icons/gi";
-import { MdFreeBreakfast } from "react-icons/md";
+import { MdLocalCafe } from "react-icons/md";
 import { FaWater } from "react-icons/fa";
 import { FaBaby } from "react-icons/fa";
+import { MdPool } from "react-icons/md";
+import { GiFruitBowl } from "react-icons/gi";
+import { MdLocalLaundryService } from "react-icons/md";
+import { MdFamilyRestroom } from "react-icons/md";
+import { MdKitchen } from "react-icons/md";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -158,11 +163,21 @@ function getServiceIcon(facilities) {
     case "바베큐":
       return <GiBarbecue />;
     case "조식포함":
-      return <MdFreeBreakfast />;
+      return <GiFruitBowl />;
     case "바다뷰":
       return <FaWater />;
     case "유아용품":
       return <FaBaby />;
+    case "수영장":
+      return <MdPool />;
+    case "카페":
+      return <MdLocalCafe />;
+    case "세탁시설":
+      return <MdLocalLaundryService />;
+    case "가족룸":
+      return <MdFamilyRestroom />;
+      case "주방시설":
+        return <MdKitchen />;
     default:
       return null;
   }
@@ -224,7 +239,7 @@ export default function BasicInfo({
           <InfoBox>
             <BoxTitle>위치정보</BoxTitle>
             <LocationRow>
-              <IoLocationOutline size={40} />
+              <IoLocationOutline size={30} />
               <span>{address}</span>
             </LocationRow>
           </InfoBox>

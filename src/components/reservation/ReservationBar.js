@@ -62,6 +62,14 @@ const CalendarWrapper = styled.div`
   margin-top: 10px;
   z-index: 20;
   box-shadow: 0 10px 30px tgba(0, 0, 0, 0.1);
+  
+  /* 첫 클릭 시 붙는 포커스 상태 */
+  .react-datepicker__day--keyboard-selected {
+    background-color: #ff7a00 !important;
+    color: white !important;
+    font-weight: 600 !important;
+  }
+  
 `;
 
 const Nights = styled.span`
@@ -117,7 +125,7 @@ export default function ReservationBar({
   guests,
   setGuests,
   onSearch,
-}){
+}) {
   const [startDate, endDate] = dateRange;
   const [isOpen, setIsOpen] = useState(false);
   const [isDateOpen, setIsDateOpen] = useState(false);
@@ -243,7 +251,9 @@ export default function ReservationBar({
           </GuestButton>
         </GuestWrapper>
       </BarBox>
-      <Button type="button" onClick={onSearch}>검색</Button>
+      <Button type="button" onClick={onSearch}>
+        검색
+      </Button>
     </Wrap>
   );
 }
