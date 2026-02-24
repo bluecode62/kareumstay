@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  max-width: 900px;
+  min-width: 1000px;
   margin: 0 auto;
   padding: 40px;
 `;
@@ -132,6 +132,13 @@ const Button = styled.button`
   }
 `;
 
+const Tag = styled.p`
+  font-weight: 600;
+  color: #3d3d3d;
+  font-size: 18px;
+  padding: 10px 0;
+`;
+
 export default function ReservationPage() {
   const [reservation, setReservation] = useState(null);
   const navigate = useNavigate();
@@ -161,10 +168,43 @@ export default function ReservationPage() {
       </Empty>
     );
   }
+  function formatDateRange(dateRange) {
+    if (!dateRange || !dateRange[0] || !dateRange[1]) return "";
+
+    const start = new Date(dateRange[0]);
+    const end = new Date(dateRange[1]);
+
+    const startStr = `${start.getFullYear()}.${String(start.getMonth() + 1).padStart(2, "0")}.${String(start.getDate()).padStart(2, "0")}`;
+    const endStr = `${end.getFullYear()}.${String(end.getMonth() + 1).padStart(2, "0")}.${String(end.getDate()).padStart(2, "0")}`;
+
+    const diffDays = Math.round((end - start) / (1000 * 60 * 60 * 24));
+
+   return (
+    <span>
+      <span>{startStr}</span> - 
+      <span>{endStr}</span> 
+      <span style={{ color: "#ff7a00" }}> ({diffDays}박)</span>
+    </span>
+  );
+  }
 
   return (
     <Wrapper>
       <Title>예약조회</Title>
+
+      <Section>
+        <h4>예약 정보:</h4>
+        <Tag>
+          📍 <span style={{ color: "#ff7a00" }}>{reservation.town}</span>
+        </Tag>
+        <Tag>
+          🏨 숙소: <span style={{ color: "#ff7a00" }}>{reservation.accommodationName}</span>
+        </Tag>
+        <Tag>📅 {formatDateRange(reservation.dateRange)}</Tag>
+        <Tag>
+          👤 성인 <span style={{ color: "#ff7a00" }}>{reservation.guests}명</span>
+        </Tag>
+      </Section>
 
       <Section>
         <h4>선택 객실:</h4>
@@ -193,7 +233,7 @@ export default function ReservationPage() {
       </Total>
 
       <ButtonRow>
-        <DeleteBtn onClick={handleDelete}>지우기</DeleteBtn>
+        <DeleteBtn onClick={handleDelete}>취소하기</DeleteBtn>
         <PayBtn onClick={handlePayment}>결제하기</PayBtn>
       </ButtonRow>
     </Wrapper>

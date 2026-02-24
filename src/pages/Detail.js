@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 
 import BasicInfo from "../components/detail/BasicInfo";
@@ -26,12 +27,21 @@ const DetailContainer = styled.div`
 export default function Detail() {
   const { id } = useParams();
 
+  const location = useLocation();
+  const town = location.state?.town;
+  const dateRange = location.state?.dateRange;
+  const guests = location.state?.guests;
+
   const [selectedRoom, setSelectedRoom] = useState(null);
   const [selectedExperiences, setSelectedExperiences] = useState([]);
 
   const accommodation = accommodationData.find(
-    (item) => item.id === Number(id)
+    (item) => item.id === Number(id),
   );
+
+  const roomWithAccommodation = selectedRoom
+    ? { ...selectedRoom, accommodationName: accommodation.name }
+    : null;
 
   if (!accommodation) {
     return <div>존재하지 않는 숙소입니다.</div>;
@@ -73,10 +83,13 @@ export default function Detail() {
 
       {selectedRoom && (
         <ReservationBox
-          selectedRoom={selectedRoom}
+          selectedRoom={roomWithAccommodation}
           selectedExperiences={selectedExperiences}
           setSelectedRoom={setSelectedRoom}
           setSelectedExperiences={setSelectedExperiences}
+          town={town}
+          dateRange={dateRange}
+          guests={guests}
         />
       )}
 
@@ -87,7 +100,6 @@ export default function Detail() {
       <ReviewList reviews={accommodation.reviews} />
 
       <TopButton />
-
     </DetailContainer>
   );
 }

@@ -92,7 +92,13 @@ export default function Search() {
           />
           <AccommodationList
             list={sortedList}
-            onCardClick={(id) => navigate(`/detail/${id}`)}
+            onCardClick={(id) => navigate(`/detail/${id}`, {
+              state: {
+                town,
+                dateRange,
+                guests,
+              },
+            })}
           />
         </ContentWrapper>
       </Inner>

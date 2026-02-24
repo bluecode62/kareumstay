@@ -9,14 +9,15 @@ import Detail from "./pages/Detail";
 import { useState } from "react";
 import PaymentComplete from "./components/detail/PaymentComplete";
 import ReservationPage from "./pages/ReservationPage";
-
+import ScrollToTop from "./components/layout/ScrollToTop";
 
 function App() {
-  const [isPaid, setIsPaid] = useState(false);
   return (
     <div className="App">
       <GlobalStyle />
+      <ScrollToTop />
       <Gnb />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/search" element={<Search />} />
@@ -24,7 +25,8 @@ function App() {
         <Route path="/payment-complete" element={<PaymentComplete />} />
         <Route path="/reservation" element={<ReservationPage />} />
       </Routes>
-     <Footer />
+
+      <Footer />
     </div>
   );
 }

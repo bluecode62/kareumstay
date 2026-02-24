@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 `;
 
 const PageWrap = styled.div`
-  margin-top: 20px;
+  margin: 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;

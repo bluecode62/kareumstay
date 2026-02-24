@@ -92,7 +92,10 @@ const Cancel = styled.button`
 const SaveBtn = styled.button`
   background: #4caf50;
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px 40px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 20px;
   border: none;
   border-radius: 10px;
 `;
@@ -133,6 +136,7 @@ const ConfirmBtn = styled.button`
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
 `;
 
 const CancelBtn = styled.button`
@@ -148,6 +152,10 @@ function ReservationBox({
   selectedExperiences,
   setSelectedRoom,
   setSelectedExperiences,
+  town,
+  dateRange,
+  guests,
+  accommodation,
 }) {
   const navigate = useNavigate();
   const [showConfirm, setShowConfirm] = useState(false);
@@ -158,8 +166,12 @@ function ReservationBox({
 
   const handleSave = () => {
     const reservationData = {
+      accommodationName: selectedRoom.accommodationName,
       room: selectedRoom,
       experiences: selectedExperiences,
+      town,
+      dateRange,
+      guests,
       total:
         selectedRoom.price +
         selectedExperiences.reduce((sum, exp) => sum + exp.price, 0),

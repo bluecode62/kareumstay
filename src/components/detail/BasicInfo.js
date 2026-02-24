@@ -55,7 +55,6 @@ const Summary = styled.p`
 const IconGroup = styled.div`
   display: flex;
   gap: 20px;
-  color:
   cursor: pointer;
 `;
 

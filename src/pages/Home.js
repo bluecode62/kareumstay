@@ -17,7 +17,7 @@ import LargeCard from "../components/common/card/LargeCard";
 import TopButton from "../components/common/TopButton";
 import { Layout } from "../components/layout/Layout";
 import { useNavigate } from "react-router-dom";
-
+import HelpModal from "../components/layout/HelpModal";
 
 const Divider = styled.hr`
   width: 1040px;
@@ -33,21 +33,46 @@ export default function Home() {
   const [dateRange, setDateRange] = useState([null, null]);
   const [guests, setGuests] = useState(1);
 
+  const [showHelp, setShowHelp] = useState(false);
+
   const handleSearch = () => {
     const [startDate, endDate] = dateRange;
 
-    if(!town || !startDate || !endDate || !guests) {
+    if (!town || !startDate || !endDate || !guests) {
       alert("마을, 날짜, 인원 수를 정해주세요.");
-      return; 
+      return;
     }
 
     navigate("/search", {
-      state: {town, dateRange, guests,}
+      state: { town, dateRange, guests },
     });
   };
   return (
     <Layout>
-      <ReservationBar 
+      <div>
+        <button
+          style={{
+            position: "absolute",
+            top: "110px",
+            left: "50%",
+            transform: "translateX(-50%)",
+            padding: "20px",
+            zIndex: 1000,
+            border: "none",
+            borderRadius: "10px",
+            fontWeight: "500",
+            fontSize: "16px",
+            padding: "20px",
+            background: "#4caf50",
+            color: "#fff",
+          }}
+          onClick={() => setShowHelp(true)}
+        >
+          이용 방법보기
+        </button>
+        {showHelp && <HelpModal onClose={() => setShowHelp(false)} />}
+      </div>
+      <ReservationBar
         town={town}
         setTown={setTown}
         dateRange={dateRange}
@@ -72,7 +97,6 @@ export default function Home() {
       <LargeCard title="이달의 축제" data={festivalData} />
 
       <TopButton />
-
     </Layout>
   );
 }
