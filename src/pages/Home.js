@@ -57,7 +57,6 @@ export default function Home() {
             left: "50%",
             transform: "translateX(-50%)",
             padding: "20px",
-            zIndex: 1000,
             border: "none",
             borderRadius: "10px",
             fontWeight: "500",
@@ -65,6 +64,7 @@ export default function Home() {
             padding: "20px",
             background: "#4caf50",
             color: "#fff",
+            cursor: "pointer",
           }}
           onClick={() => setShowHelp(true)}
         >
