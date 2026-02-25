@@ -119,7 +119,6 @@ const Avatar = styled.div`
   border-radius: 50%;
   background-color: #f1f1f1;
 `;
-const JoinPerid = styled.div``;
 
 const Right = styled.div`
   flex: 1;

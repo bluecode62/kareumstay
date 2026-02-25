@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from "styled-components";
-import { FiShare2, FiHeart } from "react-icons/fi";
 
 const Overlay = styled.div`
   position: fixed;

@@ -56,7 +56,6 @@ export default function Home() {
             top: "110px",
             left: "50%",
             transform: "translateX(-50%)",
-            padding: "20px",
             border: "none",
             borderRadius: "10px",
             fontWeight: "500",

@@ -209,7 +209,7 @@ export default function ReservationPage() {
       <Section>
         <h4>선택 객실:</h4>
         <Item>
-          <img src={reservation.room.image} />
+          <img src={reservation.room.image} alt="room Img" />
           <div>{reservation.room.name}</div>
         </Item>
       </Section>
@@ -221,7 +221,7 @@ export default function ReservationPage() {
         ) : (
           reservation.experiences.map((exp) => (
             <Item key={exp.id}>
-              <img src={exp.image} />
+              <img src={exp.image} alt="class Img" />
               <div>{exp.title}</div>
             </Item>
           ))

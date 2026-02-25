@@ -1,5 +1,4 @@
 import React from "react";
-import { accommodationData } from "../../data/accommodationData";
 import AccommodationCard from "../common/card/AccommodationCard";
 import styled from "styled-components";
 

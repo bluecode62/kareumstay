@@ -91,7 +91,7 @@ export default function ExperienceList({
   experiences,
   selectedExperiences,
   setSelectedExperiences,
-  selectedRoom={selectedRoom}
+  selectedRoom = null,
 }) {
   const [showWarning, setShowWarning] = useState(false);
 
