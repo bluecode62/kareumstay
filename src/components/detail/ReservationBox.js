@@ -178,7 +178,7 @@ function ReservationBox({
 
     localStorage.setItem("reservation", JSON.stringify(reservationData));
 
-    alert("예약조회에 저장되었습니다.");
+    alert("예약내역에 저장되었습니다.");
   };
 
   return (

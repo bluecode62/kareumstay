@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import styled from "styled-components";
@@ -24,6 +24,8 @@ const DetailContainer = styled.div`
   gap: 10px;
 `;
 
+const validDetailsIds = [1,2,3,4,5,6];
+
 export default function Detail() {
   const { id } = useParams();
 
@@ -32,12 +34,24 @@ export default function Detail() {
   const dateRange = location.state?.dateRange; 
   const guests = location.state?.guests;
 
+
   const [selectedRoom, setSelectedRoom] = useState(null);
   const [selectedExperiences, setSelectedExperiences] = useState([]);
 
-  const accommodation = accommodationData.find(
-    (item) => item.id === Number(id)
-  );
+
+  const accommodation = useMemo(() => {
+    const found = accommodationData.find(
+      (item) => item.id === Number(id)
+    );
+
+    if(found && validDetailsIds.includes(Number(id))){
+      return found;
+    }
+
+    const randomId = validDetailsIds[Math.floor(Math.random() * validDetailsIds.length)];
+
+    return accommodationData.find((item) => item.id === randomId);
+  },[id]);
 
   const roomWithAccommodation = selectedRoom
     ? { ...selectedRoom, accommodationName: accommodation.name }

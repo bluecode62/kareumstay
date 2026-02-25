@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   min-width: 1000px;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 40px;
 `;
 
@@ -100,7 +100,7 @@ const PayBtn = styled.button`
 `;
 
 const Empty = styled.div`
-  min-height: 400px;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;

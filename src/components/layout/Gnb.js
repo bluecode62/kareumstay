@@ -108,7 +108,6 @@ export default function Gnb() {
       </Dropdown>
 
       <Dropdown isOpen={activeMenu === "travel"}>
-        <DropdownItem>축제 일정표</DropdownItem>
         <DropdownItem>원데이 클래스</DropdownItem>
         <DropdownItem>기획전</DropdownItem>
         <DropdownItem>카름 마스터</DropdownItem>
@@ -116,7 +115,6 @@ export default function Gnb() {
 
       <Menu type="basic">
         <MenuLi>공지사항</MenuLi>
-        <MenuLi>관심목록</MenuLi>
         <MenuLi
           onClick={() => {
             navigate("/reservation");

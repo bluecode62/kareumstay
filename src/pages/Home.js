@@ -72,7 +72,7 @@ export default function Home() {
           }}
           onClick={() => setShowHelp(true)}
         >
-          이용 방법보기
+          이용방법 보기
         </button>
         {showHelp && <HelpModal onClose={() => setShowHelp(false)} />}
       </div>
