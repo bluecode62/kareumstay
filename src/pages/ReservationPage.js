@@ -169,23 +169,23 @@ export default function ReservationPage() {
     );
   }
   function formatDateRange(dateRange) {
-    if (!dateRange || !dateRange[0] || !dateRange[1]) return "";
-
-    const start = new Date(dateRange[0]);
-    const end = new Date(dateRange[1]);
-
+    if (!dateRange?.from || !dateRange?.to) return "";
+  
+    const start = new Date(dateRange.from);
+    const end = new Date(dateRange.to);
+  
     const startStr = `${start.getFullYear()}.${String(start.getMonth() + 1).padStart(2, "0")}.${String(start.getDate()).padStart(2, "0")}`;
     const endStr = `${end.getFullYear()}.${String(end.getMonth() + 1).padStart(2, "0")}.${String(end.getDate()).padStart(2, "0")}`;
-
+  
     const diffDays = Math.round((end - start) / (1000 * 60 * 60 * 24));
-
-   return (
-    <span>
-      <span>{startStr}</span> - 
-      <span>{endStr}</span> 
-      <span style={{ color: "#ff7a00" }}> ({diffDays}박)</span>
-    </span>
-  );
+  
+    return (
+      <span>
+        <span>{startStr}</span> - 
+        <span>{endStr}</span> 
+        <span style={{ color: "#ff7a00" }}> ({diffDays}박)</span>
+      </span>
+    );
   }
 
   return (

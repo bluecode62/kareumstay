@@ -29,14 +29,14 @@ export default function Detail() {
 
   const location = useLocation();
   const town = location.state?.town;
-  const dateRange = location.state?.dateRange;
+  const dateRange = location.state?.dateRange; 
   const guests = location.state?.guests;
 
   const [selectedRoom, setSelectedRoom] = useState(null);
   const [selectedExperiences, setSelectedExperiences] = useState([]);
 
   const accommodation = accommodationData.find(
-    (item) => item.id === Number(id),
+    (item) => item.id === Number(id)
   );
 
   const roomWithAccommodation = selectedRoom

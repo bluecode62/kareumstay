@@ -30,21 +30,26 @@ export default function Home() {
   const navigate = useNavigate();
 
   const [town, setTown] = useState("");
-  const [dateRange, setDateRange] = useState([null, null]);
+  const [dateRange, setDateRange] = useState({
+    from: undefined,
+    to: undefined,
+  });
   const [guests, setGuests] = useState(1);
 
   const [showHelp, setShowHelp] = useState(false);
-
+  console.log("현재 dateRange:", dateRange);
   const handleSearch = () => {
-    const [startDate, endDate] = dateRange;
-
-    if (!town || !startDate || !endDate || !guests) {
+    if (!town || !dateRange?.from || !dateRange?.to || !guests) {
       alert("마을, 날짜, 인원 수를 정해주세요.");
       return;
     }
-
+  
     navigate("/search", {
-      state: { town, dateRange, guests },
+      state: {
+        town,
+        dateRange,
+        guests,
+      },
     });
   };
   return (

@@ -6,7 +6,6 @@ import Footer from "./components/layout/Footer";
 import Home from "./pages/Home";
 import Search from "./pages/Search";
 import Detail from "./pages/Detail";
-import { useState } from "react";
 import PaymentComplete from "./components/detail/PaymentComplete";
 import ReservationPage from "./pages/ReservationPage";
 import ScrollToTop from "./components/layout/ScrollToTop";

@@ -2,8 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import styled from "styled-components";
 import Button from "../common/Button";
 import { StyledInput } from "./StyledInput";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+import { DayPicker } from "react-day-picker";
 
 const Wrap = styled.div`
   width: 1000px;
@@ -62,14 +61,79 @@ const CalendarWrapper = styled.div`
   margin-top: 10px;
   z-index: 20;
   box-shadow: 0 10px 30px tgba(0, 0, 0, 0.1);
-  
-  /* 첫 클릭 시 붙는 포커스 상태 */
-  .react-datepicker__day--keyboard-selected {
-    background-color: #ff7a00 !important;
-    color: white !important;
-    font-weight: 600 !important;
+  background-color: white;
+  padding: 20px;
+  font-size: 16px;
+
+ 
+  .rdp-button_previous,
+  .rdp-button_next {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 30px;
+  }
+  .rdp-day {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+  }
+  .rdp-day_button {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+  }
+  .rdp-day_button:hover {
+    background: #fff2e6;
+    color: #ff7a00;
+  }
+  .rdp-selected .rdp-day_button {
+    background: #ff7a00;
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
   }
   
+  .rdp-range_start .rdp-day_button {
+    background: #ff7a00;
+    color: white;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .rdp-range_end .rdp-day_button {
+    background: #ff7a00;
+    color: white;
+    border-radius: 0 10px 10px 0;
+  }
+  
+  .rdp-range_middle .rdp-day_button {
+    background: #ffe5d0;
+    color: #333;
+  }
+  .my-today {
+    border: 2px solid #ff7a00;
+    font-weight: bold;
+    color: #ff7a00;
+  }
+  .rdp-caption_label {
+    font-size: 16px;
+    font-weight: 600;
+    color: green;
+  }
+  .rdp-weekday {
+    font-size: 14px;
+    text-align: center;
+    color: #999;
+    font-weight: 600;
+  }
 `;
 
 const Nights = styled.span`
@@ -126,12 +190,14 @@ export default function ReservationBar({
   setGuests,
   onSearch,
 }) {
-  const [startDate, endDate] = dateRange;
+  const startDate = dateRange?.from;
+  const endDate = dateRange?.to;
   const [isOpen, setIsOpen] = useState(false);
   const [isDateOpen, setIsDateOpen] = useState(false);
 
   const dropdownRef = useRef(null);
   const dateRef = useRef(null);
+  const calendarRef = useRef(null);
 
   const increase = () => {
     if (guests < 10) {
@@ -157,13 +223,18 @@ export default function ReservationBar({
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  });
+  }, []);
 
   useEffect(() => {
     if (!isDateOpen) return;
 
-    function handleClickOutside(event) {
-      if (dateRef.current && !dateRef.current.contains(event.target)) {
+    function handleClickOutside(e) {
+      if (
+        dateRef.current &&
+        !dateRef.current.contains(e.target) &&
+        calendarRef.current &&
+        !calendarRef.current.contains(e.target)
+      ) {
         setIsDateOpen(false);
       }
     }
@@ -176,8 +247,8 @@ export default function ReservationBar({
 
   const getNights = () => {
     if (startDate && endDate) {
-      const diffTime = endDate - startDate;
-      return diffTime / (1000 * 60 * 60 * 24);
+      const diffTime = endDate.getTime() - startDate.getTime();
+      return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
     }
     return 0;
   };
@@ -209,7 +280,13 @@ export default function ReservationBar({
       </BarBox>
       <BarBox type="big" ref={dateRef}>
         <BarTitle>날짜</BarTitle>
-        <div onClick={() => setIsDateOpen(!isDateOpen)}>
+        <div
+          onClick={() => {
+            if (!isDateOpen) {
+              setIsDateOpen(true);
+            }
+          }}
+        >
           {startDate && endDate ? (
             <>
               {startDate.toLocaleDateString()} - {endDate.toLocaleDateString()}
@@ -220,20 +297,31 @@ export default function ReservationBar({
           )}
         </div>
         {isDateOpen && (
-          <CalendarWrapper>
-            <DatePicker
-              selectsRange
-              startDate={startDate}
-              endDate={endDate}
-              onChange={(update) => {
-                setDateRange(update);
+          <CalendarWrapper ref={calendarRef}>
+            <DayPicker
+              mode="range"
+              selected={dateRange}
+              min={1}
+              components={{
+                IconLeft: () => <span className="nav-arrow">‹</span>,
+                IconRight: () => <span className="nav-arrow">›</span>,
+              }}
+              modifiers={{
+                today: new Date(),
+              }}
+              modifiersClassNames={{
+                today: "my-today",
+              }}
+              onSelect={(range) => {
+                if (!range) return;
 
-                if (update[0] && update[1]) {
+                setDateRange(range);
+
+                if (range.from && range.to) {
                   setIsDateOpen(false);
                 }
               }}
-              minDate={new Date()}
-              inline
+              disabled={{ before: new Date() }}
             />
           </CalendarWrapper>
         )}

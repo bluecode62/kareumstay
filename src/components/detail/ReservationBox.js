@@ -155,7 +155,6 @@ function ReservationBox({
   town,
   dateRange,
   guests,
-  accommodation,
 }) {
   const navigate = useNavigate();
   const [showConfirm, setShowConfirm] = useState(false);
