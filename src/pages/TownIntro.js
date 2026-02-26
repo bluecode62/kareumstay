@@ -1,23 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
-// import { IntroDate } from "../data/IntroData";
-// import IntroPage from "../components/layout/IntroPage";
+import TownItem from "../components/common/page/TownItem";
+import { IntroDate } from "../data/IntroData";
 
 const Wrapper = styled.div`
   min-width: 1000px;
   margin: 20px auto;
 `;
 
+export default function TownIntro() {
+  const [selectedId] = useState(1);
 
-export default function TownIntro({ data }) {
-  return (
-    <Wrapper>
-      {/* {data.map((item) => (
-        <IntroPage
-          key={item.id}
-          data={item}
-        />
-      ))} */}
-    </Wrapper>
-  );
+  const selectedTown = IntroDate.find((town) => town.id === selectedId);
+
+  return (<Wrapper>{selectedTown && <TownItem {...selectedTown} />}</Wrapper>);
 }

@@ -18,10 +18,10 @@ const CardWrapper = styled.div`
 `;
 
 const ListWraper = styled.div`
-  display: flex; // 가로로 배치
-  flex-wrap: wrap; // 카드 수 늘어나면 다음 줄로
+  display: flex; 
+  flex-wrap: wrap; 
   align-items: center;
-  gap: 10px; // 카드 간격
+  gap: 10px; 
   margin-top: 10px;
 `;
 

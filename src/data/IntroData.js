@@ -2,7 +2,7 @@ export const IntroDate = [
   {
     id: 1,
     townName: "김녕리",
-    townImg: ["/images/townThumb01.jpg"],
+    townImg: "./images/townThumb01.jpg",
     bigIntro:
       "바당과 해녀 삼춘의 마을, 김녕리 별빛 아래 시원한 청굴물이 흐르는 곳",
     shortIntro: `
