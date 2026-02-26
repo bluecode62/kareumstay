@@ -1,12 +1,23 @@
-import React from 'react'
+import React from "react";
 import styled from "styled-components";
+// import { IntroDate } from "../data/IntroData";
+// import IntroPage from "../components/layout/IntroPage";
+
+const Wrapper = styled.div`
+  min-width: 1000px;
+  margin: 20px auto;
+`;
 
 
-
-export default function TownIntro() {
+export default function TownIntro({ data }) {
   return (
-    <div>
-      
-    </div>
-  )
+    <Wrapper>
+      {/* {data.map((item) => (
+        <IntroPage
+          key={item.id}
+          data={item}
+        />
+      ))} */}
+    </Wrapper>
+  );
 }

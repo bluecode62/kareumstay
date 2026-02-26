@@ -9,6 +9,7 @@ import Detail from "./pages/Detail";
 import PaymentComplete from "./components/detail/PaymentComplete";
 import ReservationPage from "./pages/ReservationPage";
 import ScrollToTop from "./components/layout/ScrollToTop";
+import TownIntro from "./pages/TownIntro";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/search" element={<Search />} />
         <Route path="/detail/:id" element={<Detail />} />
+        <Route path="/townintro" element={<TownIntro />} />
         <Route path="/payment-complete" element={<PaymentComplete />} />
         <Route path="/reservation" element={<ReservationPage />} />
       </Routes>

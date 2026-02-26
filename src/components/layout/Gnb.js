@@ -92,7 +92,9 @@ export default function Gnb() {
       </Menu>
 
       <Dropdown isOpen={activeMenu === "village"}>
-        <DropdownItem>김녕리</DropdownItem>
+        <DropdownItem onClick={() => {
+          navigate("/townintro")
+        }}>김녕리</DropdownItem>
         <DropdownItem>세화리</DropdownItem>
         <DropdownItem>가시리</DropdownItem>
         <DropdownItem>겨래리</DropdownItem>
