@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   flex: 1;
-  padding-left: 40px;
+padding-left: ${({ noPadding }) => (noPadding ? "0" : "40px 0")};
 `;
 const EmptyWrapper = styled.div`
   padding: 80px 0;

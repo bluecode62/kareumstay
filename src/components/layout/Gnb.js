@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 const LogoBox = styled.div`
@@ -61,8 +61,8 @@ const Dropdown = styled.div`
 const DropdownItem = styled.div`
   padding: 10px 20px;
   font-size: 14px;
-  color: #444;
-  font-weight: 500;
+  color: ${({ $active }) => ($active ? "#ff7a00" : "#444")};
+  font-weight: ${({ $active }) => ($active ? "bold" : "500")};
   transition: 0.2s;
   cursor: pointer;
 
@@ -74,13 +74,38 @@ const DropdownItem = styled.div`
 
 export default function Gnb() {
   const navigate = useNavigate();
+  const location = useLocation();
   const [activeMenu, setActiveMenu] = useState(null);
+
+  const townMenu = [
+    { id: 1, name: "김녕리" },
+    { id: 2, name: "세화리" },
+    { id: 3, name: "가시리" },
+    { id: 4, name: "교래리" },
+    { id: 5, name: "수산리" },
+    { id: 6, name: "한남리" },
+    { id: 7, name: "동백마을" },
+    { id: 8, name: "의귀리" },
+    { id: 9, name: "호근마을" },
+    { id: 10, name: "하효마을" },
+    { id: 11, name: "신창리" },
+    { id: 12, name: "저지리" },
+    { id: 13, name: "무릉2리" },
+  ];
+
+  useEffect(() => {
+    if (location.pathname.startsWith("/townintro")) {
+      setActiveMenu("village");
+    }
+  }, [location.pathname]);
 
   return (
     <LogoBox onMouseLeave={() => setActiveMenu(null)}>
-      <JejuLogo  onClick={() => {
-            navigate("/");
-          }}>
+      <JejuLogo
+        onClick={() => {
+          navigate("/");
+        }}
+      >
         <img
           src={process.env.PUBLIC_URL + "../images/logo.png"}
           alt="로고 이미지"
@@ -91,22 +116,16 @@ export default function Gnb() {
         <MenuLi onMouseEnter={() => setActiveMenu("travel")}>카름여행</MenuLi>
       </Menu>
 
-      <Dropdown isOpen={activeMenu === "village"}>
-        <DropdownItem onClick={() => {
-          navigate("/townintro")
-        }}>김녕리</DropdownItem>
-        <DropdownItem>세화리</DropdownItem>
-        <DropdownItem>가시리</DropdownItem>
-        <DropdownItem>겨래리</DropdownItem>
-        <DropdownItem>수산리</DropdownItem>
-        <DropdownItem>한남리</DropdownItem>
-        <DropdownItem>동백마을</DropdownItem>
-        <DropdownItem>의귀리</DropdownItem>
-        <DropdownItem>호근마을</DropdownItem>
-        <DropdownItem>하효마을</DropdownItem>
-        <DropdownItem>신창리</DropdownItem>
-        <DropdownItem>저지리</DropdownItem>
-        <DropdownItem>무릉2리</DropdownItem>
+      <Dropdown isOpen={activeMenu === "village" || location.pathname.startsWith("/townintro")}>
+        {townMenu.map((item) => (
+          <DropdownItem
+            key={item.id}
+            $active={location.pathname === `/townintro/${item.id}`}
+            onClick={() => navigate(`/townintro/${item.id}`)}
+          >
+            {item.name}
+          </DropdownItem>
+        ))}
       </Dropdown>
 
       <Dropdown isOpen={activeMenu === "travel"}>
