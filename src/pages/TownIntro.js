@@ -10,13 +10,9 @@ const Wrapper = styled.div`
 `;
 
 export default function TownIntro() {
-  const { id } = useParams();
+  const {id} = useParams();
 
   const selectedTown = IntroDate.find((town) => town.id === Number(id));
 
-  return (
-    <Wrapper>
-      <TownItem {...selectedTown} />
-    </Wrapper>
-  );
+  return (<Wrapper><TownItem {...selectedTown} /></Wrapper>);
 }

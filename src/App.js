@@ -10,6 +10,7 @@ import PaymentComplete from "./components/detail/PaymentComplete";
 import ReservationPage from "./pages/ReservationPage";
 import ScrollToTop from "./components/layout/ScrollToTop";
 import TownIntro from "./pages/TownIntro";
+import TourIntro from "./pages/TourIntro";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
         <Route path="/search" element={<Search />} />
         <Route path="/detail/:id" element={<Detail />} />
         <Route path="/townintro/:id" element={<TownIntro />} />
-        <Route path="/tourIntro" />
+        <Route path="/tourIntro" element={<TourIntro />} />
         <Route path="/payment-complete" element={<PaymentComplete />} />
         <Route path="/reservation" element={<ReservationPage />} />
       </Routes>
