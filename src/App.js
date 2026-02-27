@@ -24,7 +24,7 @@ function App() {
         <Route path="/search" element={<Search />} />
         <Route path="/detail/:id" element={<Detail />} />
         <Route path="/townintro/:id" element={<TownIntro />} />
-        <Route path="/tourIntro" element={<TourIntro />} />
+        <Route path="/tourIntro/:type" element={<TourIntro />} />
         <Route path="/payment-complete" element={<PaymentComplete />} />
         <Route path="/reservation" element={<ReservationPage />} />
       </Routes>

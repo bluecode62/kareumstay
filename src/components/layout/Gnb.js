@@ -116,7 +116,11 @@ export default function Gnb() {
         <MenuLi onMouseEnter={() => setActiveMenu("travel")}>카름여행</MenuLi>
       </Menu>
 
-      <Dropdown isOpen={activeMenu === "village" || location.pathname.startsWith("/townintro")}>
+      <Dropdown
+        isOpen={
+          activeMenu === "village" || location.pathname.startsWith("/townintro")
+        }
+      >
         {townMenu.map((item) => (
           <DropdownItem
             key={item.id}
@@ -128,12 +132,35 @@ export default function Gnb() {
         ))}
       </Dropdown>
 
-      <Dropdown isOpen={activeMenu === "travel"  || location.pathname.startsWith("/tourIntro") }>
-        <DropdownItem onClick={() => {
-          navigate("/tourIntro");
-        }}>원데이 클래스</DropdownItem>
-        <DropdownItem>기획전</DropdownItem>
-        <DropdownItem>카름 마스터</DropdownItem>
+      <Dropdown
+        isOpen={
+          activeMenu === "travel" || location.pathname.startsWith("/tourIntro")
+        }
+      >
+        <DropdownItem
+          $active={location.pathname === "/tourIntro/class"}
+          onClick={() => {
+            navigate("/tourIntro/class");
+          }}
+        >
+          원데이 클래스
+        </DropdownItem>
+        <DropdownItem
+          $active={location.pathname === "/tourIntro/event"}
+          onClick={() => {
+            navigate("/tourIntro/event");
+          }}
+        >
+          기획전
+        </DropdownItem>
+        <DropdownItem
+          $active={location.pathname === "/tourIntro/guide"}
+          onClick={() => {
+            navigate("/tourIntro/guide");
+          }}
+        >
+          카름 마스터
+        </DropdownItem>
       </Dropdown>
 
       <Menu type="basic">

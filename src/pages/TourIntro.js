@@ -1,13 +1,28 @@
 import React from 'react'
-import { ClassData } from '../data/tourMenu'
+import { ClassData, EventData, GuideData } from '../data/tourMenu'
 import TourItem from '../components/common/page/TourItem';
+import { useParams } from 'react-router-dom';
 
 export default function TourIntro() {
-  const tour = ClassData[0];  
+  const {type} = useParams();
+
+  let tourData;
+
+  if(type === "class") {
+    tourData = ClassData[0];
+  } else if (type === "event") {
+    tourData = EventData[0];
+  }else if (type === "guide") {
+    tourData = GuideData[0];
+  } else {
+    tourData = null;
+  }
+
+  if (!tourData) return <div>데이터 없음</div>
 
   return (
     <div>
-      {tour && <TourItem {...tour} />}
+      <TourItem {...tourData} />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { GuideData } from "../../../data/tourMenu";
 
 const Wrapper = styled.div`
   width: 1000px;
@@ -29,17 +30,21 @@ const CardList = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 30px;
+  gap: 20px;
+
+  grid-template-columns: ${({ $type }) =>
+    $type === "event" ? "repeat(3, 1fr)" : "repeat(2, 1fr)"};
 `;
 
 const Box = styled.div`
-  width: 400px;
-  height: 520px;
+  width: ${({ $type }) =>
+    $type === "event" ? "calc((100% - 60px) / 3)" : "calc((100% - 30px) / 2)"};
+  height: ${({ $type }) => ($type === "event" ? "430px" : "500px")};
   display: flex;
   flex-direction: column;
 
   h3 {
-    font-size: 24px;
+    font-size: 20px;
     word-break: keep-all;
     margin-top: 10px;
   }
@@ -69,37 +74,69 @@ const ImgWrap = styled.div`
   }
 `;
 
-const Price = styled.p`
+const Price = styled.div`
   text-align: right;
-  color: #b7b7b7;
-  border-top: 1px solid #4b4f53;
+  color: #f05423;
+  border-top: 1px solid #f05423;
   padding: 10px 0;
+  font-weight: 500;
 
   span {
     font-size: 12px;
   }
 `;
 
-export default function TourItem({ name, intro, classList, type }) {
+const PageNumber = styled.div`
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 auto;
+  color: #666;
+
+  span {
+    padding: 0 20px;
+    cursor: pointer;
+  }
+`;
+
+export default function TourItem({ name, intro, list, type, img, caption }) {
   return (
     <Wrapper>
       <Title>
         <div className="bigTitle">{name}</div>
         <div className="smallTItle">{intro}</div>
       </Title>
+      {type === "guide" && (
+        <ul>
+          {GuideData[0].img.map((src, index) => (
+            <li key={index}>
+              <img src={src} alt={`설명 이미지 ${index + 1}`} />
+              <div>설명글</div>
+            </li>
+          ))}
+        </ul>
+      )}
       <CardList>
-        {classList.map((item) => (
-          <Box key={item.id}>
+        {list.map((item) => (
+          <Box key={item.id} $type={type}>
             <ImgWrap $type={type}>
-              <img src={item.img} alt={item.className} />
+              <img src={item.img} alt={item.name} />
             </ImgWrap>
-            <h3>{item.className}</h3>
+            <h3>{item.name}</h3>
             <p>{item.intro}</p>
-            <Price>
-              <span>(성인1인기준)</span> 가격: {item.price.toLocaleString()}원
-            </Price>
+            {item.price?.toLocaleString() && (
+              <Price>
+                <span>(성인1인기준)</span> 가격: {item.price.toLocaleString()}원
+              </Price>
+            )}
           </Box>
         ))}
+        {type === "event" && (
+          <PageNumber>
+            <span style={{ color: "#ff7a00" }}>1</span>
+            <span>2</span>
+            <span>3</span>
+          </PageNumber>
+        )}
       </CardList>
     </Wrapper>
   );
