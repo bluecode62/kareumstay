@@ -128,8 +128,10 @@ export default function Gnb() {
         ))}
       </Dropdown>
 
-      <Dropdown isOpen={activeMenu === "travel"}>
-        <DropdownItem>원데이 클래스</DropdownItem>
+      <Dropdown isOpen={activeMenu === "travel"  || location.pathname.startsWith("/tourIntro") }>
+        <DropdownItem onClick={() => {
+          navigate("/touritem");
+        }}>원데이 클래스</DropdownItem>
         <DropdownItem>기획전</DropdownItem>
         <DropdownItem>카름 마스터</DropdownItem>
       </Dropdown>
