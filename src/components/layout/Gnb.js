@@ -93,11 +93,6 @@ export default function Gnb() {
     { id: 13, name: "무릉2리" },
   ];
 
-  useEffect(() => {
-    if (location.pathname.startsWith("/townintro")) {
-      setActiveMenu("village");
-    }
-  }, [location.pathname]);
 
   return (
     <LogoBox onMouseLeave={() => setActiveMenu(null)}>
@@ -118,8 +113,7 @@ export default function Gnb() {
 
       <Dropdown
         isOpen={
-          activeMenu === "village" || location.pathname.startsWith("/townintro")
-        }
+          activeMenu === "village"}
       >
         {townMenu.map((item) => (
           <DropdownItem
@@ -134,8 +128,7 @@ export default function Gnb() {
 
       <Dropdown
         isOpen={
-          activeMenu === "travel" || location.pathname.startsWith("/tourIntro")
-        }
+          activeMenu === "travel" }
       >
         <DropdownItem
           $active={location.pathname === "/tourIntro/class"}
