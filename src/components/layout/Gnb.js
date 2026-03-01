@@ -93,7 +93,6 @@ export default function Gnb() {
     { id: 13, name: "무릉2리" },
   ];
 
-
   return (
     <LogoBox onMouseLeave={() => setActiveMenu(null)}>
       <JejuLogo
@@ -111,10 +110,7 @@ export default function Gnb() {
         <MenuLi onMouseEnter={() => setActiveMenu("travel")}>카름여행</MenuLi>
       </Menu>
 
-      <Dropdown
-        isOpen={
-          activeMenu === "village"}
-      >
+      <Dropdown isOpen={activeMenu === "village"}>
         {townMenu.map((item) => (
           <DropdownItem
             key={item.id}
@@ -126,10 +122,7 @@ export default function Gnb() {
         ))}
       </Dropdown>
 
-      <Dropdown
-        isOpen={
-          activeMenu === "travel" }
-      >
+      <Dropdown isOpen={activeMenu === "travel"}>
         <DropdownItem
           $active={location.pathname === "/tourIntro/class"}
           onClick={() => {
@@ -157,7 +150,14 @@ export default function Gnb() {
       </Dropdown>
 
       <Menu type="basic">
-        <MenuLi>공지사항</MenuLi>
+        <MenuLi
+          onClick={() => {
+            navigate("/notice");
+          }}
+          $active={location.pathname === "/notice"}
+        >
+          공지사항
+        </MenuLi>
         <MenuLi
           onClick={() => {
             navigate("/reservation");
