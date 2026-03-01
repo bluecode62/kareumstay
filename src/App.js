@@ -12,6 +12,7 @@ import ScrollToTop from "./components/layout/ScrollToTop";
 import TownIntro from "./pages/TownIntro";
 import TourIntro from "./pages/TourIntro";
 import Notice from "./pages/Notice";
+import Login from "./components/common/page/Login";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/townintro/:id" element={<TownIntro />} />
         <Route path="/tourIntro/:type" element={<TourIntro />} />
         <Route path="/notice" element={<Notice />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/payment-complete" element={<PaymentComplete />} />
         <Route path="/reservation" element={<ReservationPage />} />
       </Routes>

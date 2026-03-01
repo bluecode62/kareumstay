@@ -165,7 +165,14 @@ export default function Gnb() {
         >
           예약내역
         </MenuLi>
-        <MenuLi>로그인</MenuLi>
+        <MenuLi
+          onClick={() => {
+            navigate("/login");
+          }}
+          $active={location.pathname === "/login"}
+        >
+          로그인
+        </MenuLi>
       </Menu>
     </LogoBox>
   );

@@ -32,7 +32,7 @@ const NoticeList = styled.div`
 const ListItem = styled.div`
   display: flex;
   align-items: center;
-  padding: 20px 0;
+  padding: 40px 0;
   border-bottom: 1px solid #eee;
   cursor: pointer;
 `;
@@ -54,6 +54,18 @@ const Date = styled.div`
   color: #999;
 `;
 
+const PageNumber = styled.div`
+  font-size: 20px;
+  font-weight: 500;
+  margin: 40px auto;
+  color: #666;
+
+  span {
+    padding: 0 20px;
+    cursor: pointer;
+  }
+`;
+
 export default function NoticeItem({ name, intro, list }) {
   return (
     <Wrapper>
@@ -70,6 +82,11 @@ export default function NoticeItem({ name, intro, list }) {
             <Date>{item.date}</Date>
           </ListItem>
         ))}
+
+        <PageNumber>
+          <span style={{ color: "#ff7a00" }}>1</span>
+          <span>2</span>
+        </PageNumber>
       </NoticeList>
     </Wrapper>
   );
