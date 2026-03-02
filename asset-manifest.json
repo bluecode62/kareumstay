@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kareumstay/static/css/main.dca84246.css",
-    "main.js": "/kareumstay/static/js/main.95cd251a.js",
+    "main.js": "/kareumstay/static/js/main.cd21563f.js",
     "static/js/206.e847b63c.chunk.js": "/kareumstay/static/js/206.e847b63c.chunk.js",
     "static/media/pick03.jpg": "/kareumstay/static/media/pick03.50e1349c160e1750d156.jpg",
     "static/media/choice03.jpg": "/kareumstay/static/media/choice03.1afa20b7c43ecde89086.jpg",
@@ -159,6 +159,6 @@
   },
   "entrypoints": [
     "static/css/main.dca84246.css",
-    "static/js/main.95cd251a.js"
+    "static/js/main.cd21563f.js"
   ]
 }
