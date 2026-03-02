@@ -42,13 +42,15 @@ export default function LocationSection({ location }) {
     lng: location.lng,
   };
 
+  const apiKey = process.env.REACT_APP_GOOGLE_API_KEY;
+
   return (
     <Wrapper>
       <Title>위치</Title>
 
       <MapWrapper>
         <LoadScript
-          googleMapsApiKey={"AIzaSyBDaIdF5JzfYWwC4YUSiGZsR-UBsTi9uOY"}
+          googleMapsApiKey={apiKey}
         >
           <GoogleMap
             mapContainerStyle={{ width: "100%", height: "100%" }}
