@@ -74,14 +74,14 @@ export const LinkRow = styled.div`
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
-  color: #ff7a00;
+  color: #333;
 
   span {
     margin: 0 10px;
     cursor: pointer;
 
     &:hover {
-      color: #4a7efc;
+      color:#ff7a00;
     }
   }
 `;

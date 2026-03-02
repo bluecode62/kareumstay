@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 const LogoBox = styled.div`
@@ -26,6 +26,7 @@ const Menu = styled.ul`
 `;
 const MenuLi = styled.li`
   cursor: pointer;
+  color: #222;
 
   &:hover {
     font-weight: bold;
@@ -34,6 +35,21 @@ const MenuLi = styled.li`
 
   &:hover > div {
     opacity: 1;
+  }
+`;
+
+const BasicMenuLi = styled(NavLink)`
+  cursor: pointer;
+  color: #222;
+
+  &:hover {
+    font-weight: bold;
+    color: #f05423;
+  }
+
+  &.active {
+    color: #f05423;
+    font-weight: bold;
   }
 `;
 
@@ -150,29 +166,9 @@ export default function Gnb() {
       </Dropdown>
 
       <Menu type="basic">
-        <MenuLi
-          onClick={() => {
-            navigate("/notice");
-          }}
-          $active={location.pathname === "/notice"}
-        >
-          공지사항
-        </MenuLi>
-        <MenuLi
-          onClick={() => {
-            navigate("/reservation");
-          }}
-        >
-          예약내역
-        </MenuLi>
-        <MenuLi
-          onClick={() => {
-            navigate("/login");
-          }}
-          $active={location.pathname === "/login"}
-        >
-          로그인
-        </MenuLi>
+        <BasicMenuLi to="/notice">공지사항</BasicMenuLi>
+        <BasicMenuLi to="/reservation">예약내역</BasicMenuLi>
+        <BasicMenuLi to="/login">로그인</BasicMenuLi>
       </Menu>
     </LogoBox>
   );

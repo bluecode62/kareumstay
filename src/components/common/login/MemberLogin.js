@@ -35,7 +35,7 @@ export default function MemberLogin() {
     <LinkRow>
       <span>아이디찾기</span>|
       <span>비밀번호 찾기</span>|
-      <span style={{ color: "#4a7efc" }}>회원가입</span>
+      <span style={{ color: "#ff7a00" }}>회원가입</span>
     </LinkRow>
   </Form>
 );
