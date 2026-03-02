@@ -117,7 +117,7 @@ export default function Gnb() {
         }}
       >
         <img
-          src={process.env.PUBLIC_URL + "../images/logo.png"}
+          src={process.env.PUBLIC_URL + "/images/logo.png"}
           alt="로고 이미지"
         />
       </JejuLogo>

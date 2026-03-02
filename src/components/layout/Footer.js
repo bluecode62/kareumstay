@@ -59,7 +59,7 @@ export default function footer() {
         <LeftBox>
           <ImgBox type="left">
             <img
-              src={process.env.PUBLIC_URL + "../images/ft_logo.png"}
+              src={process.env.PUBLIC_URL + "/images/ft_logo.png"}
               alt="로고 이미지"
             />
           </ImgBox>
@@ -68,19 +68,19 @@ export default function footer() {
           <ImgList>
             <LogoItem>
               <LogoImg
-                src={process.env.PUBLIC_URL + "../images/jeju_logo.png"}
+                src={process.env.PUBLIC_URL + "/images/jeju_logo.png"}
                 alt="푸터 이미지01"
               />
             </LogoItem>
             <LogoItem>
               <LogoImg
-                src={process.env.PUBLIC_URL + "../images/jejutourism_logo.png"}
+                src={process.env.PUBLIC_URL + "/images/jejutourism_logo.png"}
                 alt="푸터 이미지01"
               />
             </LogoItem>
             <LogoItem>
               <LogoImg
-                src={process.env.PUBLIC_URL + "../images/visitjeju_logo.png"}
+                src={process.env.PUBLIC_URL + "/images/visitjeju_logo.png"}
                 alt="푸터 이미지01"
               />
             </LogoItem>
