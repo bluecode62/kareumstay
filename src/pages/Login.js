@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import GuestLogin from "../login/GuestLogin";
-import MemberLogin from "../login/MemberLogin";
+import GuestLogin from "../components/common/login/GuestLogin";
+import MemberLogin from "../components/common/login/MemberLogin";
 
 export const Wrapper = styled.div`
   min-width: 600px;

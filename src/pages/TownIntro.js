@@ -3,6 +3,7 @@ import styled from "styled-components";
 import TownItem from "../components/common/page/TownItem";
 import { IntroDate } from "../data/IntroData";
 import { useParams } from "react-router-dom";
+import TopButton from "../components/common/TopButton";
 
 const Wrapper = styled.div`
   min-width: 1000px;
@@ -10,9 +11,14 @@ const Wrapper = styled.div`
 `;
 
 export default function TownIntro() {
-  const {id} = useParams();
+  const { id } = useParams();
 
   const selectedTown = IntroDate.find((town) => town.id === Number(id));
 
-  return (<Wrapper><TownItem {...selectedTown} /></Wrapper>);
+  return (
+    <Wrapper>
+      <TownItem {...selectedTown} /> 
+      <TopButton />
+    </Wrapper>
+  );
 }

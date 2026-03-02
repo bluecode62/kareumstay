@@ -12,7 +12,7 @@ import ScrollToTop from "./components/layout/ScrollToTop";
 import TownIntro from "./pages/TownIntro";
 import TourIntro from "./pages/TourIntro";
 import Notice from "./pages/Notice";
-import Login from "./components/common/page/Login";
+import Login from "./pages/Login";
 
 function App() {
   return (

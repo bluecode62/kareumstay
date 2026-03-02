@@ -2,6 +2,7 @@ import React from 'react'
 import { ClassData, EventData, GuideData } from '../data/tourMenu'
 import TourItem from '../components/common/page/TourItem';
 import { useParams } from 'react-router-dom';
+import TopButton from '../components/common/TopButton';
 
 export default function TourIntro() {
   const {type} = useParams();
@@ -23,6 +24,8 @@ export default function TourIntro() {
   return (
     <div>
       <TourItem {...tourData} />
+      <TopButton />
+
     </div>
   );
 }
