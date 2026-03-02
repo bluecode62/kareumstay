@@ -2,7 +2,7 @@ export const IntroDate = [
   {
     id: 1,
     townName: "김녕리",
-    townImg: "/images/townThumb01.jpg",
+    townImg: process.env.PUBLIC_URL + "/images/townThumb01.jpg",
     bigIntro:
       "젊은 감성의 바닷가 마을, 세화리 뚜벅이 여행자들이 사랑하는 힐링 스팟",
     shortIntro: `
@@ -10,19 +10,19 @@ export const IntroDate = [
     `,
     ActImg: [
       {
-        img: "/images/act01-01.jpg",
+        img: process.env.PUBLIC_URL + "/images/act01-01.jpg",
         label: "바당 속 세계와 만나는 해녀 체험",
         caption:
           "해녀 삼춘들과 함께 에메랄드 빛 김녕 바다로 들어가 직접 해산물을 채취하고, 바당 속에서 숨비소리를 배우며,김녕리 해녀들이 대대로 지켜온 생활의 지혜를 온몸으로 체험합니다.",
       },
       {
-        img: "/images/act01-02.jpg",
+        img: process.env.PUBLIC_URL + "/images/act01-02.jpg",
         label: "별빛 따라 타박타박 밤마실 투어",
         caption:
           "김녕어울림센터에서 시작해 마을 골목길을 천천히 걸으며 김녕리 삼춘들의 이야기를 듣고, 청굴물에서 별빛을 바라보며 제주 동쪽 바다의 신비로운 전설과 숨은 매력을 발견합니다.",
       },
       {
-        img: "/images/act01-03.jpg",
+        img: process.env.PUBLIC_URL + "/images/act01-03.jpg",
         label: "노을지는 해안에서 바비큐 파티",
         caption:
           "동쪽 바다에 노을이 스며드는 김녕리 해안에서 갓 잡은 싱싱한 해산물과 함께 바베큐를 즐기고, 마을 삼춘들과 둘러앉아 나누는 정겨운 이야기 속에서 특별한 맛과 정이 쌓여갑니다.",
@@ -30,7 +30,7 @@ export const IntroDate = [
     ],
     townPic: [
       {
-        img: "/images/townPic01.jpg",
+        img: process.env.PUBLIC_URL + "/images/townPic01.jpg",
         bigTxt: "바당과 별빛이 만나는 곳, 파도소리에 깨어나 노을빛에 물들다",
         smallTxt: `
         파도 소리와 함께 깨어나는 마을, 김녕리. 해녀들이 물질하러 나가는 새벽, 그 곁에서 바다 사람들의 삶과 어우러진 김녕리의 일상을 찾아갑니다. 청굴물이 흐르고 별빛이 내리는 밤, 해녀 삼춘들이 들려주는 바당 이야기 속에서 바다와 맞닿은 김녕리 마을의 자연이 선사하는 평온한 시간을 만나갑니다. 갓 잡은 해산물의 바다 향과 노을빛 바비큐의 따뜻함이 어우러진 김녕리에서만 느낄 수 있는 진짜 제주의 맛과 정을 오래도록 간직해보세요.
@@ -41,7 +41,7 @@ export const IntroDate = [
   {
     id: 2,
     townName: "세화리",
-    townImg: "/images/townThumb02.jpg",
+    townImg: process.env.PUBLIC_URL + "/images/townThumb02.jpg",
     bigIntro:
       "바당과 해녀 삼춘의 마을, 김녕리 별빛 아래 시원한 청굴물이 흐르는 곳",
     shortIntro: `
@@ -49,19 +49,19 @@ export const IntroDate = [
     `,
     ActImg: [
       {
-        img: "/images/act02-01.jpg",
+        img: process.env.PUBLIC_URL + "/images/act02-01.jpg",
         label: "다랑쉬오름 웰니스 프로그램",
         caption:
           "다랑쉬오름 둘레길을 천천히 걸으면서 명상과 해먹체험으로 힐링하세요.자연환경해설사와 함께하는 웰니스 프로그램으로 나와 자연을 연결하고 몸과 마음의 건강을 회복하세요.",
       },
       {
-        img: "/images/act02-02.jpg",
+        img: process.env.PUBLIC_URL + "/images/act02-02.jpg",
         label: "해녀생태박물관 & 바당 살리기",
         caption:
           "해녀생태박물관에서 세화리 해녀들의 이야기를 듣고 바당 살리기 활동에 참여해보세요.지속가능한 바다 환경을 위한 세화리만의 특별한 환경보전 체험을 경험할 수 있어요.",
       },
       {
-        img: "/images/act02-03.jpg",
+        img: process.env.PUBLIC_URL + "/images/act02-03.jpg",
         label: "젊은 감각의 마을 감성 투어",
         caption:
           "마을카페 477+에서 구좌 당근으로 만든 디저트를 맛보고 동네책방에서 책을 읽으며 여유를 즐겨요. 세화리 마을길을 산책하면서 재미난 가게들을 둘러보는 것도 잊지 마세요!",
@@ -69,7 +69,7 @@ export const IntroDate = [
     ],
     townPic: [
       {
-        img: "/images/townPic02.jpg",
+        img: process.env.PUBLIC_URL + "/images/townPic02.jpg",
         bigTxt: "일과 삶이 만나는 곳, 워케이션으로 새로운 시작을 꿈꾸다",
         smallTxt: `
         노트북 하나로 떠나는 새로운 여행, 세화리. 질그랭이센터에서 일하는 아침, 그 곁에서 일과 삶의 균형을 찾아온 사람들과 어우러진 세화리의 일상을 찾아갑니다. 마을카페 477+에서 들려오는 키보드 소리와 창밖으로 보이는 바다와 다랑쉬오름의 평온함, 바다와 맞닿은 세화리 마을에서 새로운 라이프스타일과 창의적 영감을 발견합니다. 구좌 당근 디저트로 달달한 브레이크 타임을 갖고 책방에서 찾은 새로운 아이디어를 떠올리면서 힙한 카페에서 스페셜티 커피 한잔하는 시간, 세화리에서만 경험할 수 있는 일과 삶이 조화로운 워케이션의 특별함을 오래도록 간직하세요.
@@ -80,7 +80,7 @@ export const IntroDate = [
   {
     id: 3,
     townName: "가시리",
-    townImg: "/images/townThumb03.jpg",
+    townImg: process.env.PUBLIC_URL + "/images/townThumb03.jpg",
     bigIntro:
       "삼다수 솟아나는 청정마을, 교래리 물 맑고 공기 좋은 한라산 아래 첫 동네",
     shortIntro: `
@@ -88,19 +88,19 @@ export const IntroDate = [
     `,
     ActImg: [
       {
-        img: "/images/act03-01.jpg",
+        img: process.env.PUBLIC_URL + "/images/act03-01.jpg",
         label: "유채꽃프라자 트레일러닝",
         caption:
           "유채꽃프라자에서 시작해 시원한 트레일러닝을 즐겨보세요. 계절마다 다른 빛깔로 물드는 유채꽃밭과 드넓은 들판을 달리며 가시리만의 자유로운 바람을 온몸으로 느껴보세요.",
       },
       {
-        img: "/images/act03-02.jpg",
+        img: process.env.PUBLIC_URL + "/images/act03-02.jpg",
         label: "조랑말체험공원 말 체험",
         caption:
           "조랑말체험공원에서 귀여운 조랑말들과 교감하며 승마 체험을 즐겨보세요. 말도자기 만들기 체험으로 힐링하며 나만의 특별한 말 작품을 직접 그려 기념품으로 가져갈 수 있어요.",
       },
       {
-        img: "/images/act03-03.jpg",
+        img: process.env.PUBLIC_URL + "/images/act03-03.jpg",
         label: "쫄븐갑마장길과 따라비오름 산책",
         caption:
           "쫄븐갑마장길을 걸으며 특별한 생태를 관찰해보세요. 따라비오름에 올라 제주 최초의 풍력 발전소와 가시리 전경을 한눈에 내려다보는 감동적인 순간도 놓치지 마세요!",
@@ -108,7 +108,7 @@ export const IntroDate = [
     ],
     townPic: [
       {
-        img: "/images/townPic03.jpg",
+        img: process.env.PUBLIC_URL + "/images/townPic03.jpg",
         bigTxt:
           "오름과 바람이 만나는 곳, 유채꽃 파도치는 들판에서 자유를 만나다",
         smallTxt: `
@@ -120,7 +120,7 @@ export const IntroDate = [
   {
     id: 4,
     townName: "교래리",
-    townImg: "/images/townThumb04.jpg",
+    townImg: process.env.PUBLIC_URL + "/images/townThumb04.jpg",
     bigIntro:
       "바람 타고 달리는 재미진 마을, 가시리 쫄븐갑마장길과 따라비오름 품은 러닝천국",
     shortIntro: `
@@ -128,19 +128,19 @@ export const IntroDate = [
     `,
     ActImg: [
       {
-        img: "/images/act04-01.jpg",
+        img: process.env.PUBLIC_URL + "/images/act04-01.jpg",
         label: "삼다수숲길 노르딕워킹",
         caption:
           "청정한 삼다수가 솟아나는 숲길에서 노르딕 워킹을 즐겨보세요.교래자연휴양림과 삼다수숲길을 걸으며 한라산 아래 첫 동네의 맑은 공기와 자연의 소리를 온몸으로 느낄 수 있습니다.",
       },
       {
-        img: "/images/act04-02.jpg",
+        img: process.env.PUBLIC_URL + "/images/act04-02.jpg",
         label: "말과 함께하는 힐링 체험",
         caption:
           "경주마의 따뜻한 눈빛을 바라보며 마음의 평안을 찾아보세요. 목장에서 맨발로 걸으며 말과 교감하고, 희귀생물도감을 만들며 자연을 탐구하는 특별한 시간을 경험할 수 있습니다.",
       },
       {
-        img: "/images/act04-03.jpg",
+        img: process.env.PUBLIC_URL + "/images/act04-03.jpg",
         label: "표고버섯 음식과 와인 시음",
         caption:
           "자매가 운영하는 마을의 명소 운암정식당에서 마을사람들이 재배한 표고버섯 요리를 맛보고, 마을양조장에서 와인을 시음하며 교래리만의 특별한 미식 여행을 즐길 수 있습니다.",
@@ -148,7 +148,7 @@ export const IntroDate = [
     ],
     townPic: [
       {
-        img: "/images/townPic04.jpg",
+        img: process.env.PUBLIC_URL + "/images/townPic04.jpg",
         bigTxt: "자연과 치유가 만나는 곳, 몸 마음 건강을 회복하는 청정지대",
         smallTxt: `
         삼다수숲길에서 마을분들과 따뜻한 담소를 나누며 노르딕워킹을 즐기고, 경주마 목장에서는 말들의 순수한 눈빛을 바라보며 교감하는 시간을 가져봅니다. 희귀생물도감을 만들고 나에게 쓰는 편지를 꼭꼭 눌러 쓰며 새로운 용기를 얻어보세요. 오랜 세월 동안 솜씨 좋은 자매가 운영하는 운암정식당에서 표고버섯 요리와 집밥을 맛보고 마을 농업회사법인 제주양조장에서 1950와인을 맛보며 현지인들이 사랑하는 진짜 교래리의 맛과 따뜻한 정을 느낄 수 있습니다.
@@ -159,7 +159,7 @@ export const IntroDate = [
   {
     id: 5,
     townName: "수산리",
-    townImg: "/images/townThumb05.jpg",
+    townImg: process.env.PUBLIC_URL + "/images/townThumb05.jpg",
     bigIntro:
       "시가 흐르는 힐링마을, 수산리 밭담길 걸으며 누구나 시인이 되는 곳",
     shortIntro: `
@@ -167,19 +167,19 @@ export const IntroDate = [
     `,
     ActImg: [
       {
-        img: "/images/act05-01.jpg",
+        img: process.env.PUBLIC_URL + "/images/act05-01.jpg",
         label: "시가 흐르는 물레밭담길 산책",
         caption:
           "송두영 카름마스터와 함께 한국 100대 시인의 자연시가 새겨진 물메 밭담길을 걸어보세요. 돌담길에 새겨진 시를 읽으며 걸으면 누구나 시인이 되는 시간을 경험할 수 있습니다.",
       },
       {
-        img: "/images/act05-02.jpg",
+        img: process.env.PUBLIC_URL + "/images/act05-02.jpg",
         label: "물뫼힐링팜 유기농 치유 프로그램",
         caption:
           "양희전 카름마스터의 물뫼힐링팜에서 유기농 토양이 주는 치유 에너지를 느껴보세요. 지친 몸과 마음을 회복하는 치유 프로그램과 건강한 유기농 음식으로 몸과 맘을 정화해보세요.",
       },
       {
-        img: "/images/act05-03.jpg",
+        img: process.env.PUBLIC_URL + "/images/act05-03.jpg",
         label: "제주 노마드 자연여행과 싱잉볼 명상",
         caption:
           "양희전 카름마스터와 함께하는 제주 노마드 자연여행 오름 트레킹으로 대자연의 깊은 숲을 탐험해보세요. 오름 정상에서 싱잉볼의 신비로운 소리와 함께하는 숲 명상으로 평온을 찾을 수 있습니다.",
@@ -187,7 +187,7 @@ export const IntroDate = [
     ],
     townPic: [
       {
-        img: "/images/townPic05.jpg",
+        img: process.env.PUBLIC_URL + "/images/townPic05.jpg",
         bigTxt: "문학과 자연이 만나는 곳, 물메의 품에서 깊은 숨을 쉬다",
         smallTxt: `
         제주 최초 수몰 마을 물메의 애잔한 이야기를 품은 돌담길, 한국 100대 시인의 자연시가 새겨진 그 길을 걸으며 마음속 깊은 곳에 잠들어 있던 감성을 깨워봅니다. 마을 모퉁이를 돌 때마다 만나는 시비 앞에서 가만가만 시를 낭송하며 누구나 시인이 되는 순간을 경험해보세요. 물뫼힐링팜에서는 양희전 카름마스터와 함께 유기농 토양이 주는 자연의 에너지를 온몸으로 받아들이고, 명상을 통해 일상에서 놓쳤던 소중한 감정들과 마주하는 깊은 성찰의 시간을 가져봅니다. 말을 타고 오름에 올라 싱잉볼의 울림과 함께 모든 걱정을 내려놓고 충분한 휴식을 취하면서 빠른 도시생활에서 쌓인 스트레스를 풀어보세요.
@@ -198,7 +198,7 @@ export const IntroDate = [
   {
     id: 6,
     townName: "한남리",
-    townImg: "/images/townThumb06.jpg",
+    townImg: process.env.PUBLIC_URL + "/images/townThumb06.jpg",
     bigIntro:
       "머체왓숲길 따라 걷는 마을, 한남리 제주의 모든 숲을 한 걸음에 만나다",
     shortIntro: `
@@ -206,19 +206,19 @@ export const IntroDate = [
     `,
     ActImg: [
       {
-        img: "/images/act06-01.jpg",
+        img: process.env.PUBLIC_URL + "/images/act06-01.jpg",
         label: "머체왓숲길 원시림 트레킹",
         caption:
           "고철희 대표와 함께 제주의 모든 숲을 한 걸음에 만나는 머체왓숲길을 걸어보세요. 드넓은 목장에서 편백나무 숲을 지나 원시림의 다채로움 속에서 치유 에너지를 느낄 수 있습니다.",
       },
       {
-        img: "/images/act06-02.jpg",
+        img: process.env.PUBLIC_URL + "/images/act06-02.jpg",
         label: "숲속 해먹 명상과 힐링 체험",
         caption:
           "머체왓숲길 해먹에 누워 나무 사이로 스며드는 햇살을 느껴보세요. 편백나무 숲터널에서 눈을 감고 걸어보고 심호흡하면서 자연과 연결되는 특별한 힐링을 경험할 수 있습니다.",
       },
       {
-        img: "/images/act06-03.jpg",
+        img: process.env.PUBLIC_URL + "/images/act06-03.jpg",
         label: "한라산 보며 족욕하고 약차 마시기",
         caption:
           "한라산을 바라보며 머체왓숲에서 나온 천연 족욕제를 넣은 따뜻한 족욕을 즐겨보세요. 머체왓숲길 카페에서 약차를 마시며 여유로운 시간을 보내면서 약재도 구매할 수 있습니다.",
@@ -226,7 +226,7 @@ export const IntroDate = [
     ],
     townPic: [
       {
-        img: "/images/townPic06.jpg",
+        img: process.env.PUBLIC_URL + "/images/townPic06.jpg",
         bigTxt:
           "원시림과 사람이 연결되는 곳, 머체왓숲길이 선물하는 자연 에너지",
         smallTxt: `
@@ -238,7 +238,7 @@ export const IntroDate = [
   {
     id: 7,
     townName: "동백마을",
-    townImg: "/images/townThumb07.jpg",
+    townImg: process.env.PUBLIC_URL + "/images/townThumb07.jpg",
     bigIntro:
       "동백군락지 품은 장수마을, 동백마을 세계가 인정한 맛과 멋이 꽃피는 곳",
     shortIntro: `
@@ -246,19 +246,19 @@ export const IntroDate = [
     `,
     ActImg: [
       {
-        img: "/images/act07-01.jpg",
+        img: process.env.PUBLIC_URL + "/images/act07-01.jpg",
         label: "동백군락지와 마을길 산책",
         caption:
           "마을을 지켜온 300년 동백군락지에 들어설 때는 신성한 마음으로 두 손을 모읍니다. 예쁘고 조용한 마을길을 산책하며 마을 삼춘들의 장수 비결을 듣고 자연 치유력에 감사합니다.",
       },
       {
-        img: "/images/act07-02.jpg",
+        img: process.env.PUBLIC_URL + "/images/act07-02.jpg",
         label: "동백체험과 언우재센터 숙박",
         caption:
           "동백언우재센터 1층에서는 세상에서 제일 좋은 동백오일을 활용해 올인원바를 만들고 2층에서 숙박하면서 새로운 인생 챕터를 즐겁게 준비하는 은퇴자 프로그램에 참여해 보세요.",
       },
       {
-        img: "/images/act07-03.jpg",
+        img: process.env.PUBLIC_URL + "/images/act07-03.jpg",
         label: "동백방앗간 견학과 동백제품 구매",
         caption:
           "마을 사람들이 힘을 모아 세운 동백방앗간에서 100% 제주산 동백 제품이 만들어지는 과정을 견학하고, 아모레퍼시픽과의 우정으로 탄생한 예쁜 포장의 동백 제품을 구매하고 선물할 수 있어요.",
@@ -266,7 +266,7 @@ export const IntroDate = [
     ],
     townPic: [
       {
-        img: "/images/townPic07.jpg",
+        img: process.env.PUBLIC_URL + "/images/townPic07.jpg",
         bigTxt:
           "신성한 동백숲과 사람이 만나는 곳, 동백언우재센터에서 새로운 힘을 얻다",
         smallTxt: `
@@ -278,7 +278,7 @@ export const IntroDate = [
   {
     id: 8,
     townName: "의귀리",
-    townImg: "/images/townThumb08.jpg",
+    townImg: process.env.PUBLIC_URL + "/images/townThumb08.jpg",
     bigIntro:
       "조랑말 뛰노는 화랑의 마을, 의귀리 말의 본고장에서 만난 승마와 다도의 품격",
     shortIntro: `
@@ -286,19 +286,19 @@ export const IntroDate = [
     `,
     ActImg: [
       {
-        img: "/images/act08-01.jpg",
+        img: process.env.PUBLIC_URL + "/images/act08-01.jpg",
         label: "옷귀마테마타운 초보자 승마 교육",
         caption:
           "전문 교관의 친절한 지도로 승마 기초부터 차근차근 배워보세요. 말과의 교감을 통해 자신감을 기르고 안전하게 승마의 첫걸음을 시작할 수 있습니다.",
       },
       {
-        img: "/images/act08-02.jpg",
+        img: process.env.PUBLIC_URL + "/images/act08-02.jpg",
         label: "말 타고 숲길과 오름 들판 달리기",
         caption:
           "승마 교육을 마친 후 교관과 함께 아름다운 들판과 숲길로 말을 타고 나가보세요. 탁 트인 자연 속에서 말등에 올라 바라보는 제주 오름의 풍경은 잊을 수 없는 감동을 선사합니다.",
       },
       {
-        img: "/images/act08-03.jpg",
+        img: process.env.PUBLIC_URL + "/images/act08-03.jpg",
         label: "옷귀차방에서 화랑도 다도 체험",
         caption:
           "화랑도가 말을 달린 후 차를 마시며 심신을 다스리던 전통을 이어받아 정성스럽게 우린 차 한 잔으로 마음의 여유를 찾아보세요. 승마 후 따뜻한 차 한 잔이 생활의 품격을 높여줍니다.",
@@ -306,7 +306,7 @@ export const IntroDate = [
     ],
     townPic: [
       {
-        img: "/images/townPic08.jpg",
+        img: process.env.PUBLIC_URL + "/images/townPic08.jpg",
         bigTxt:
           "말과 함께 삶의 품격을 기르는 곳, 말과 차로 심신을 가꾸는 수련장",
         smallTxt: `
@@ -318,7 +318,7 @@ export const IntroDate = [
   {
     id: 9,
     townName: "호근마을",
-    townImg: "/images/townThumb09.jpg",
+    townImg: process.env.PUBLIC_URL + "/images/townThumb09.jpg",
     bigIntro:
       "치유의 숲이 지켜주는 마을, 호근마을 토박이 도슨트와 함께하는 마을산책",
     shortIntro: `
@@ -326,19 +326,19 @@ export const IntroDate = [
     `,
     ActImg: [
       {
-        img: "/images/act09-01.jpg",
+        img: process.env.PUBLIC_URL + "/images/act09-01.jpg",
         label: "서귀포 치유의 숲 산림치유 프로그램",
         caption:
           "치유의 숲에서 산림치유지도사와 함께 숲길을 걸어보세요.산림치유프로그램으로 지친 몸과 맘을 회복하고 편백나무 침대에서 피톤치드를 마시며 숲의 소리와 냄새, 빛깔을 느껴보세요.",
       },
       {
-        img: "/images/act09-02.jpg",
+        img: process.env.PUBLIC_URL + "/images/act09-02.jpg",
         label: "토박이 도슨트와 마을 안길 산책",
         caption:
           "현상봉 마을회장과 함께 예쁜 마을 안길을 걸으며 마을 삼춘들의 이야기를 듣고, 현지인만 아는 속골천의 시원한 물에 발을 담그면 제주의 옛 정취를 제대로 체험할 수 있습니다.",
       },
       {
-        img: "/images/act09-03.jpg",
+        img: process.env.PUBLIC_URL + "/images/act09-03.jpg",
         label: "구덕 장인이 만든 차롱에 도시락 맛보기",
         caption:
           "구덕 장인이 만든 전통 차롱에 정성 가득 맛난 도시락을 치유의 숲에서 맛보세요. 자연 속에서 피크닉을 즐기고 차롱가게에 들러 쉰다리 음료와 메이드인 호근 상품 구경도 잊지 마세요.",
@@ -346,7 +346,7 @@ export const IntroDate = [
     ],
     townPic: [
       {
-        img: "/images/townPic09.jpg",
+        img: process.env.PUBLIC_URL + "/images/townPic09.jpg",
         bigTxt: "전통과 자연이 지켜지는 곳, 다시 살아갈 힘을 얻는 소울 스팟",
         smallTxt: `
         치유의 숲이 지켜주는 호근마을에서 서귀포 치유의 숲 산림치유 프로그램으로 몸과 마음을 회복하고, 마을 토박이 도슨트와 함께 마을 안길을 산책하며 속골천에 발을 담그는 여유로운 시간을 보내세요. 유일하게 남은 제주 전통 구덕 장인이 만든 차롱에 담긴 제주 향토음식으로 자연 속 피크닉을 즐기며 치유의 숲이 선사하는 자연의 에너지와 함박웃음으로 반겨주는 마을 삼춘들의 다정함으로 다시 살아갈 힘을 얻을 수 있습니다.
@@ -357,7 +357,7 @@ export const IntroDate = [
   {
     id: 10,
     townName: "하효마을",
-    townImg: "/images/townThumb10.jpg",
+    townImg: process.env.PUBLIC_URL + "/images/townThumb10.jpg",
     bigIntro:
       "달콤한 감귤이 자라는 마을, 하효마을 사시사철 따뜻한 웃음이 꽃피는 낙원",
     shortIntro: `
@@ -365,19 +365,19 @@ export const IntroDate = [
     `,
     ActImg: [
       {
-        img: "/images/act10-01.jpg",
+        img: process.env.PUBLIC_URL + "/images/act10-01.jpg",
         label: "하효살롱협동조합 감귤과즐 만들기",
         caption:
           "김미형 대표와 함께 제주에서 가장 달콤한 감귤로 과즐을 만들어 보세요. 따뜻한 기후가 키운 하효마을 감귤의 특별한 맛과 다문화 공동체의 따뜻한 마음을 함께 나눌 수 있습니다.",
       },
       {
-        img: "/images/act10-02.jpg",
+        img: process.env.PUBLIC_URL + "/images/act10-02.jpg",
         label: "쇠소깍에서 테우와 카약 타기",
         caption:
           "한라산에서 흘러내린 효돈천의 담수와 해수가 만나 생긴 깊은 웅덩이 쇠소깍에서 전통 테우와 카약을 타보세요. 여유로운 시간을 보내며 제주 자연의 경이로움을 만끽할 수 있습니다.",
       },
       {
-        img: "/images/act10-03.jpg",
+        img: process.env.PUBLIC_URL + "/images/act10-03.jpg",
         label: "하효 검은모래 해변 산책",
         caption:
           "하효마을의 검은모래 해변을 산책하며 화산섬만의 특별한 해안 풍경을 감상해보세요. 검은 화산모래가 만들어낸 신비로운 해변에서 파도 소리를 들으며 바다 정취를 만끽할 수 있습니다.",
@@ -385,7 +385,7 @@ export const IntroDate = [
     ],
     townPic: [
       {
-        img: "/images/townPic10.jpg",
+        img: process.env.PUBLIC_URL + "/images/townPic10.jpg",
         bigTxt:
           "검은 모래, 푸른 물과 감귤색의 조화 감귤의 고장이 전하는 따뜻한 환대",
         smallTxt: `
@@ -397,7 +397,7 @@ export const IntroDate = [
   {
     id: 11,
     townName: "신창리",
-    townImg: "/images/townThumb11.jpg",
+    townImg: process.env.PUBLIC_URL + "/images/townThumb11.jpg",
     bigIntro:
       "노을이 아름다운 해안마을, 신창리 지질트레일과 바이크 투어의 성지",
     shortIntro: `
@@ -405,19 +405,19 @@ export const IntroDate = [
     `,
     ActImg: [
       {
-        img: "/images/act11-01.jpg",
+        img: process.env.PUBLIC_URL + "/images/act11-01.jpg",
         label: "수월봉 노을 감상과 돌고래 관찰",
         caption:
           "수월봉에서 제주에서 가장 아름다운 노을을 감상하세요. 해안에서는 제주 남방 돌고래들을 발견하는 특별한 행운도 누릴 수 있어 신창리만의 잊을 수 없는 해안 체험을 만끽할 수 있습니다.",
       },
       {
-        img: "/images/act11-02.jpg",
+        img: process.env.PUBLIC_URL + "/images/act11-02.jpg",
         label: "검은모래 지질 트레일 트레킹",
         caption:
           "화산 퇴적물이 쌓여 만들어진 검은모래 해안절벽을 따라 이어지는 지질트레일을 경험하세요. 유네스코 세계지질공원의 독특하고 희귀한 화산지형을 직접 체험할 수 있습니다.",
       },
       {
-        img: "/images/act11-03.jpg",
+        img: process.env.PUBLIC_URL + "/images/act11-03.jpg",
         label: "노을해안1014 바이크 투어",
         caption:
           "바이크를 타고 신창해안도로를 달리며 제주에서 가장 아름다운 일몰을 만나보세요. 시원한 바닷바람을 맞으며 달리는 천혜의 해안도로에서 특별한 라이딩을 경험할 수 있습니다.",
@@ -425,7 +425,7 @@ export const IntroDate = [
     ],
     townPic: [
       {
-        img: "/images/townPic11.jpg",
+        img: process.env.PUBLIC_URL + "/images/townPic11.jpg",
         bigTxt: "바다와 노을이 만나는 곳, 바람을 가르며 서쪽 하늘로 달리다",
         smallTxt: `
         노을이 아름다운 해안마을 신창리에서 노을해안1014 바이크 투어로 신창해안도로를 시원하게 달리고, 화산 퇴적물이 쌓여 만들어진 검은모래 지질트레일을 걸으며 태초 제주의 신비로운 화산 흔적을 발견합니다. 해발 77m 수월봉 정상 수월정에서 제주에서 가장 아름다운 노을을 감상하며 제주 남방큰돌고래들을 만나는 행운까지 누리면서, 바이크 투어의 성지에서 바다와 하늘이 만나는 특별한 제주 서부 해안 여행을 경험해보세요.
@@ -436,7 +436,7 @@ export const IntroDate = [
   {
     id: 12,
     townName: "저지리",
-    townImg: "/images/townThumb12.jpg",
+    townImg: process.env.PUBLIC_URL + "/images/townThumb12.jpg",
     bigIntro:
       "어린 날의 모험이 자라는 마을, 저지리 자연과 예술이 깨우는 순수의 시대",
     shortIntro: `
@@ -444,19 +444,19 @@ export const IntroDate = [
     `,
     ActImg: [
       {
-        img: "/images/act12-01.jpg",
+        img: process.env.PUBLIC_URL + "/images/act12-01.jpg",
         label: "아꼬아 탐험단 자연예술 캠프",
         caption:
           "어린이들의 모험심을 깨우는 아꼬아 탐험단은 곶자왈에서 곤충과 버섯을 관찰하고, 제주 현대미술관에서 예술 워크샵을 하는 등 자연과 예술이 어우러진 캠프를 진행합니다.",
       },
       {
-        img: "/images/act12-02.jpg",
+        img: process.env.PUBLIC_URL + "/images/act12-02.jpg",
         label: "미센터 덤부리스테이에 머물며 힐링하기",
         caption:
           "덤부리스테이에서 창 밖의 저지오름과 아름다운 숲을 감상하며 새소리에 깨어나는 아침을 맞이하고, 1층 책밭에서 책도 읽고 저지리의 평온한 농촌 정취와 예술 감수성을 즐기세요.",
       },
       {
-        img: "/images/act12-03.jpg",
+        img: process.env.PUBLIC_URL + "/images/act12-03.jpg",
         label: "환상숲곶자왈 생태 탐험",
         caption:
           "환상숲곶자왈 이지영 대표와 함께 신비로운 곶자왈 생태를 탐험해 보세요. 자연이 만든 예술작품을 감상한 후 따뜻한 족욕과 맛있는 차 한잔이면 몸과 마음의 피로가 사라집니다.",
@@ -464,7 +464,7 @@ export const IntroDate = [
     ],
     townPic: [
       {
-        img: "/images/townPic12.jpg",
+        img: process.env.PUBLIC_URL + "/images/townPic12.jpg",
         bigTxt:
           "곶자왈과 어린시절이 만나는 곳, 아꼬아 탐험단과 함께 꿈을 키우다",
         smallTxt: `
@@ -476,7 +476,7 @@ export const IntroDate = [
   {
     id: 13,
     townName: "무릉2리",
-    townImg: "/images/townThumb13.jpg",
+    townImg: process.env.PUBLIC_URL + "/images/townThumb13.jpg",
     bigIntro:
       "외할머니 품 같은 마을, 무릉2리 토박이 농부와 이주민이 함께 만든 외갓집",
     shortIntro: `
@@ -484,19 +484,19 @@ export const IntroDate = [
     `,
     ActImg: [
       {
-        img: "/images/act13-01.jpg",
+        img: process.env.PUBLIC_URL + "/images/act13-01.jpg",
         label: "농부와 함께하는 농사체험",
         caption:
           "토박이 농부들과 함께 농사를 지으며 제주에 외갓집이 생기는 경험을 해보세요. 계절별 농작물을 직접 심고 가꾸고 수확하며 사람과 자연의 연결을 체감하게 되실 거에요.",
       },
       {
-        img: "/images/act13-02.jpg",
+        img: process.env.PUBLIC_URL + "/images/act13-02.jpg",
         label: "무릉곶자왈 사운드워킹",
         caption:
           "무릉곶자왈 숲길을 걸으며 자연의 소리에 온전히 귀 기울이는 시간을 오롯이 즐겨보세요. 새소리, 바람소리, 나뭇잎 스치는 소리에 집중하며 마음의 평안을 찾는 특별한 시간입니다.",
       },
       {
-        img: "/images/act13-03.jpg",
+        img: process.env.PUBLIC_URL + "/images/act13-03.jpg",
         label: "무릉외갓집 꾸러미와 청 만들기",
         caption:
           "직접 기른 제철 과일로 달콤한 잼과 청을 만들고 마을 삼춘들과 정겨운 이야기를 나눠보세요. 도시에서도 제주를 느낄 수 있는 무릉외갓집 제철 꾸러미도 꼭 경험해보세요.",
@@ -504,7 +504,7 @@ export const IntroDate = [
     ],
     townPic: [
       {
-        img: "/images/townPic13.jpg",
+        img: process.env.PUBLIC_URL + "/images/townPic13.jpg",
         bigTxt: "농부과 도시가 만나는 곳, 사시사철 외갓집의 정성을 나누다",
         smallTxt: `
         농사짓는 손길과 함께 시작되는 하루, 무릉2리에서 농사를 배우는 아침, 그 곁에서 55명의 토박이 농부와 5명의 이주민이 협력해 만든 무릉외갓집의 일상도 흘러갑니다. 곶자왈 숲길에 담겨있는 자연의 소리와 마을 삼춘들의 정겨운 웃음소리에 귀기울이고 흙과 맞닿은 무릉2리 마을이 선사하는 따뜻한 정성과 지속가능한 관계를 키워갑니다. 제철 과일로 만든 달콤한 잼의 향기와 꾸러미에 담긴 마음이 자라는 무릉2리에서 진짜 외갓집의 포근함과 외할머니의 마음이 담긴 정성을 오래도록 간직해보세요.
