@@ -57,7 +57,7 @@ export const Button = styled.button`
   height: 60px;
   border: none;
   border-radius: 14px;
-  background: linear-gradient(90deg, #4a7efc, #5a8dfc);
+  background: #ff7a00;
   color: white;
   font-size: 16px;
   font-weight: 600;
@@ -74,7 +74,7 @@ export const LinkRow = styled.div`
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
-  color: #666;
+  color: #ff7a00;
 
   span {
     margin: 0 10px;
