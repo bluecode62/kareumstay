@@ -149,10 +149,10 @@ export const accommodationData = [
     summary: "최대 인원 3명 · 침실 5개 · 침대 2개 · 욕실 1개",
     thumbnail: hahyo1,
     images: [
-      "/images/stay01-01.jpg",
-      "/images/stay01-02.jpg",
-      "/images/stay01-03.jpg",
-      "/images/stay01-04.jpg",
+      process.env.PUBLIC_URL + "/images/stay01-01.jpg",
+      process.env.PUBLIC_URL + "/images/stay01-02.jpg",
+      process.env.PUBLIC_URL + "/images/stay01-03.jpg",
+      process.env.PUBLIC_URL + "/images/stay01-04.jpg",
     ],
     description: `
     기분 좋은 민박은 친환경 나무 루버 인테리어로 되어 있어요. 
@@ -166,14 +166,14 @@ export const accommodationData = [
         id: 1,
         name: "침실 1",
         price: 94000,
-        image: "/images/room01-01.jpg",
+        image: process.env.PUBLIC_URL + "/images/room01-01.jpg",
         info: "더블 침대 · 화장실 · 에어컨",
       },
       {
         id: 2,
         name: "침실 2",
         price: 98000,
-        image: "/images/room01-02.jpg",
+        image: process.env.PUBLIC_URL + "/images/room01-02.jpg",
         info: "더블 침대 · 화장실 · 에어컨 · 건조기",
       },
     ],
@@ -183,13 +183,13 @@ export const accommodationData = [
         id: 1,
         title: "자전거 탐방클래스",
         price: 30000,
-        image: "/images/exp01.jpg",
+        image: process.env.PUBLIC_URL + "/images/exp01.jpg",
       },
       {
         id: 2,
         title: "커피 로스팅 클래스",
         price: 40000,
-        image: "/images/exp02.jpg",
+        image: process.env.PUBLIC_URL + "/images/exp02.jpg",
       },
     ],
 
@@ -300,10 +300,10 @@ export const accommodationData = [
     thumbnail: hahyo2,
 
     images: [
-      "/images/stay02-01.jpg",
-      "/images/stay02-02.jpg",
-      "/images/stay02-03.jpg",
-      "/images/stay02-04.jpg",
+      process.env.PUBLIC_URL + "/images/stay02-01.jpg",
+      process.env.PUBLIC_URL + "/images/stay02-02.jpg",
+      process.env.PUBLIC_URL + "/images/stay02-03.jpg",
+      process.env.PUBLIC_URL + "/images/stay02-04.jpg",
     ],
     description: `
     조용한 제주마을 하효에 위치한 하효일(下孝日)은 평범하지만 정겨운 우리네 일상을 담고 있습니다. 
@@ -320,7 +320,7 @@ export const accommodationData = [
         id: 1,
         name: "침실 1",
         price: 230000,
-        image: "/images/room02-01.jpg",
+        image: process.env.PUBLIC_URL + "/images/room02-01.jpg",
         info: "퀸사이즈 침대 · 화장실 · 에어컨",
       },
     ],
@@ -330,13 +330,13 @@ export const accommodationData = [
         id: 1,
         title: "감귤농장 체험클래스",
         price: 50000,
-        image: "/images/exp03.jpg",
+        image: process.env.PUBLIC_URL + "/images/exp03.jpg",
       },
       {
         id: 2,
         title: "커피 로스팅 클래스",
         price: 40000,
-        image: "/images/exp02.jpg",
+        image: process.env.PUBLIC_URL + "/images/exp02.jpg",
       },
     ],
 
@@ -456,10 +456,10 @@ export const accommodationData = [
     thumbnail: hahyo3,
 
     images: [
-      "/images/stay03-01.jpg",
-      "/images/stay03-02.jpg",
-      "/images/stay03-03.jpg",
-      "/images/stay03-04.jpg",
+      process.env.PUBLIC_URL + "/images/stay03-01.jpg",
+      process.env.PUBLIC_URL + "/images/stay03-02.jpg",
+      process.env.PUBLIC_URL + "/images/stay03-03.jpg",
+      process.env.PUBLIC_URL + "/images/stay03-04.jpg",
     ],
     description: `
     제주올레 5코스 끝! 쇠소깍 6코스 시작!
@@ -471,28 +471,28 @@ export const accommodationData = [
         id: 1,
         name: "원룸형",
         price: 77000,
-        image: "/images/room03-01.jpg",
+        image: process.env.PUBLIC_URL + "/images/room03-01.jpg",
         info: "더블침대 · 화장실 · 에어컨 · 주방시설",
       },
       {
         id: 1,
         name: "복층형",
         price: 80000,
-        image: "/images/room03-02.jpg",
+        image: process.env.PUBLIC_URL + "/images/room03-02.jpg",
         info: "더블침대 · 화장실 · 에어컨 · 주방시설",
       },
       {
         id: 1,
         name: "가족형A",
         price: 110000,
-        image: "/images/room03-03.jpg",
+        image: process.env.PUBLIC_URL + "/images/room03-03.jpg",
         info: "더블침대 2개 · 화장실 · 에어컨 · 주방시설 · 발코니",
       },
       {
         id: 1,
         name: "가족형B",
         price: 110000,
-        image: "/images/room03-04.jpg",
+        image: process.env.PUBLIC_URL + "/images/room03-04.jpg",
         info: "더블침대 2개 · 화장실 · 에어컨 · 주방시설 · 발코니",
       },
     ],
@@ -502,13 +502,13 @@ export const accommodationData = [
         id: 1,
         title: "감귤농장 체험클래스",
         price: 50000,
-        image: "/images/exp03.jpg",
+        image: process.env.PUBLIC_URL + "/images/exp03.jpg",
       },
       {
         id: 2,
         title: "커피 로스팅 클래스",
         price: 40000,
-        image: "/images/exp02.jpg",
+        image: process.env.PUBLIC_URL + "/images/exp02.jpg",
       },
     ],
 
@@ -607,10 +607,10 @@ export const accommodationData = [
     thumbnail: hahyo4,
 
     images: [
-      "/images/stay04-01.jpg",
-      "/images/stay04-02.jpg",
-      "/images/stay04-03.jpg",
-      "/images/stay04-04.jpg",
+      process.env.PUBLIC_URL + "/images/stay04-01.jpg",
+      process.env.PUBLIC_URL + "/images/stay04-02.jpg",
+      process.env.PUBLIC_URL + "/images/stay04-03.jpg",
+      process.env.PUBLIC_URL + "/images/stay04-04.jpg",
     ],
     description: `
     스너글은 제주에서 가장 따뜻한 하효동에 위치해 있습니다. 
@@ -623,7 +623,7 @@ export const accommodationData = [
         id: 1,
         name: "침실1",
         price: 120000,
-        image: "/images/room04-01.jpg",
+        image: process.env.PUBLIC_URL + "/images/room04-01.jpg",
         info: "더블침대 · 화장실 · 에어컨",
       },
     ],
@@ -633,7 +633,7 @@ export const accommodationData = [
         id: 1,
         title: "카약 체험클래스",
         price: 80000,
-        image: "/images/exp04.jpg",
+        image: process.env.PUBLIC_URL + "/images/exp04.jpg",
       },
     ],
 
@@ -732,10 +732,10 @@ export const accommodationData = [
     thumbnail: hahyo5,
 
     images: [
-      "/images/stay05-01.jpg",
-      "/images/stay05-02.jpg",
-      "/images/stay05-03.jpg",
-      "/images/stay05-04.jpg",
+      process.env.PUBLIC_URL + "/images/stay05-01.jpg",
+      process.env.PUBLIC_URL + "/images/stay05-02.jpg",
+      process.env.PUBLIC_URL + "/images/stay05-03.jpg",
+      process.env.PUBLIC_URL + "/images/stay05-04.jpg",
     ],
     description: `
     아름다운 쇠소깍 해변에서 파도 소리를 들으며 힐링할 수 있는 공간입니다. 
@@ -748,21 +748,21 @@ export const accommodationData = [
         id: 1,
         name: "침실더블1",
         price: 90000,
-        image: "/images/room05-01.jpg",
+        image: process.env.PUBLIC_URL + "/images/room05-01.jpg",
         info: "더블침대 · 화장실 · 에어컨",
       },
       {
         id: 1,
         name: "침실더블2",
         price: 100000,
-        image: "/images/room05-02.jpg",
+        image: process.env.PUBLIC_URL + "/images/room05-02.jpg",
         info: "더블침대 · 화장실 · 에어컨 · 발코니",
       },
       {
         id: 1,
         name: "침실트윈1",
         price: 130000,
-        image: "/images/room05-03.jpg",
+        image: process.env.PUBLIC_URL + "/images/room05-03.jpg",
         info: "더블침대 · 화장실 · 에어컨 · 발코니",
       },
     ],
@@ -772,13 +772,13 @@ export const accommodationData = [
         id: 1,
         title: "제주 고기국수 쿠킹클래스",
         price: 20000,
-        image: "/images/exp05.jpg",
+        image: process.env.PUBLIC_URL + "/images/exp05.jpg",
       },
       {
         id: 2,
         title: "카약 체험클래스",
         price: 80000,
-        image: "/images/exp04.jpg",
+        image: process.env.PUBLIC_URL + "/images/exp04.jpg",
       },
     ],
 
@@ -886,10 +886,10 @@ export const accommodationData = [
     thumbnail: hahyo6,
 
     images: [
-      "/images/stay06-01.jpg",
-      "/images/stay06-02.jpg",
-      "/images/stay06-03.jpg",
-      "/images/stay06-04.jpg",
+      process.env.PUBLIC_URL + "/images/stay06-01.jpg",
+      process.env.PUBLIC_URL + "/images/stay06-02.jpg",
+      process.env.PUBLIC_URL + "/images/stay06-03.jpg",
+      process.env.PUBLIC_URL + "/images/stay06-04.jpg",
     ],
     description: `
      <빈도롱이가>는 제주 전통돌집을 개조하여 만든 숙소이고, 가옥 구조를 그대로 활용하여 옛 멋은 살리되, 
@@ -905,14 +905,14 @@ export const accommodationData = [
         id: 1,
         name: "침실더블1",
         price: 80000,
-        image: "/images/room06-01.jpeg",
+        image: process.env.PUBLIC_URL + "/images/room06-01.jpeg",
         info: "더블침대 · 이불난방 · 에어컨 · 침구",
       },
       {
         id: 1,
         name: "침실더블2",
         price: 90000,
-        image: "/images/room06-02.jpeg",
+        image: process.env.PUBLIC_URL + "/images/room06-02.jpeg",
         info: "더블침대 · 이불난방 · 에어컨 · 침구 · 보관 공간",
       },
     ],
@@ -922,13 +922,13 @@ export const accommodationData = [
         id: 1,
         title: "감귤디저트 쿠킹클래스",
         price: 40000,
-        image: "/images/exp06.jpg",
+        image: process.env.PUBLIC_URL + "/images/exp06.jpg",
       },
       {
         id: 2,
         title: "다육이 심기 클래스",
         price: 20000,
-        image: "/images/exp07.jpg",
+        image: process.env.PUBLIC_URL + "/images/exp07.jpg",
       },
     ],
 
@@ -1001,7 +1001,8 @@ export const accommodationData = [
         rating: 3,
         createdAt: "한 달 전",
         room: "침실1",
-        content: "몸이 안 좋아서 쉬는 동안 또롱이가 와서 놀아준 즐거운 추억이었습니다.",
+        content:
+          "몸이 안 좋아서 쉬는 동안 또롱이가 와서 놀아준 즐거운 추억이었습니다.",
       },
       {
         id: 3,
@@ -1010,7 +1011,8 @@ export const accommodationData = [
         rating: 4,
         createdAt: "5주 전",
         room: "침실2",
-        content: "늘 이용하는 곳이고 집처럼 아늑해요. 또롱이 늘 건강히 잘 지내서 다행이고, 항상 깨끗해서 좋아요~",
+        content:
+          "늘 이용하는 곳이고 집처럼 아늑해요. 또롱이 늘 건강히 잘 지내서 다행이고, 항상 깨끗해서 좋아요~",
       },
       {
         id: 4,
@@ -1019,7 +1021,8 @@ export const accommodationData = [
         rating: 5,
         createdAt: "6주 전",
         room: "침실더블2",
-        content: "야외에서 재밌게 바베큐 즐기고, 또롱이랑 즐겁게 놀아서 더 좋았습니다!",
+        content:
+          "야외에서 재밌게 바베큐 즐기고, 또롱이랑 즐겁게 놀아서 더 좋았습니다!",
       },
       {
         id: 5,
