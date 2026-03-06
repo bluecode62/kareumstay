@@ -150,7 +150,7 @@ useState를 활용해 모달 상태(showConfirm)를 관리하고,<br />
 사용자가 결제를 선택하면 결제 완료 페이지로 이동하도록<br />
 React Router의 navigate 함수를 사용해 페이지 이동을 처리했습니다.<br />
 
-```React
+```jsx
 const [showConfirm, setShowConfirm] = useState(false);
 
 <Pay onClick={() => setShowConfirm(true)}>결제하기</Pay>
@@ -167,7 +167,7 @@ React Router의 navigate 함수를 활용해 라우팅을 구현했습니다.<br
 결제 완료 페이지에서는 결제가 정상적으로 완료되었다는<br />
 메시지를 사용자에게 표시하도록 UI를 구성했습니다.<br />
 
-```React
+```jsx
 /// React Router 사용
 
 navigate("/payment-complete");
@@ -183,7 +183,7 @@ export default function PaymentComplete()
 이를 통해 사용자가 페이지를 이동하거나 새로고침을 하더라도<br />
 예약 정보를 유지할 수 있도록 했습니다.<br />
 
-```React
+```jsx
 /// 브라우저 저장소 활용
 localStorage.setItem("reservation", JSON.stringify(reservationData));
 ```
@@ -196,7 +196,7 @@ LocalStorage에 저장된 예약 데이터를 불러오도록 구현했습니다
 데이터가 없는 경우에는 "예약 내역이 없습니다"라는<br />
 예외 메시지를 표시하도록 처리했습니다.<br />
 
-```React
+```jsx
 /// 데이터 불러오기 
 useEffect(() => {
   const saved = localStorage.getItem("reservation");
@@ -207,7 +207,7 @@ useEffect(() => {
 LocalStorage에 저장된 예약 데이터를 삭제하고<br />
 화면 상태를 초기화하도록 처리했습니다.<br />
 
-```React
+```jsx
 /// 데이터 상태 동기화
 localStorage.removeItem("reservation");
 setReservation(null);
