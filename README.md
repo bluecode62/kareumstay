@@ -41,8 +41,26 @@ map 기반 동적 리스트 렌더링 (rooms, experiences, reviews 등) (Detail.
 <h1>마을숙소 리스트, 예약일정 조회 등 구현</h1>
 
 <img width="557" height="678" alt="숙소데이터01" src="https://github.com/user-attachments/assets/0698ea11-9a8d-4ce2-ab36-18d0df3e2d6b" />
+<img width="477" height="330" alt="main03" src="https://github.com/user-attachments/assets/86befe8f-f09b-48bb-a0f1-39bf55af366a" />
+<img width="675" height="488" alt="main04" src="https://github.com/user-attachments/assets/c44848bd-c2c9-485b-a326-a1508d92f28a" />
+<img width="585" height="511" alt="main05" src="https://github.com/user-attachments/assets/99032851-a5a2-484a-b70a-f0e9321090f6" />
 
-home.js에 있는 컴포넌트 ReservationBar.js(예약일정 검색창)에 보낼 데이터를 정의해 보냅니다.
+Home 컴포넌트에서 마을(town), 예약 날짜(dateRange), 인원 수(guests)
+상태를 useState로 관리하고 ReservationBar 컴포넌트에 props로 전달했습니다.
+
+ReservationBar에서는 전달받은 상태를 기반으로 마을 선택 드롭다운,
+날짜 선택 캘린더, 인원 수 증감 기능을 구현하여 예약 조건을
+설정할 수 있도록 구성했습니다.
+
+검색 버튼 클릭 시 handleSearch 함수가 실행되며,
+입력된 예약 정보를 React Router의 navigate state로 전달하여
+Search 페이지에서 해당 조건을 기반으로 숙소 리스트를
+조회하도록 구현했습니다.
+
+또한 useEffect와 useRef를 활용해 드롭다운 및 캘린더
+외부 클릭 시 자동으로 닫히도록 인터랙션을 처리했습니다.
+
+
 
 
 
