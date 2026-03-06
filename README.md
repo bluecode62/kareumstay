@@ -87,7 +87,6 @@ Search 컴포넌트에서는 숙소 데이터를 기반으로
 <h1>map 기반 동적 리스트 렌더링 (rooms, experiences, reviews 등)</h1>
 <img width="741" height="692" alt="디테일01" src="https://github.com/user-attachments/assets/21469fda-c22f-412a-8f19-3ff1b46bb2a2" />
 <img width="530" height="1067" alt="디테일0203" src="https://github.com/user-attachments/assets/ab532eb4-b32e-4870-94e2-90ef04ac8380" />
-<img width="635" height="1944" alt="예약박스010203" src="https://github.com/user-attachments/assets/bd29a432-d0d2-447c-a23d-232ffa45bcad" />
 
 Search 페이지에서 선택한 숙소 id와 예약 데이터(town, dateRange, guests)를
 React Router의 navigate state를 통해 Detail 페이지로 전달했습니다.
@@ -105,8 +104,8 @@ map()을 활용해 동적으로 렌더링하도록 구현했습니다.
 <hr >
 
 <h1>객실 선택 및 원데이 클래스 추가 옵션 기능 구현</h1>
-
-
+<img width="492" height="211" alt="객실선택및원데이" src="https://github.com/user-attachments/assets/f2af1c88-a0b5-40f5-a81b-ee4632e514c9" />
+<img width="635" height="1944" alt="예약박스010203" src="https://github.com/user-attachments/assets/bd29a432-d0d2-447c-a23d-232ffa45bcad" />
 
 또한 예약 데이터는 LocalStorage에 저장하여
 사용자가 예약 정보를 유지할 수 있도록 구현했습니다.
