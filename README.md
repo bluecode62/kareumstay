@@ -108,14 +108,14 @@ map()을 활용해 동적으로 렌더링하도록 구현했습니다.
 <hr >
 
 <h1>객실 선택 및 원데이 클래스 추가 옵션 기능 구현</h1>
-<img width="492" height="211" alt="객실선택및원데이" src="https://github.com/user-attachments/assets/f2af1c88-a0b5-40f5-a81b-ee4632e514c9" />
+<img width="492" height="211" alt="객실선택및원데이" src="https://github.com/user-attachments/assets/f2af1c88-a0b5-40f5-a81b-ee4632e514c9" /><br />
 Detail 페이지에서는 객실이 선택되었을 때만 예약내역 컴포넌트가
 렌더링되도록 조건부 렌더링을 적용했습니다.
 selectedRoom 상태값이 존재할 때만 ReservationBox 컴포넌트를
 보여주도록 구현하여, 사용자가 객실을 먼저 선택한 후
 원데이 클래스와 같은 추가 옵션을 선택할 수 있도록 예약 흐름을 설계했습니다.
 
-<img width="635" height="1944" alt="예약박스010203" src="https://github.com/user-attachments/assets/bd29a432-d0d2-447c-a23d-232ffa45bcad" />
+<img width="635" height="1944" alt="예약박스010203" src="https://github.com/user-attachments/assets/bd29a432-d0d2-447c-a23d-232ffa45bcad" /><br />
 ReservationBox 컴포넌트는 사용자가 선택한 객실과
 추가 옵션(원데이 클래스)을 기반으로 예약 정보를 관리하는 역할을 합니다.
 선택된 객실과 체험 프로그램 데이터를 props로 전달받아
@@ -124,5 +124,5 @@ ReservationBox 컴포넌트는 사용자가 선택한 객실과
 추가 옵션의 가격을 합산하여 계산하도록 구현했습니다.
 체험 프로그램은 배열 형태로 관리되기 때문에
 reduce() 함수를 사용해 전체 가격을 합산하도록 설계했습니다.
+<img width="522" height="263" alt="원데이클래스데이터" src="https://github.com/user-attachments/assets/c063baa6-8cd5-414d-ac95-eb311e4f7e0d" />
 
-<img width="644" height="1475" alt="reviews0102" src="https://github.com/user-attachments/assets/5390e37e-0b67-44e2-b982-13ff6fd7d7b7" />
