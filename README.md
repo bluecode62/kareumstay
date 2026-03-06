@@ -220,6 +220,8 @@ setReservation(null);
 예약 정보를 조회할 수 있도록 했으며,<br />
 예약 취소 시 LocalStorage 데이터를 삭제하도록 처리했습니다.<br />
 <br />
+
+📍 Git Page 링크:  https://bluecode62.github.io/cafe-responsive-web/
 결제 버튼을 클릭하면 결제 확인 모달이 나타나고,<br />
 사용자가 결제를 확인하면 결제 완료 페이지로 이동하는<br />
 예약 및 결제 흐름을 구현했습니다.<br />
