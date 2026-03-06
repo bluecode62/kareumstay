@@ -227,7 +227,6 @@ setReservation(null);
 
 
 트러블 슈팅🚀<br />
-<br />
 1️⃣ 체크인 날짜만 클릭하면 캘린더가 바로 닫히는 현상<br />
 <br />
 : 리액트 DayPicker로 숙박일정을 선택할 때 체크인만 클릭하면 캘린더가 바로 닫히는 문제가 있었습니다.<br />
@@ -239,9 +238,25 @@ setReservation(null);
 <br />
 : Home 페이지에서 선택한 마을, 숙박일정, 인원수를 Search 페이지로 전달했지만, 페이지가 렌더링되면 해당 값들이 유지되지 않고 초기 상태로 돌아가는 문제가 있었습니다.<br />
 React Router로 페이지 이동 시 state를 통해 데이터를 전달하고 있었지만, Search 컴포넌트의 useState 초기값에 해당 값을 반영하지 않아 렌더링 시 상태가 초기화되고 있었습니다.<br />
-그래서 상태가 계속 유지시킬 수 있게 location 상태이상을 사용하면 Home페이지에서의 데이터를 그대로 받아올 수 있게 되어 해결되었습니다.<br />
 
+* useState 초기값에 해당 값을 반영X<br />
 
+React Router로 페이지 이동 시 state를 통해 데이터를 전달하고 있었지만, Search 컴포넌트의 useState 초기값에 해당 값을 반영하지 않아 렌더링 시 상태가 초기화되고 있었습니다.<br />
+: useLocation()을 통해 전달된 state 값을 확인하고, 이를 useState의 초기값으로 설정하여 이전 페이지에서 선택한 값이 유지되도록 수정했습니다.<br />
+
+```jsx
+///Home 페이지에서 선택한 마을, 숙박일정, 인원수 정보가 Search 페이지에서도 그대로 유지
+const initialTown = location.state?.town || "";
+
+const [town, setTown] = useState(initialTown);
+
+const [dateRange, setDateRange] = useState(
+  location.state?.dateRange || [null, null]
+);
+
+const [guests, setGuests] = useState(location.state?.guests || 1);
+```
+👉 React Router의 location.state를 활용하면 페이지 이동 시 사용자 입력 상태를 자연스럽게 전달하고 초기값으로 활용할 수 있다는 점을 배웠습니다.
 
 
 📍 Git Page 링크: https://bluecode62.github.io/kareumstay/
