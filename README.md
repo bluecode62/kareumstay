@@ -36,5 +36,4 @@ map 기반 동적 리스트 렌더링 (rooms, experiences, reviews 등) (Detail.
 - 결제 버튼 클릭 시 상태값을 변경하여 결제 완료 화면을 표시
 
 
-
-
+<hr >
