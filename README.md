@@ -212,7 +212,7 @@ LocalStorage에 저장된 예약 데이터를 삭제하고<br />
 localStorage.removeItem("reservation");
 setReservation(null);
 ```
-
+<br />
 예약 기능에서는 사용자가 선택한 객실과 체험 프로그램을<br />
 기반으로 예약 데이터를 생성하고 LocalStorage에 저장할 수 있도록 구현했습니다.<br />
 <br />
@@ -224,5 +224,14 @@ setReservation(null);
 결제 버튼을 클릭하면 결제 확인 모달이 나타나고,<br />
 사용자가 결제를 확인하면 결제 완료 페이지로 이동하는<br />
 예약 및 결제 흐름을 구현했습니다.<br />
+
+
+트러블 슈팅🚀
+1️⃣ 체크인 날짜만 클릭하면 캘린더가 바로 닫히는 현상<br />
+: 리액트 DayPicker로 숙박일정을 선택할 때 체크인만 클릭하면 캘린더가 바로 닫히는 현상이 있었습니다.<br />
+라이브러리의 CSS, :checked 부분에 문제인 건가 CSS를 위주로 디버깅하다가 <br />
+문득 머리 속에서 "혹시 초기값이 없어서 이런 거 아닐까?"라는 생각에<br />
+dateRange의 초기값을 null 또는 적절한 범위로 설정하여 캘린더가 체크인만 선택해도 닫히지 않도록 수정했습니다.<br />
+onSelect에서 from과 to가 모두 존재할 때만 캘린더를 닫도록 조건을 추가했습니다.<br />
 
 📍 Git Page 링크: https://bluecode62.github.io/kareumstay/
