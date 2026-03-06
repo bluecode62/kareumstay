@@ -133,4 +133,19 @@ reduce() 함수를 사용해 전체 가격을 합산하도록 설계했습니다
 <h1>결제 버튼 클릭 시 결제 완료 화면 조건부 렌더링 & 예약저장 기능 </h1>
 <img width="562" height="609" alt="결제박스01" src="https://github.com/user-attachments/assets/c999ef3c-02db-4d55-8fba-43f2241c555f" /><br />
 <img width="463" height="243" alt="결제박스02" src="https://github.com/user-attachments/assets/6211ecd1-3d91-497e-a2e4-0499d62a81eb" /><br />
+<img width="794" height="2110" alt="예약조회010203" src="https://github.com/user-attachments/assets/9b88b408-d73f-46f9-a235-5fb44ef92977" /><br />
+<br />
 
+📝 전체 흐름
+ 1️⃣ 결제 확인 모달 + 결제 완료 페이지 이동 
+ 2️⃣ 예약 데이터 LocalStorage 저장 
+ 3️⃣ 예약내역 조회 / 삭제 / 결제 처리
+
+
+✏️ 결제 버튼 클릭 시 결제 확인 모달 구현
+: 예약내역 컴포넌트에서는 결제 버튼을 클릭하면
+결제 확인 모달이 나타나도록 구현했습니다.
+<br />
+useState를 활용해 모달 상태(showConfirm)를 관리하고,
+사용자가 결제를 선택하면 결제 완료 페이지로 이동하도록
+React Router의 navigate 함수를 사용해 페이지 이동을 처리했습니다.
