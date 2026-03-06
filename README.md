@@ -37,3 +37,13 @@ map 기반 동적 리스트 렌더링 (rooms, experiences, reviews 등) (Detail.
 
 
 <hr >
+
+<h1>마을숙소 리스트, 예약일정 조회 등 구현</h1>
+
+<img width="557" height="678" alt="숙소데이터01" src="https://github.com/user-attachments/assets/0698ea11-9a8d-4ce2-ab36-18d0df3e2d6b" />
+
+home.js에 있는 컴포넌트 ReservationBar.js(예약일정 검색창)에 보낼 데이터를 정의해 보냅니다.
+
+
+
+
