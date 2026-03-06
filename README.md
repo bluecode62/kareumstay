@@ -125,7 +125,7 @@ ReservationBox 컴포넌트는 사용자가 선택한 객실과<br />
 총 예약 금액은 선택한 객실 가격과 추가 옵션의 가격을 합산하여 계산하도록 구현했습니다.<br />
 체험 프로그램은 배열 형태로 관리되기 때문에<br />
 reduce() 함수를 사용해 전체 가격을 합산하도록 설계했습니다.<br />
-.<br />
+<br />
 <img width="522" height="263" alt="원데이클래스데이터" src="https://github.com/user-attachments/assets/c063baa6-8cd5-414d-ac95-eb311e4f7e0d" /><br />
 <h5>원데이 클래스 데이터</h5>
 <hr >
