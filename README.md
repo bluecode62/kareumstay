@@ -62,8 +62,45 @@ Search 페이지에서 해당 조건을 기반으로 숙소 리스트를
 
 <hr >
 
-<h1>숙소 페이지 UI 및 컴포넌트 구조 설계 (Search.js)</h1>
+<h1>숙소 페이지 UI 및 컴포넌트 구조 설계</h1>
+
+<img width="638" height="1042" alt="searchUI0102" src="https://github.com/user-attachments/assets/356cc9cd-6c82-478d-9fee-6d1e6a9687db" />
+<img width="525" height="765" alt="SearchUI03" src="https://github.com/user-attachments/assets/f23e7609-a433-41f7-b4d7-fa5bd0a3c037" />
+<img width="594" height="398" alt="ResultBar" src="https://github.com/user-attachments/assets/9a03edf7-156f-475f-98bb-3342c8ab0fc2" />
+<img width="617" height="2124" alt="필터박스" src="https://github.com/user-attachments/assets/df032d06-6916-4232-8faa-b240c2fa214c" />
+<img width="759" height="385" alt="숙소리스트" src="https://github.com/user-attachments/assets/5764114c-bf51-4a6d-babb-f718c2071bc3" />
+
+Home 페이지에서 전달받은 예약 데이터(town, dateRange, guests)를
+React Router의 location state를 통해 Search 페이지에서 받아
+검색 조건 상태를 초기화했습니다.
+
+Search 컴포넌트에서는 숙소 데이터를 기반으로
+마을, 숙소 유형, 시설 조건에 따른 필터링 로직을 구현하고
+가격순, 별점순, 리뷰순 등의 정렬 기능을 추가하여
+사용자가 원하는 조건에 맞게 숙소 리스트를 조회할 수 있도록 설계했습니다.
+또한 ResultBar, FilterBox, AccommodationList 등
+기능 단위로 컴포넌트를 분리하여
+데이터를 props로 전달하는 구조로 UI를 구성했습니다.
+
+<hr >
+
+<h1>map 기반 동적 리스트 렌더링 (rooms, experiences, reviews 등)</h1>
+<img width="741" height="692" alt="디테일01" src="https://github.com/user-attachments/assets/21469fda-c22f-412a-8f19-3ff1b46bb2a2" />
+<img width="530" height="1266" alt="디테일0203" src="https://github.com/user-attachments/assets/802fae0a-cb6e-46aa-98a0-780a73bb6d03" />
 
 
+Search 페이지에서 선택한 숙소 id와 예약 데이터(town, dateRange, guests)를
+React Router의 navigate state를 통해 Detail 페이지로 전달했습니다.
 
+Detail 페이지에서는 전달받은 id를 기반으로 숙소 데이터를 조회하고
+해당 데이터를 여러 UI 컴포넌트(ImageGallery, BasicInfo, RoomList,
+ExperienceList, ReviewList 등)에 props로 전달하여 페이지 구조를 구성했습니다.
 
+객실 목록, 체험 프로그램, 리뷰 등 배열 형태의 데이터는
+map()을 활용해 동적으로 렌더링하도록 구현했습니다.
+
+사용자가 객실과 체험 프로그램을 선택하면 ReservationBox 컴포넌트에서
+선택된 데이터를 관리하고 총 예약 금액을 계산하도록 설계했습니다.
+
+또한 예약 데이터는 LocalStorage에 저장하여
+사용자가 예약 정보를 유지할 수 있도록 구현했습니다.
