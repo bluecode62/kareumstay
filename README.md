@@ -149,3 +149,77 @@ reduce() 함수를 사용해 전체 가격을 합산하도록 설계했습니다
 useState를 활용해 모달 상태(showConfirm)를 관리하고,<br />
 사용자가 결제를 선택하면 결제 완료 페이지로 이동하도록<br />
 React Router의 navigate 함수를 사용해 페이지 이동을 처리했습니다.<br />
+
+```react
+const [showConfirm, setShowConfirm] = useState(false);
+
+<Pay onClick={() => setShowConfirm(true)}>결제하기</Pay>
+
+/// 조건부 렌더링
+{showConfirm && (
+  <ModalOverlay>
+```
+
+✏️ 결제 완료 페이지 이동 기능 <br />
+: 사용자가 결제를 확인하면 결제 완료 페이지로 이동하도록<br />
+React Router의 navigate 함수를 활용해 라우팅을 구현했습니다.<br />
+<br />
+결제 완료 페이지에서는 결제가 정상적으로 완료되었다는<br />
+메시지를 사용자에게 표시하도록 UI를 구성했습니다.<br />
+
+```react
+/// React Router 사용
+
+navigate("/payment-complete");
+
+export default function PaymentComplete()
+```
+
+✏️ 예약 정보 저장 기능<br />
+: 예약 정보를 저장할 수 있도록<br />
+객실 정보, 체험 프로그램, 지역, 날짜, 인원, 총 금액 등의 데이터를<br />
+객체 형태로 구성한 후 LocalStorage에 저장하도록 구현했습니다.<br />
+<br />
+이를 통해 사용자가 페이지를 이동하거나 새로고침을 하더라도<br />
+예약 정보를 유지할 수 있도록 했습니다.<br />
+
+```react
+/// 브라우저 저장소 활용
+localStorage.setItem("reservation", JSON.stringify(reservationData));
+```
+
+✏️ 예약내역 조회 기능 구현<br />
+: 예약내역 페이지에서는 useEffect를 활용해<br />
+LocalStorage에 저장된 예약 데이터를 불러오도록 구현했습니다.<br />
+<br />
+저장된 데이터가 존재할 경우 예약 정보를 화면에 표시하고,<br />
+데이터가 없는 경우에는 "예약 내역이 없습니다"라는<br />
+예외 메시지를 표시하도록 처리했습니다.<br />
+
+```react
+/// 데이터 불러오기 
+useEffect(() => {
+  const saved = localStorage.getItem("reservation");
+```
+
+✏️ 예약 삭제 기능<br />
+: 예약 취소 기능을 구현하기 위해<br />
+LocalStorage에 저장된 예약 데이터를 삭제하고<br />
+화면 상태를 초기화하도록 처리했습니다.<br />
+
+```react
+/// 데이터 상태 동기화
+localStorage.removeItem("reservation");
+setReservation(null);
+```
+
+예약 기능에서는 사용자가 선택한 객실과 체험 프로그램을<br />
+기반으로 예약 데이터를 생성하고 LocalStorage에 저장할 수 있도록 구현했습니다.<br />
+<br />
+예약내역 페이지에서는 저장된 데이터를 불러와<br />
+예약 정보를 조회할 수 있도록 했으며,<br />
+예약 취소 시 LocalStorage 데이터를 삭제하도록 처리했습니다.<br />
+<br />
+결제 버튼을 클릭하면 결제 확인 모달이 나타나고,<br />
+사용자가 결제를 확인하면 결제 완료 페이지로 이동하는<br />
+예약 및 결제 흐름을 구현했습니다.<br />
