@@ -24,7 +24,7 @@
 - 숙소 카드 컴포넌트를 분리하여 재사용 가능한 구조로 설계
 - props를 활용해 숙소 정보 데이터를 전달
 
-map 기반 동적 리스트 렌더링 (rooms, experiences, reviews 등) (Detail.js)
+map 기반 동적 리스트 렌더링 (rooms, experiences, reviews) (Detail.js)
 - map()을 활용해 컴포넌트를 반복 렌더링하여 데이터 기반 UI 구성
 
 객실 선택 및 원데이 클래스 추가 옵션 기능 구현 (Detail.js)
