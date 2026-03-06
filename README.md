@@ -12,7 +12,7 @@
 - LocalStorage API
   
 ## 📂 페이지 구성
-- 메인 홈페이지 (Home.js/TownIntro.js/TourIntro.js/Notice.js/ReservationPage.js/Login.js/)
+- 메인 홈페이지 (Home.js)
 - 숙소 리스트 페이지 (Search.js)
 - 숙소 상세 디테일 페이지 (Detail.js)
 
