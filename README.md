@@ -39,6 +39,11 @@ map 기반 동적 리스트 렌더링 (rooms, experiences, reviews) (Detail.js)
 <hr >
 
 <h1>마을숙소 리스트, 예약일정 조회 등 구현</h1>
+<img width="947" height="318" alt="예약01" src="https://github.com/user-attachments/assets/b9fde0d5-5816-4f52-9c5e-09ba84ecf538" />
+<img width="874" height="378" alt="예약02" src="https://github.com/user-attachments/assets/330ffa9c-0280-4f1c-ba9a-0a952ad07e84" />
+<img width="863" height="93" alt="예약03" src="https://github.com/user-attachments/assets/e250c9f7-0b96-405f-b4d1-fb6b9a67afcc" />
+<img width="1266" height="612" alt="예약04" src="https://github.com/user-attachments/assets/8ac0bec3-738f-4d61-b9d8-9a1e3bfa8558" /><br />
+
 
 <img width="557" height="678" alt="숙소데이터01" src="https://github.com/user-attachments/assets/0698ea11-9a8d-4ce2-ab36-18d0df3e2d6b" />
 <img width="477" height="330" alt="main03" src="https://github.com/user-attachments/assets/86befe8f-f09b-48bb-a0f1-39bf55af366a" />
