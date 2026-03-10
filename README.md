@@ -73,6 +73,7 @@ Search 페이지에서 해당 조건을 기반으로 숙소 리스트를
 <img width="1231" height="921" alt="필터리스트02" src="https://github.com/user-attachments/assets/08851bd5-4b11-404e-9d81-1ded96a39050" />
 <img width="1251" height="914" alt="필터리스트03" src="https://github.com/user-attachments/assets/d38dda44-35a5-4979-b3b2-28d5415e0038" />
 <img width="1225" height="937" alt="필터리스트04" src="https://github.com/user-attachments/assets/e1f99983-ffaa-47cc-8f00-53c3734e45e4" />
+<img width="1246" height="719" alt="필터리스트05" src="https://github.com/user-attachments/assets/d3cc5420-5486-4c5e-ac45-b19d77b4c977" /><br />
 
 
 <img width="638" height="1042" alt="searchUI0102" src="https://github.com/user-attachments/assets/cfe2f284-c687-4dff-b44b-2b08d0647907" />
