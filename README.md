@@ -68,6 +68,12 @@ Search 페이지에서 해당 조건을 기반으로 숙소 리스트를
 <hr >
 
 <h1>숙소 페이지 UI 및 컴포넌트 구조 설계</h1>
+<img width="1286" height="938" alt="조회리스트UI" src="https://github.com/user-attachments/assets/6884b538-4431-47f6-8b34-07742508acb0" />
+<img width="1278" height="739" alt="필터리스트01" src="https://github.com/user-attachments/assets/d7475eee-6963-4e57-90dd-00a1e2b8e1ff" />
+<img width="1231" height="921" alt="필터리스트02" src="https://github.com/user-attachments/assets/08851bd5-4b11-404e-9d81-1ded96a39050" />
+<img width="1251" height="914" alt="필터리스트03" src="https://github.com/user-attachments/assets/d38dda44-35a5-4979-b3b2-28d5415e0038" />
+<img width="1225" height="937" alt="필터리스트04" src="https://github.com/user-attachments/assets/e1f99983-ffaa-47cc-8f00-53c3734e45e4" />
+
 
 <img width="638" height="1042" alt="searchUI0102" src="https://github.com/user-attachments/assets/cfe2f284-c687-4dff-b44b-2b08d0647907" />
 <img width="525" height="765" alt="SearchUI03" src="https://github.com/user-attachments/assets/f23e7609-a433-41f7-b4d7-fa5bd0a3c037" />
