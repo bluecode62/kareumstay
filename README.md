@@ -151,6 +151,13 @@ reduce() 함수를 사용해 전체 가격을 합산하도록 설계했습니다
 <hr >
 
 <h1>결제 버튼 클릭 시 결제 완료 화면 조건부 렌더링 & 예약저장 기능 </h1>
+<img width="1002" height="387" alt="결제01" src="https://github.com/user-attachments/assets/c03f985e-8782-43f9-bd36-f13c753082d1" />
+<img width="641" height="679" alt="결제02" src="https://github.com/user-attachments/assets/8d821489-f323-46cf-94b0-f075ddc63ad7" />
+<img width="1012" height="683" alt="저장01" src="https://github.com/user-attachments/assets/3f056575-c6c1-49e7-b368-4a93f5940f50" />
+<img width="1385" height="952" alt="저장02" src="https://github.com/user-attachments/assets/4fcdf980-c767-4955-b0d3-6f66f3114865" />
+<img width="1043" height="545" alt="저장03" src="https://github.com/user-attachments/assets/3157fc19-3fc1-42b1-9429-3c799f19495e" />
+<img width="1426" height="721" alt="저장04" src="https://github.com/user-attachments/assets/64ee64ef-9bbb-4d9b-b7fd-b1327e71bd92" /><br />
+
 <img width="562" height="609" alt="결제박스01" src="https://github.com/user-attachments/assets/c999ef3c-02db-4d55-8fba-43f2241c555f" /><br />
 <img width="463" height="243" alt="결제박스02" src="https://github.com/user-attachments/assets/6211ecd1-3d91-497e-a2e4-0499d62a81eb" /><br />
 <img width="794" height="2110" alt="예약조회010203" src="https://github.com/user-attachments/assets/9b88b408-d73f-46f9-a235-5fb44ef92977" /><br />
