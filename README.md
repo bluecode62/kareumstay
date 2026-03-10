@@ -97,6 +97,11 @@ Search 컴포넌트에서는 숙소 데이터를 기반으로
 <hr >
 
 <h1>map 기반 동적 리스트 렌더링 (rooms, experiences, reviews 등)</h1>
+<img width="1029" height="949" alt="디테일01" src="https://github.com/user-attachments/assets/035a150b-6372-48b3-8b26-d9a1f90940db" />
+<img width="1023" height="938" alt="디테일02" src="https://github.com/user-attachments/assets/23fc2f1d-0dd5-42e7-8c81-f1fae30f940c" />
+<img width="1019" height="885" alt="디테일03" src="https://github.com/user-attachments/assets/c56f321b-e4d6-4776-92e0-f9c6c47c2e89" /><br />
+
+
 <img width="741" height="692" alt="디테일01" src="https://github.com/user-attachments/assets/21469fda-c22f-412a-8f19-3ff1b46bb2a2" />
 <img width="530" height="1067" alt="디테일0203" src="https://github.com/user-attachments/assets/ab532eb4-b32e-4870-94e2-90ef04ac8380" />
 <img width="620" height="591" alt="rooms" src="https://github.com/user-attachments/assets/65ed9b05-22f2-4f77-8049-e49a092b2ea8" />
