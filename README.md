@@ -128,7 +128,9 @@ map()을 활용해 동적으로 렌더링하도록 구현했습니다.
 <img width="1023" height="844" alt="객실,클래스 추가01" src="https://github.com/user-attachments/assets/dc76b4f8-e689-4188-be9d-b10274edb8bb" />
 <img width="1013" height="373" alt="선택예외" src="https://github.com/user-attachments/assets/9b23751a-9bf8-445c-869a-ac8d9850489e" /><br />
 
-<img width="492" height="211" alt="객실선택및원데이" src="https://github.com/user-attachments/assets/f2af1c88-a0b5-40f5-a81b-ee4632e514c9" /><br />
+<img width="624" height="594" alt="객실원데이수정01" src="https://github.com/user-attachments/assets/db1f50f1-1547-4bc5-b775-0ccbe4da5b5a" /><br />
+<img width="579" height="673" alt="객실원데이수정02" src="https://github.com/user-attachments/assets/8f8610be-a50f-492d-a362-955ebaeaee0e" /><br />
+
 Detail 페이지에서는 객실이 선택되었을 때만 예약내역 컴포넌트가<br />
 렌더링되도록 조건부 렌더링을 적용했습니다.<br />
 <br />
