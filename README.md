@@ -128,9 +128,6 @@ map()을 활용해 동적으로 렌더링하도록 구현했습니다.
 <img width="1023" height="844" alt="객실,클래스 추가01" src="https://github.com/user-attachments/assets/dc76b4f8-e689-4188-be9d-b10274edb8bb" />
 <img width="1013" height="373" alt="선택예외" src="https://github.com/user-attachments/assets/9b23751a-9bf8-445c-869a-ac8d9850489e" /><br />
 
-<img width="624" height="594" alt="객실원데이수정01" src="https://github.com/user-attachments/assets/db1f50f1-1547-4bc5-b775-0ccbe4da5b5a" /><br />
-<img width="579" height="673" alt="객실원데이수정02" src="https://github.com/user-attachments/assets/8f8610be-a50f-492d-a362-955ebaeaee0e" /><br />
-
 Detail 페이지에서는 객실이 선택되었을 때만 예약내역 컴포넌트가<br />
 렌더링되도록 조건부 렌더링을 적용했습니다.<br />
 <br />
@@ -138,7 +135,9 @@ selectedRoom 상태값이 존재할 때만 ReservationBox 컴포넌트를<br />
 보여주도록 구현하여, 사용자가 객실을 먼저 선택한 후<br />
 원데이 클래스와 같은 추가 옵션을 선택할 수 있도록 예약 흐름을 설계했습니다.<br />
 
-<img width="635" height="1944" alt="예약박스010203" src="https://github.com/user-attachments/assets/bd29a432-d0d2-447c-a23d-232ffa45bcad" /><br />
+<img width="628" height="639" alt="예약박스01" src="https://github.com/user-attachments/assets/89ee0a33-724d-476f-9c51-80c8f7817bd9" /><br />
+<img width="624" height="594" alt="객실원데이수정01" src="https://github.com/user-attachments/assets/db1f50f1-1547-4bc5-b775-0ccbe4da5b5a" /><br />
+<img width="579" height="673" alt="객실원데이수정02" src="https://github.com/user-attachments/assets/8f8610be-a50f-492d-a362-955ebaeaee0e" /><br />
 ReservationBox 컴포넌트는 사용자가 선택한 객실과<br />
 추가 옵션(원데이 클래스)을 기반으로 예약 정보를 관리하는 역할을 합니다.<br />
 선택된 객실과 체험 프로그램 데이터를 props로 전달받아<br />
