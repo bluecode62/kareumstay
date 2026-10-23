@@ -287,7 +287,7 @@ const [dateRange, setDateRange] = useState(
 
 const [guests, setGuests] = useState(location.state?.guests || 1);
 ```
-👉 React Router의 location.state를 활용하면 페이지 이동 시 사용자 입력 상태를 자연스럽게 전달하고 초기값으로 활용할 수 있다는 점을 배웠습니다.
+👉 React Router의 location.state로 페이지 이동 시 사용자 입력을 전달하고 초기값으로 쓸 수 있다는 것을 배웠습니다.
 
 
 📍 Git Page 링크: https://bluecode62.github.io/kareumstay/
